@@ -1,0 +1,1728 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ay/ontologies/2022/7/croppestdisease#"
+     xml:base="http://www.semanticweb.org/ay/ontologies/2022/7/croppestdisease"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:OntologiHamaPenyakitPadi="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#abstract"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanAgenBiologi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanAgenBiologi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis"/>
+        <rdfs:label>diberikan Agen Biologi</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanBakterisida -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanBakterisida">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakterisida"/>
+        <rdfs:label>diberikan Bakterisida</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanFungisida -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanFungisida">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:label>diberikan Fungisida</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanPengendalianHama -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanPengendalianHama">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kimia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KontrolTerintegrasi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kultural"/>
+        <rdfs:label>diberikan Pengendalian Hama</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanPerawatan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanPerawatan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PerawatanPenyakit"/>
+        <rdfs:label>diberikan Perawatan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanPestisida -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#diberikanPestisida">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:label>diberikan Pestisida</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#memilikiGejala -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#memilikiGejala">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:label>memiliki Gejala</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#menyebabkanPenyakit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#menyebabkanPenyakit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>menyebabkan Penyakit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#terkenaPatogen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#terkenaPatogen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:label>terkena Patogen</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#terkenaPenyakit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#terkenaPenyakit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>terkena Penyakit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#terserangHama -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#terserangHama">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>terserang Hama</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakterisida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakterisida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kimia"/>
+        <rdfs:abstract xml:lang="id">Bakterisida adalah jenis bahan atau zat yang digunakan untuk membunuh atau menghambat pertumbuhan bakteri. Bakterisida bekerja dengan cara merusak sel bakteri atau menghentikan fungsi vital mereka, sehingga mengurangi atau menghilangkan infeksi bakteri. Penggunaan bakterisida penting dalam pengendalian penyakit bakteri pada tanaman, manusia, hewan, atau lingkungan untuk mengurangi dampak negatif yang disebabkan oleh bakteri patogen. Bakterisida biasanya digunakan dalam pengobatan medis, pertanian, sanitasi, dan industri lainnya sebagai bagian dari upaya untuk mengendalikan pertumbuhan dan penyebaran bakteri yang merugikan.</rdfs:abstract>
+        <rdfs:label>Bakterisida</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PengendalianHama"/>
+        <rdfs:abstract xml:lang="id">Pengendalian hayati atau biokontrol adalah suatu cara pengendalian hama, seperti serangga, tungau, gulma, dan penyakit tanaman, dengan menggunakan organisme lain. Itu bergantung pada predasi, parasitisme, herbivora, atau mekanisme alami lainnya, tetapi biasanya juga melibatkan peran manajemen manusia yang aktif. Ini dapat menjadi komponen penting dari program pengendalian hama terpadu (PHT). Ada tiga strategi dasar untuk pengendalian hama biologis: klasik (impor), di mana musuh alami hama diperkenalkan dengan harapan mencapai pengendalian; induktif (augmentasi), di mana populasi besar musuh alami diberikan untuk pengendalian hama secara cepat; dan inokulatif (konservasi), di mana tindakan diambil untuk memelihara musuh alami melalui penanaman kembali secara teratur. Musuh alami hama serangga, juga dikenal sebagai agen kontrol biologis, termasuk predator, parasitoid, patogen, dan pesaing. Agen pengendali hayati penyakit tanaman paling sering disebut sebagai antagonis. Agen pengendalian hayati gulma meliputi predator benih, herbivora, dan patogen tanaman. Pengendalian hayati dapat memiliki efek samping pada keanekaragaman hayati melalui serangan terhadap spesies non-target melalui salah satu mekanisme di atas, terutama ketika suatu spesies diperkenalkan tanpa pemahaman menyeluruh tentang konsekuensi yang mungkin terjadi.</rdfs:abstract>
+        <rdfs:label>Biologis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kimia"/>
+        <rdfs:abstract>Fungisida adalah bahan kimia yang digunakan untuk mengendalikan atau membunuh jamur penyebab penyakit pada tanaman. Fungisida bekerja dengan menghambat pertumbuhan, merusak struktur sel, atau mengganggu proses biokimia dalam jamur patogen. Penggunaan fungisida harus dilakukan dengan hati-hati, mengikuti petunjuk penggunaan yang tepat, dan memperhatikan keamanan serta dampak lingkungan yang mungkin timbul.</rdfs:abstract>
+        <rdfs:label>Fungisida</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala">
+        <rdfs:abstract xml:lang="id">Gejala hama dan penyakit tanaman merujuk pada perubahan fisik atau fisiologis yang terjadi pada tanaman sebagai respons terhadap serangan organisme atau patogen, seperti serangga hama atau jamur penyebab penyakit. Gejala ini dapat berupa perubahan warna, pembusukan, deformasi, penurunan pertumbuhan, atau kerontokan bagian tanaman. Identifikasi gejala ini penting untuk diagnosis dan pengendalian yang tepat terhadap hama dan penyakit tanaman.</rdfs:abstract>
+        <rdfs:label>Gejala</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Hama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Hama">
+        <rdfs:abstract xml:lang="id">Hama tanaman adalah organisme yang menyebabkan kerusakan atau gangguan pada tanaman baik secara langsung maupun tidak langsung. Mereka dapat berupa serangga, nematoda, hewan pengerat, atau organisme lain yang memakan, menghisap, atau merusak bagian tanaman seperti daun, batang, akar, atau buah. Hama tanaman dapat mengurangi produktivitas, mengubah struktur tanaman, menyebabkan penyakit, atau bahkan menyebabkan kematian tanaman. Pengendalian hama tanaman melibatkan penggunaan metode terpadu yang meliputi pengendalian hayati, penggunaan pestisida, penggunaan varietas tahan hama, dan praktik budidaya yang baik.</rdfs:abstract>
+        <rdfs:label>Hama</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Hama"/>
+        <rdfs:abstract xml:lang="id">Hama padi adalah organisme yang menyebabkan kerusakan atau gangguan pada tanaman padi secara langsung maupun tidak langsung. Hama-hama padi umumnya meliputi serangga seperti wereng, penggerek batang, penggerek tongkol, dan ulat daun padi. Serangan hama padi dapat mengurangi hasil panen, merusak bagian tanaman seperti daun, batang, malai, atau biji, dan mempengaruhi kualitas gabah.</rdfs:abstract>
+        <rdfs:label>Hama Padi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kimia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kimia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PengendalianHama"/>
+        <rdfs:abstract xml:lang="id">Pengendalian hama kimia melibatkan penggunaan bahan kimia atau pestisida untuk mengurangi populasi hama yang merusak tanaman. Pestisida yang digunakan harus dipilih dengan hati-hati, mempertimbangkan efektivitas terhadap hama target dan keamanan terhadap manusia serta lingkungan. Aplikasi pestisida harus dilakukan sesuai dengan petunjuk penggunaan yang benar, termasuk dosis yang tepat dan jangka waktu penarikan yang diikuti sebelum panen. Penting untuk memantau efektivitas pengendalian hama kimia dan mempertimbangkan pendekatan pengendalian terpadu untuk mengurangi ketergantungan pada pengendalian kimia dan mengurangi risiko residu pestisida.</rdfs:abstract>
+        <rdfs:label>Kimia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KontrolTerintegrasi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KontrolTerintegrasi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PengendalianHama"/>
+        <rdfs:abstract>Pengendalian hama terpadu adalah pendekatan berbasis luas yang mengintegrasikan praktik kimia dan non-kimia untuk pengendalian hama secara ekonomis. Pengendalian hama ini bertujuan untuk menekan populasi hama di bawah Economy Injury Level (EIL). Organisasi Pangan dan Pertanian PBB mendefinisikan IPM sebagai &quot;pertimbangan cermat dari semua teknik pengendalian hama yang tersedia dan integrasi berikutnya dari langkah-langkah yang tepat yang mencegah perkembangan populasi hama dan menjaga pestisida dan intervensi lain ke tingkat yang dibenarkan secara ekonomi dan mengurangi atau meminimalkan risiko terhadap kesehatan manusia dan lingkungan PHT menekankan pertumbuhan tanaman yang sehat dengan kemungkinan gangguan paling kecil terhadap agroekosistem dan mendorong mekanisme pengendalian hama alami.&quot;</rdfs:abstract>
+        <rdfs:label>Kontrol Terintegrasi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kultural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kultural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PengendalianHama"/>
+        <rdfs:abstract>Pengendalian hama budaya mengacu pada manipulasi sistem produksi tanaman atau praktik budaya untuk mengurangi atau menghilangkan populasi hama. Praktik pengendalian budaya dapat berkisar dari konsep sederhana seperti menyesuaikan tanggal penanaman untuk menghindari serangan hama hingga pendekatan pertanian yang lebih kompleks yang mungkin mencakup penyesuaian pengaturan spasial dan temporal agroekosistem. Praktik budaya dapat menjadi rumit untuk diterapkan, terutama yang bergantung pada interaksi berbagai spesies tanaman dan artropoda.</rdfs:abstract>
+        <rdfs:label>Kultural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Padi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tanaman"/>
+        <rdfs:abstract>Padi adalah benih dari spesies rumput Oryza sativa (beras Asia) atau lebih jarang Oryza glaberrima (beras Afrika). Nama padi liar biasanya digunakan untuk spesies dari genera Zizania dan Porteresia, baik liar maupun peliharaan, meskipun istilah ini juga dapat digunakan untuk varietas Oryza primitif atau tidak dibudidayakan. Sebagai biji-bijian sereal, beras domestik adalah makanan pokok yang paling banyak dikonsumsi oleh lebih dari setengah populasi manusia di dunia, terutama di Asia dan Afrika. Ini adalah komoditas pertanian dengan produksi tertinggi ketiga di dunia, setelah tebu dan jagung. Karena sebagian besar tanaman tebu dan jagung digunakan untuk tujuan selain konsumsi manusia, beras merupakan tanaman pangan terpenting dalam kaitannya dengan nutrisi dan asupan kalori manusia, menyediakan lebih dari seperlima kalori yang dikonsumsi manusia di seluruh dunia. Ada banyak jenis beras dan preferensi kuliner cenderung bervariasi di setiap daerah. Metode tradisional untuk bercocok tanam padi adalah membanjiri sawah saat, atau setelah, menanam bibit muda. Metode sederhana ini membutuhkan perencanaan irigasi yang baik tetapi mengurangi pertumbuhan tanaman gulma dan hama yang kurang kuat yang tidak memiliki kondisi pertumbuhan terendam, dan mencegah hama. Meskipun penggenangan tidak wajib untuk menanam padi, semua metode irigasi lainnya memerlukan upaya yang lebih tinggi dalam pengendalian gulma dan hama selama periode pertumbuhan dan pendekatan yang berbeda untuk pemupukan tanah. Padi, monokotil, biasanya ditanam sebagai tanaman tahunan, meskipun di daerah tropis dapat bertahan hidup sebagai tanaman tahunan dan dapat menghasilkan tanaman ratun hingga 30 tahun. Budidaya padi sangat cocok untuk negara dan wilayah dengan biaya tenaga kerja rendah dan curah hujan tinggi, karena padat karya untuk bercocok tanam dan membutuhkan banyak air. Namun demikian, padi praktis dapat ditanam di mana saja, bahkan di daerah perbukitan atau pegunungan yang terjal dengan menggunakan sistem teras pengatur air. Meskipun spesies induknya berasal dari Asia dan beberapa bagian Afrika, perdagangan dan ekspor selama berabad-abad telah menjadikannya hal yang biasa di banyak budaya di seluruh dunia. Produksi dan konsumsi beras diperkirakan bertanggung jawab atas 4% emisi gas rumah kaca global pada tahun 2010.</rdfs:abstract>
+        <rdfs:label>Padi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Patogen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Patogen">
+        <rdfs:abstract xml:lang="id">Patogen tanaman adalah organisme yang menyebabkan penyakit pada tanaman. Mereka dapat berupa bakteri, jamur, virus, atau nematoda parasitik yang menginfeksi dan merusak jaringan tanaman. Patogen tanaman dapat mengganggu pertumbuhan, mengubah fungsi fisiologis, menyebabkan gejala penyakit, dan mengurangi hasil panen tanaman tersebut.</rdfs:abstract>
+        <rdfs:label>Patogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Patogen"/>
+        <rdfs:abstract xml:lang="id">Patogen padi adalah mikroorganisme yang menyebabkan penyakit pada tanaman padi. Beberapa patogen padi yang umum termasuk jamur, bakteri, dan virus. Patogen tersebut dapat menginfeksi berbagai bagian tanaman, seperti akar, batang, daun, dan malai padi, menyebabkan berbagai gejala penyakit dan potensial mengurangi hasil panen. Pengendalian penyakit padi melibatkan pemantauan penyakit, penggunaan varietas tahan, aplikasi pestisida yang tepat, serta praktik budidaya yang baik untuk meminimalkan risiko infeksi patogen.</rdfs:abstract>
+        <rdfs:label>Patogen Padi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PengendalianHama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PengendalianHama">
+        <rdfs:abstract xml:lang="id">Pengendalian hama adalah pengaturan atau pengelolaan spesies yang didefinisikan sebagai hama; setiap hewan, tumbuhan atau jamur yang berdampak buruk pada aktivitas manusia atau lingkungan. Tanggapan manusia tergantung pada pentingnya kerusakan yang dilakukan dan berkisar dari toleransi, melalui pencegahan dan pengelolaan, hingga upaya untuk memberantas hama sepenuhnya. Tindakan pengendalian hama dapat dilakukan sebagai bagian dari strategi pengelolaan hama terpadu. Di bidang pertanian, hama dicegah dengan cara mekanis, budaya, kimia dan biologi. Membajak dan mengolah tanah sebelum menabur mengurangi beban hama, dan rotasi tanaman membantu mengurangi penumpukan spesies hama tertentu. Kepedulian terhadap lingkungan berarti membatasi penggunaan pestisida demi metode lain. Hal ini dapat dicapai dengan memantau tanaman, hanya menggunakan pestisida jika diperlukan, dan dengan menanam varietas dan tanaman yang tahan terhadap hama. Jika memungkinkan, cara biologis digunakan, mendorong musuh alami hama dan memasukkan predator atau parasit yang sesuai. Di rumah dan lingkungan perkotaan, hama adalah hewan pengerat, burung, serangga, dan organisme lain yang berbagi habitat dengan manusia, dan memakan dan/atau merusak harta benda. Pengendalian hama ini diupayakan melalui pengucilan atau karantina, penolakan, penghilangan fisik atau cara kimia. Sebagai alternatif, berbagai metode pengendalian biologis dapat digunakan termasuk program sterilisasi.</rdfs:abstract>
+        <rdfs:label>Pengendalian Hama</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Penyakit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Penyakit">
+        <rdfs:abstract xml:lang="id">Penyakit tanaman adalah gangguan atau kelainan yang terjadi pada tanaman akibat serangan patogen, seperti jamur, bakteri, virus, atau nematoda. Gejala penyakit tanaman dapat berupa bercak pada daun, pembusukan akar, layu, kematangan yang terganggu, atau bahkan kematian tanaman. Penyakit tanaman dapat menyebabkan penurunan pertumbuhan, kerugian hasil panen, dan mengganggu stabilitas agroekosistem. Pengendalian penyakit tanaman melibatkan penerapan praktik budidaya yang baik, penggunaan varietas tahan penyakit, sanitasi lahan, dan penggunaan fungisida atau pestisida yang sesuai.</rdfs:abstract>
+        <rdfs:label>Penyakit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Penyakit"/>
+        <rdfs:abstract xml:lang="id">Penyakit padi adalah gangguan atau kelainan yang terjadi pada tanaman padi akibat serangan patogen seperti jamur, bakteri, atau virus. Gejala penyakit padi dapat berupa bercak pada daun, rebahnya malai padi, atau kerusakan pada akar dan batang. Penyakit padi dapat menyebabkan penurunan hasil panen, kerugian ekonomi, dan mengancam keberlanjutan produksi padi.</rdfs:abstract>
+        <rdfs:label>Penyakit Padi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PerawatanPenyakit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PerawatanPenyakit">
+        <rdfs:abstract xml:lang="id">Perawatan penyakit tanaman melibatkan beberapa langkah penting. Pertama, identifikasi jenis penyakit yang terjadi pada tanaman untuk menentukan langkah-langkah pengendalian yang sesuai. Kedua, terapkan praktik budidaya yang baik, seperti sanitasi lahan, pengelolaan kelembaban yang tepat, dan pemilihan varietas yang tahan terhadap penyakit. Ketiga, jika diperlukan, gunakan bahan pengendali penyakit seperti fungisida, bakterisida, atau virusida sesuai dengan petunjuk penggunaan yang tepat dan memperhatikan keamanan serta dampak lingkungan yang mungkin timbul.</rdfs:abstract>
+        <rdfs:label>Perawatan Penyakit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kimia"/>
+        <rdfs:abstract>Pestisida adalah zat yang dimaksudkan untuk mengendalikan hama. Ini termasuk herbisida, insektisida, nematisida, moluskisida, piscisida, avicide, rodentisida, bakterisida, penolak serangga, penolak hewan, mikrobisida, fungisida, dan lampricide. Yang paling umum adalah herbisida yang mencapai sekitar 80% dari semua penggunaan pestisida. Sebagian besar pestisida dimaksudkan untuk berfungsi sebagai produk perlindungan tanaman (juga dikenal sebagai produk perlindungan tanaman), yang pada umumnya melindungi tanaman dari gulma, jamur, atau serangga. Sebagai contoh, jamur Alternaria solani digunakan untuk memerangi gulma air Salvinia. Secara umum, pestisida adalah bahan kimia (seperti karbamat) atau agen biologis (seperti virus, bakteri, atau jamur) yang menghalangi, melumpuhkan, membunuh, atau menghambat hama. Hama sasaran dapat mencakup serangga, patogen tanaman, gulma, moluska, burung, mamalia, ikan, nematoda (cacing gelang), dan mikroba yang merusak properti, menyebabkan gangguan, atau menyebarkan penyakit, atau merupakan vektor penyakit. Seiring dengan manfaat tersebut, pestisida juga memiliki kelemahan, seperti potensi toksisitas terhadap manusia dan spesies lainnya.</rdfs:abstract>
+        <rdfs:label>Pestisida</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tanaman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tanaman">
+        <rdfs:abstract xml:lang="id">Tanaman adalah organisme hidup yang termasuk dalam kerajaan Plantae dan memiliki kemampuan untuk fotosintesis. Mereka dapat tumbuh dan berkembang di berbagai lingkungan, baik di darat maupun di air. Tanaman memiliki beragam bentuk, ukuran, dan fungsi, mulai dari tumbuhan kecil hingga pohon besar, dan berperan penting dalam ekosistem sebagai produsen utama dan penyedia makanan bagi organisme lain. Tanaman juga memiliki nilai ekonomi yang tinggi sebagai sumber pangan, bahan baku industri, obat-obatan, dan keindahan estetika dalam lanskap.</rdfs:abstract>
+        <rdfs:label>Tanaman</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Acidovorax_avenae_subsp._avenae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Acidovorax_avenae_subsp._avenae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Acidovorax avenae subsp. avenae adalah bakteri patogen yang menyebabkan penyakit serius pada tanaman padi. Bakteri ini merupakan spesies dalam genus Acidovorax dan subspesiesnya, A. avenae, menginfeksi tanaman padi dan beberapa tanaman inang lainnya. Penyakit yang disebabkan oleh Acidovorax avenae subsp. avenae pada padi dikenal sebagai penyakit bercak daun bakteri. Gejalanya meliputi munculnya bercak-bercak kecil berwarna cokelat atau kemerahan pada daun tanaman padi. Bercak-bercak ini kemudian dapat meluas dan menggabung menjadi bercak yang lebih besar, membentuk pola bercak tak beraturan pada daun. Pada tahap lanjut, daun yang terinfeksi dapat mengering dan mati.</rdfs:abstract>
+        <rdfs:label>Acidovorax avenae subsp. avenae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Azoxystrobin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Azoxystrobin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Azoxystrobin adalah sejenis fungisida yang digunakan untuk mengendalikan penyakit pada tanaman, termasuk pada padi. Fungisida ini bekerja dengan cara menghambat pernapasan mitokondria jamur penyebab penyakit. Azoxystrobin efektif dalam mengendalikan penyakit seperti bercak daun, bercak coklat, dan penyakit lainnya pada tanaman padi.</rdfs:abstract>
+        <rdfs:label>Azoxystrobin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_thuringiensis_var._israelensis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_thuringiensis_var._israelensis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Bacillus thuringiensis var. israelensis (Bti) adalah sebuah varietas dari bakteri Bacillus thuringiensis yang digunakan sebagai pestisida biologis. Bti menghasilkan kristal toksin yang efektif melawan larva serangga, termasuk nyamuk, lalat, dan belatung. Kristal toksin yang dihasilkan oleh Bti dapat diinjeksi atau dikonsumsi oleh larva belatung, merusak sistem pencernaan mereka dan menyebabkan kematian. Bti aman untuk digunakan di sekitar manusia, hewan, dan lingkungan, serta tidak menyebabkan dampak negatif yang signifikan pada organisme lainnya.</rdfs:abstract>
+        <rdfs:label>Bacillus thuringiensis var. israelensis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakanae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakanae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Carbendazim"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Prothioconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Triadimefon"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tricyclazole"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_melengkung"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_batang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_bibit_yang_tidak_normal"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Produksi_suara_berbunyi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rebahnya_tanaman"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gibberella_fujikuroi"/>
+        <rdfs:abstract xml:lang="id">Penyakit bakanae pada padi adalah suatu penyakit yang disebabkan oleh jamur Fusarium fujikuroi. Jamur ini dapat menyerang tanaman padi pada berbagai tahap pertumbuhannya, termasuk masa bibit, pertumbuhan vegetatif, dan masa berbunga. Penyakit ini juga dikenal dengan sebutan &quot;penyakit bibit berbunyi&quot; karena gejala utamanya adalah bibit yang terinfeksi mengeluarkan suara berbunyi ketika air mengalir melalui tanaman yang terinfeksi.</rdfs:abstract>
+        <rdfs:label>Bakanae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BakteriGarisDaun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BakteriGarisDaun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanBakterisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fosfit"/>
+        <OntologiHamaPenyakitPadi:diberikanBakterisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kasugamisin"/>
+        <OntologiHamaPenyakitPadi:diberikanBakterisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Streptomisin"/>
+        <OntologiHamaPenyakitPadi:diberikanBakterisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tembaga"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Malai"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Xanthomonas_oryzae_pv._oryzicola"/>
+        <rdfs:abstract xml:lang="id">Penyakit bakteri garis daun pada padi disebabkan oleh bakteri Xanthomonas oryzae pv. oryzae. Gejalanya termasuk adanya garis berwarna kuning atau coklat pada daun, bercak bakteri, dan pengeringan daun. Penyakit ini dapat mengurangi hasil panen dan dapat dikendalikan melalui penggunaan varietas padi tahan, sanitasi lahan, pengaturan irigasi yang tepat, dan penggunaan bakterisida yang sesuai.</rdfs:abstract>
+        <rdfs:label>Bakteri Garis Daun</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Batang_berlubang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Batang_berlubang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala batang padi berlubang menunjukkan adanya serangan hama atau penyakit. Lubang-lubang pada batang dapat mengindikasikan serangan oleh hama penggerek batang padi atau serangga lainnya yang memakan jaringan batang. Serangan serius dapat melemahkan batang, membuatnya rapuh, dan menyebabkan tanaman padi roboh.</rdfs:abstract>
+        <rdfs:label>Batang berlubang</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Batang_rapuh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Batang_rapuh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala batang padi rapuh menunjukkan kelemahan struktural pada tanaman. Batang yang rapuh mudah patah atau melengkung saat terkena tekanan ringan. Tanaman padi yang mengalami gejala ini cenderung tidak dapat menopang beban malai atau angin yang kuat. Kelemahan struktural pada batang padi dapat disebabkan oleh faktor lingkungan, kekurangan nutrisi, infeksi penyakit, atau serangan hama.</rdfs:abstract>
+        <rdfs:label>Batang rapuh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BelalangSawah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BelalangSawah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Karbamat"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Neonicotinoid"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Organofosfat"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Piretroid"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HawarDaunBakteri"/>
+        <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tungro"/>
+        <rdfs:abstract xml:lang="id">Belalang sawah, atau Nilaparvata lugens, adalah serangga hama yang menyerang tanaman padi. Serangga ini dapat menyebabkan kerusakan pada tanaman padi dengan menghisap cairan dari batang dan daun. Serangan yang parah dapat mengurangi hasil panen dan mengganggu pertumbuhan tanaman. Pengendalian belalang sawah melibatkan penggunaan insektisida, penggunaan varietas padi tahan, pemantauan populasi secara teratur, dan praktik pengelolaan lingkungan seperti pemotongan gulma dan rotasi tanaman.</rdfs:abstract>
+        <rdfs:label>Belalang Sawah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BelatungLalatBibit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BelatungLalatBibit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Steinernema_feltiae"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_thuringiensis_var._israelensis"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metarhizium_anisopliae"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kematian_bibit"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_batang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_terhambat"/>
+        <rdfs:abstract xml:lang="id">Belatung lalat bibit adalah tahap larva dari beberapa spesies lalat yang menjadi hama pada bibit tanaman. Mereka berukuran kecil, berwarna putih atau krem, dan sering kali merusak akar atau batang bibit. Serangan belatung lalat bibit dapat menyebabkan kematian bibit atau pertumbuhan yang terhambat, yang berdampak pada produktivitas tanaman. Pengendalian belatung lalat bibit melibatkan pemantauan awal serangan, pembersihan media tanam, pergiliran tanaman, dan penggunaan insektisida yang sesuai jika diperlukan.</rdfs:abstract>
+        <rdfs:label>Belatung Lalat Bibit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BercakCoklat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BercakCoklat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Azoxystrobin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Difenoconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Mancozeb"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Propiconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pyraclostrobin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Triadimefon"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_malai"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_rontok"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Cochliobolus_miyabeanus"/>
+        <rdfs:abstract xml:lang="id">Penyakit bercak coklat, juga dikenal sebagai bercak daun coklat, adalah penyakit jamur yang umum terjadi pada tanaman padi. Penyakit ini disebabkan oleh jamur Bipolaris oryzae. Gejala awal penyakit ini adalah munculnya bercak-barcak coklat pada daun padi yang kemudian memperluas dan menggabung menjadi lesi berbentuk oval atau bulat. Lesi pada daun cenderung memiliki tepi yang berwarna gelap dan tengah yang berwarna coklat kemerahan. Pada tingkat yang lebih parah, lesi dapat meluas ke batang dan malai padi, menyebabkan kerusakan yang signifikan.</rdfs:abstract>
+        <rdfs:label>Bercak Coklat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_hitam_pada_bulir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_hitam_pada_bulir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Bercak hitam pada bulir padi merupakan gejala yang mengindikasikan adanya kerusakan atau infeksi pada bulir tersebut. Gejala ini dapat terlihat sebagai adanya bercak-bercak berwarna hitam yang muncul pada permukaan bulir padi yang masih muda. Bercak hitam tersebut dapat memiliki ukuran yang bervariasi, dari yang kecil hingga meluas menutupi sebagian atau seluruh permukaan bulir. Seiring dengan perkembangan penyakit atau infeksi, bercak hitam ini bisa membesar dan membentuk lesi yang lebih besar. Penyebab bercak hitam pada bulir padi bisa beragam, seperti infeksi oleh patogen seperti jamur atau bakteri, atau serangan hama tertentu.</rdfs:abstract>
+        <rdfs:label>Bulir terdapat bercak</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Bercak pada daun padi merupakan salah satu gejala yang umum terjadi pada beberapa penyakit jamur dan bakteri yang menginfeksi tanaman. Gejala ini ditandai dengan munculnya bercak-barcak yang berbeda warna dan ukuran pada daun padi. Bercak-bercak ini dapat memiliki beragam bentuk, mulai dari bulat, oval, hingga tidak teratur. Warna bercak juga bervariasi, mulai dari coklat, coklat pucat, kehitaman, hingga kekuningan. Selain perbedaan warna dan ukuran, bercak pada daun padi juga dapat memiliki karakteristik lain, seperti tepi yang lebih gelap atau kehitaman. Pada beberapa kasus, bercak dapat mengembang dan menyatu membentuk lesi yang lebih besar. Intensitas dan penyebaran bercak pada daun padi juga bergantung pada tingkat keparahan infeksi dan kondisi lingkungan.</rdfs:abstract>
+        <rdfs:label>Daun terdapat bercak</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_malai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_malai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract>Bercak pada malai padi adalah gejala yang dapat terjadi akibat berbagai penyakit atau kondisi stres pada tanaman. Gejala ini ditandai dengan adanya bercak-barcak yang terlihat pada malai padi. Bercak-bercak ini dapat memiliki ukuran dan bentuk yang bervariasi, mulai dari kecil hingga besar, dan berbentuk bulat atau tidak teratur. Warna bercak pada malai padi juga dapat berbeda-beda, mulai dari coklat, kehitaman, hingga kekuningan. Bercak-barcak tersebut biasanya menunjukkan adanya kerusakan atau infeksi pada bagian malai. Bercak yang lebih besar atau yang terdapat dalam jumlah banyak dapat mengurangi kualitas dan hasil panen padi.</rdfs:abstract>
+        <rdfs:label>Malai terdapat bercak</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Blas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Blas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Azoxystrobin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Carbendazim"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Difenoconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Mancozeb"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Propiconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Trifloxystrobin"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Malai"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembentukan_Sporulasi"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Magnaporthe_oryzae"/>
+        <rdfs:abstract xml:lang="id">Penyakit blas padi, juga dikenal sebagai blast, disebabkan oleh jamur Magnaporthe oryzae. Gejalanya meliputi adanya bercak-bercak kecil berwarna putih keabu-abuan pada daun, batang, dan malai padi. Bercak-bercak ini kemudian berkembang menjadi lesi berbentuk lonjong dengan tepi merah atau coklat. Pada tahap yang lebih parah, lesi tersebut dapat bergabung membentuk pola seragam yang disebut sebagai &quot;blas&quot;. Penyakit ini dapat menyebabkan kerontokan malai, kehilangan hasil panen, bahkan kematian tanaman padi. Pengendalian penyakit blas padi dapat dilakukan dengan menggunakan fungisida seperti triazoles, strobilurins, atau kombinasi dari beberapa jenis fungisida yang efektif terhadap jamur Magnaporthe oryzae.</rdfs:abstract>
+        <rdfs:label>Blas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BottomRot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BottomRot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanBakterisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kasugamisin"/>
+        <OntologiHamaPenyakitPadi:diberikanBakterisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Streptomisin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Difenoconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Mancozeb"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Propiconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kehilangan_akar"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Layu"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_akar"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Penurunan_produktivitas"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_terhambat"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Acidovorax_avenae_subsp._avenae"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Burkholderia_glumae"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fusarium_spp."/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pythium_spp."/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rhizoctonia_solani"/>
+        <rdfs:abstract xml:lang="id">Penyakit busuk akar pada padi, juga dikenal sebagai penyakit Akar Gudang atau Akar Hancur, adalah kondisi yang menyebabkan kerusakan pada sistem akar tanaman padi. Penyakit ini biasanya disebabkan oleh patogen seperti jamur, bakteri, atau nematoda. Gejala penyakit busuk akar pada padi dapat bervariasi tergantung pada patogen yang menyebabkannya</rdfs:abstract>
+        <rdfs:label>Busuk Akar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bulir_pecah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bulir_pecah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Penutupan bulir yang tidak sempurna atau pecah pada padi dapat menjadi masalah serius yang mempengaruhi kualitas dan hasil panen. Ketika bulir tidak menutup dengan sempurna, hal ini memungkinkan masuknya patogen atau serangga penyebab penyakit. Selain itu, penutupan yang tidak sempurna juga dapat menyebabkan kerontokan bulir yang lebih banyak, mengurangi potensi hasil panen. Penutupan bulir yang tidak sempurna atau pecah dapat disebabkan oleh beberapa faktor. Salah satu faktornya adalah serangan hama, seperti wereng punggung putih atau hama padi lainnya, yang dapat menyebabkan kerusakan pada bulir dan menghambat penutupannya. Faktor lingkungan juga dapat berperan, seperti kelembaban yang tidak stabil atau cuaca yang ekstrem, yang dapat mempengaruhi perkembangan bulir dan proses penutupannya.</rdfs:abstract>
+        <rdfs:label>Bulir pecah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Burkholderia_glumae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Burkholderia_glumae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Burkholderia glumae adalah bakteri patogen yang menyebabkan penyakit serius pada tanaman padi. Bakteri ini termasuk dalam genus Burkholderia dan dapat menginfeksi berbagai bagian tanaman padi, termasuk daun, malai, batang, dan rumpun padi. Penyakit yang disebabkan oleh Burkholderia glumae pada padi dikenal sebagai penyakit bercak bakteri atau bacterial panicle blight. Gejalanya meliputi munculnya bercak-bercak basah berwarna cokelat atau kehitaman pada malai padi yang terinfeksi. Bercak-bercak ini kemudian dapat membesar dan menyebabkan busuk pada malai, menghasilkan bau yang tidak sedap. Infeksi pada malai padi dapat mengakibatkan penurunan jumlah dan kualitas gabah yang dihasilkan.</rdfs:abstract>
+        <rdfs:label>Burkholderia glumae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BusukBatang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BusukBatang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Azoxystrobin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Carbendazim"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Mancozeb"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Propiconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pyraclostrobin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_batang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pengeluaran_cairan"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_batang"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Magnaporthe_salvinii"/>
+        <rdfs:abstract xml:lang="id">Busuk batang pada padi, juga dikenal sebagai penyakit &quot;sheath rot&quot; atau &quot;stem rot&quot;, adalah penyakit serius yang dapat merusak tanaman padi. Penyakit ini disebabkan oleh serangan berbagai patogen. Gejala penyakit ini meliputi pembusukan dan kerusakan pada batang tanaman padi. Saat terinfeksi, batang padi akan mengalami perubahan warna menjadi cokelat atau hitam. Lesi atau luka berbentuk bulat atau oval terbentuk pada batang, yang kemudian berkembang menjadi area busuk yang lembek. Infeksi yang parah dapat menyebabkan kerusakan jaringan batang yang luas, bahkan hingga batang patah. Selain itu, serangan patogen juga dapat menyebabkan pembentukan struktur berupa miselium, spora, atau sklerotium pada batang yang terinfeksi.</rdfs:abstract>
+        <rdfs:label>Busuk Batang</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BusukPelepah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BusukPelepah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Azoxystrobin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fluazinam"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metalaxyl"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Propiconazole"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pyraclostrobin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kerapuhan_pelepah"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_pelepah"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_pelepah"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_pelepah"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Sarocladium_oryzae"/>
+        <rdfs:abstract xml:lang="id">Busuk pelepah padi, juga dikenal sebagai penyakit &quot;leaf sheath rot&quot;, adalah penyakit yang mempengaruhi pelepah daun pada tanaman padi. Penyakit ini disebabkan oleh infeksi patogen seperti jamur, bakteri, atau virus. Gejala penyakit ini meliputi pembusukan dan kerusakan pada pelepah daun padi. Salah satu gejala umum busuk pelepah padi adalah adanya bercak basah atau kering pada pelepah daun. Bercak basah dapat disertai dengan pembusukan, perubahan warna, dan kelembaban yang tinggi. Sedangkan bercak kering biasanya ditandai dengan pengeringan dan kekeringan pada pelepah daun.</rdfs:abstract>
+        <rdfs:label>Busuk Pelepah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Carbendazim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Carbendazim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Carbendazim adalah sejenis fungisida yang digunakan untuk mengendalikan penyakit jamur pada tanaman. Bahan aktif carbendazim memiliki efek penghambatan pertumbuhan dan reproduksi jamur patogen. Carbendazim sering digunakan untuk melawan penyakit seperti bercak daun, busuk pangkal batang, dan busuk buah pada berbagai tanaman termasuk padi. Carbendazim biasanya digunakan dalam bentuk larutan atau bubuk yang diaplikasikan ke tanaman secara foliar atau tanah.</rdfs:abstract>
+        <rdfs:label>Carbendazim</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Cochliobolus_miyabeanus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Cochliobolus_miyabeanus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Cochliobolus miyabeanus adalah jamur patogen yang menyebabkan penyakit bercak coklat pada tanaman padi. Jamur ini merupakan salah satu penyebab utama penyakit bercak coklat di berbagai wilayah yang menghasilkan padi. Gejala penyakit ini meliputi munculnya bercak-barcak coklat pada daun, batang, dan malai padi. Bercak-bercak ini awalnya berwarna coklat pucat, tetapi kemudian dapat berkembang menjadi lesi yang lebih besar dan gelap. Lesi pada daun dan batang sering kali memiliki tepi yang lebih gelap atau kehitaman.</rdfs:abstract>
+        <rdfs:label>Cochliobolus miyabeanus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_berlubang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_berlubang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala daun berlubang adalah ketika terdapat lubang-lubang pada daun tanaman yang biasanya disebabkan oleh serangan hama atau aktivitas makan serangga. Serangga tersebut dapat berupa ulat, belalang, atau serangga lainnya. Lubang-lubang pada daun bisa berbentuk bulat, tidak teratur, atau mengikuti pola tertentu. Gejala ini dapat menyebabkan kerusakan estetik pada tanaman dan mengganggu proses fotosintesis serta pertumbuhan tanaman.</rdfs:abstract>
+        <rdfs:label>Daun berlubang</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_melengkung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_melengkung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala daun melengkung pada padi umumnya terkait dengan infeksi oleh virus atau penyakit. Daun yang terinfeksi biasanya melengkung ke arah yang tidak normal dan membentuk kurva atau lipatan. Daun juga dapat tampak lebih kecil dan berwarna pucat. Tanaman yang terinfeksi mungkin mengalami pertumbuhan terhambat dan menghasilkan rendah. Penting untuk melakukan identifikasi penyebab yang akurat dan mengambil tindakan pengendalian yang tepat untuk mengurangi kerusakan pada tanaman padi.</rdfs:abstract>
+        <rdfs:label>Daun melengkung</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala daun mengering pada padi umumnya terlihat sebagai daun yang kering, rapuh, dan mudah patah. Daun mungkin menjadi kering secara keseluruhan atau hanya bagian-bagian tertentu yang mengalami kekeringan. Tanaman yang terkena gejala ini biasanya mengalami penurunan pertumbuhan dan produksi yang dapat berdampak negatif pada hasil panen. Penyebab umum dari gejala daun mengering pada padi meliputi kekurangan air, serangan hama atau penyakit, kelebihan garam tanah, atau kondisi lingkungan yang ekstrem seperti suhu yang terlalu tinggi.</rdfs:abstract>
+        <rdfs:label>Daun mengering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala daun menguning pada padi adalah ketika daun-daun tanaman padi berubah warna menjadi kuning. Daun yang menguning dapat terjadi secara merata atau hanya pada beberapa bagian tanaman. Selain perubahan warna, daun yang menguning juga bisa menjadi lemas atau layu. Penyebab umum gejala ini antara lain defisiensi nutrisi, serangan hama atau penyakit, kondisi lingkungan yang tidak sesuai, atau kelebihan air pada akar tanaman. Penting untuk mengidentifikasi penyebab pasti dan mengambil tindakan yang tepat untuk mengatasi gejala daun menguning pada padi.</rdfs:abstract>
+        <rdfs:label>Daun menguning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_rontok -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_rontok">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Daun padi yang rontok adalah gejala yang dapat terjadi akibat berbagai faktor, termasuk kondisi lingkungan, penyakit, serangan hama, atau kekurangan nutrisi. Gejala ini ditandai dengan gugur atau kerontokan daun padi sebelum mencapai usia panen yang normal. Ada beberapa alasan mengapa daun padi dapat rontok. Salah satunya adalah kondisi lingkungan yang tidak sesuai, seperti suhu yang ekstrem, kelembaban rendah atau tinggi, serta kekeringan atau kelebihan air. Selain itu, serangan penyakit seperti penyakit layu atau bercak daun juga dapat menyebabkan kerontokan daun padi.</rdfs:abstract>
+        <rdfs:label>Daun rontok</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Difenoconazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Difenoconazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Difenoconazole adalah sejenis fungisida yang digunakan untuk mengendalikan penyakit pada tanaman, termasuk pada padi. Fungisida ini bekerja dengan cara menghambat sintesis ergosterol, yang merupakan komponen penting dalam membran sel jamur penyebab penyakit. Difenoconazole efektif dalam mengendalikan penyakit seperti bercak daun, bercak coklat, dan penyakit lainnya pada tanaman padi.</rdfs:abstract>
+        <rdfs:label>Difenoconazole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fipronil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fipronil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Fipronil adalah sejenis insektisida yang digunakan untuk mengendalikan hama serangga. Ini bekerja dengan mengganggu sistem saraf hama, mengakibatkan paralisis dan kematian serangga target. Fipronil sering digunakan dalam pengendalian kutu, rayap, kecoa, dan serangga lainnya di berbagai bidang seperti pertanian, kehutanan, dan pengendalian hama rumah tangga.</rdfs:abstract>
+        <rdfs:label>Fipronil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fluazinam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fluazinam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Fluazinam adalah sejenis fungisida yang digunakan untuk mengendalikan berbagai penyakit yang disebabkan oleh jamur pada tanaman, termasuk busuk pelepah pada padi. Fungisida ini termasuk dalam kelompok fungisida oksazolidindion dan bekerja dengan menghambat enzim spesifik yang terlibat dalam sintesis membran sel pada patogen. Fluazinam efektif dalam mengontrol beberapa jenis patogen penyebab busuk pelepah padi, seperti Rhizoctonia solani dan Sclerotinia spp. Fungisida ini memiliki sifat sistemik yang memungkinkannya diserap oleh tanaman dan didistribusikan ke seluruh jaringan tanaman, memberikan perlindungan yang luas terhadap infeksi jamur.</rdfs:abstract>
+        <rdfs:label>Fluazinam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fosfit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fosfit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakterisida"/>
+        <rdfs:abstract xml:lang="id">Bakterisida fosfit adalah senyawa yang digunakan untuk mengendalikan infeksi bakteri pada tanaman. Senyawa fosfit, seperti fosfit potasium atau fosfit kalsium, memiliki sifat antimikroba yang efektif melawan bakteri patogen. Bakterisida fosfit bekerja dengan mempengaruhi metabolisme dan pertumbuhan bakteri, sehingga menghambat penyebaran infeksi. Senyawa ini biasanya diaplikasikan ke tanaman melalui penyemprotan daun atau aplikasi ke tanah.</rdfs:abstract>
+        <rdfs:label>Fosfit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fusarium_spp. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fusarium_spp.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Fusarium spp. adalah kelompok jamur patogen yang dapat menyebabkan berbagai penyakit pada tanaman, termasuk tanaman padi. Fusarium spp. adalah genus jamur yang terdiri dari banyak spesies, di antaranya Fusarium graminearum, Fusarium oxysporum, dan Fusarium fujikuroi. Masing-masing spesies tersebut dapat menyebabkan penyakit dengan gejala dan dampak yang berbeda.</rdfs:abstract>
+        <rdfs:label>Fusarium spp.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#GanjurPadiAsia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#GanjurPadiAsia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Telenomus_spp."/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Trichogrammatidae"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Karbofuran"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Organofosfat"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Piretroid"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_berlubang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang"/>
+        <rdfs:abstract xml:lang="id">Ganjur padi Asia (Cnaphalocrocis medinalis) adalah serangga hama yang menjadi ancaman serius bagi tanaman padi di wilayah Asia. Serangga ini umumnya menyerang daun dan batang tanaman padi. Gejala serangan ganjur padi Asia termasuk adanya lubang-lubang pada daun, daun menggulung, dan kemungkinan kerusakan pada batang. Serangga ini menghisap cairan dari tanaman, mengakibatkan daun menjadi kuning, mengering, dan pada kasus yang parah dapat menyebabkan matinya tanaman. Pengendalian hama ini melibatkan penggunaan metode budidaya yang baik, penggunaan varietas padi tahan hama, pengendalian biologi, dan jika diperlukan, penggunaan insektisida yang tepat dan aman.</rdfs:abstract>
+        <rdfs:label>Ganjur Padi Asia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#GarisMerah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#GarisMerah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metil_tiofonat"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_malai"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gonatophragmium_sp."/>
+        <rdfs:abstract xml:lang="id">Penyakit garis merah padi, juga dikenal sebagai Rice Red Stripe atau Red Stripe Disease, disebabkan oleh jamur Gonatophragmium sp. Penyakit ini menyerang tanaman padi dan dapat menyebabkan kerugian ekonomi yang signifikan dalam produksi padi. Gejala awal penyakit garis merah padi umumnya terlihat pada daun-daun muda. Daun yang terinfeksi akan menunjukkan garis merah muda atau merah kecoklatan yang melintang di antara tulang daun. Seiring penyakit berkembang, garis-garis merah ini dapat memanjang dan meluas ke bagian atas daun, batang, dan malai. Daun-daun yang parah terinfeksi dapat mengering dan mati.</rdfs:abstract>
+        <rdfs:label>Garis Merah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala garis pada daun dapat terlihat sebagai adanya garis-garis berwarna coklat atau kehitaman yang melintang pada daun tanaman. Garis-garis ini dapat terbentuk secara lurus atau berkelok-kelok mengikuti pola vena daun. Daun yang terinfeksi dengan gejala garis seringkali tampak lebih lemah, kering, atau layu dibandingkan dengan daun yang sehat. Gejala garis pada daun dapat disebabkan oleh berbagai faktor, seperti infeksi bakteri, virus, atau serangga pengisap.</rdfs:abstract>
+        <rdfs:label>Daun terdapat garis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gibberella_fujikuroi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gibberella_fujikuroi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract>Gibberella fujikuroi adalah spesies jamur dalam genus Gibberella. Jamur ini dikenal karena menyebabkan penyakit pada tanaman, termasuk penyakit bakanae pada padi. Gibberella fujikuroi dapat menyerang tanaman padi pada berbagai tahap pertumbuhannya dan menyebabkan kerugian yang signifikan dalam produksi padi.</rdfs:abstract>
+        <rdfs:label>Gibberella fujikuroi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gonatophragmium_sp. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gonatophragmium_sp.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Gejala-gejala ini disebabkan oleh jamur dari genus Gonatophragmium. Dipercaya bahwa patogen memasuki jaringan tanaman dan menghasilkan racun yang terbawa ke ujung daun oleh pembuluh daun, sehingga membentuk garis khas. Garis merah merupakan ancaman potensial terhadap produksi beras di Asia Tenggara dan India.</rdfs:abstract>
+        <rdfs:label>Gonatophragmium sp.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#GosongBulir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#GosongBulir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pyraclostrobin"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_hitam_pada_bulir"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bulir_pecah"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_bulir"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_bulir"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tilletia_barclayana"/>
+        <rdfs:abstract xml:lang="id">Penyakit gosong bulir padi, juga dikenal sebagai penyakit gosong gabah, adalah penyakit yang disebabkan oleh jamur Tilletia barclayana. Penyakit ini umum terjadi pada tanaman padi dan dapat menyebabkan kerugian ekonomi yang signifikan. Gejala utama penyakit gosong bulir padi adalah munculnya bercak-bercak berwarna hitam atau coklat gelap pada bulir padi yang masih muda. Bercak-bercak ini kemudian berkembang menjadi lesi berbentuk bulat atau oval yang meluas dan membusuk. Bulir padi yang terinfeksi akan berubah warna menjadi kecoklatan atau hitam. Selain itu, pada tahap infeksi lanjutan, terdapat penutupan bulir yang tidak sempurna atau pecahnya bulir, sehingga mengurangi kualitas dan hasil panen padi.</rdfs:abstract>
+        <rdfs:label>Gosong bulir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaKupu-kupuPadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaKupu-kupuPadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fipronil"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Imidakloprid"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Batang_berlubang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Batang_rapuh"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Malai_hilang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tanaman_terdapat_pupa"/>
+        <rdfs:abstract>Hama kupu-kupu padi  ditemukan di semua lingkungan sawah tetapi lebih berlimpah di sawah tadah hujan. Mereka berwarna cokelat muda dengan tanda oranye dan memiliki pola bercak putih khas pada sayapnya. Serangga dewasa aktif di siang hari dan mereka memiliki gerakan terbang yang tidak menentu ketika mereka melompat dari satu tanaman ke tanaman lain. Betina bertelur putih atau kuning pucat, berbentuk bulat. Larva aktif di malam hari. Larva berwarna hijau dengan garis vertikal kemerahan di setiap sisi lateral kepala, berukuran sekitar 50 mm. Kepompong berwarna cokelat muda atau hijau muda, dan ujungnya runcing. Perkembangan mereka didukung oleh kejadian cuaca ekstrem seperti kekeringan, hujan lebat atau banjir. Penyalahgunaan pestisida membunuh serangga yang bermanfaat dan mungkin juga menjadi penyebab kemunculan mereka.</rdfs:abstract>
+        <rdfs:label>Hama Kupu-kupu Padi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HawarDaunBakteri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HawarDaunBakteri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanBakterisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Oksitetrasiklin"/>
+        <OntologiHamaPenyakitPadi:diberikanBakterisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Streptomisin"/>
+        <OntologiHamaPenyakitPadi:diberikanBakterisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tembaga"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Malai"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Xanthomonas_oryzae_pv._oryzicola"/>
+        <rdfs:abstract xml:lang="id">Hawar Daun pada padi, juga dikenal sebagai Blast (disebabkan oleh Magnaporthe oryzae), adalah penyakit yang disebabkan oleh jamur. Ini adalah salah satu penyakit padi yang paling umum dan dapat menyebabkan kerugian serius dalam produksi tanaman padi.</rdfs:abstract>
+        <rdfs:label>Hawar Daun Bakteri</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HawarMalaiBakteri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HawarMalaiBakteri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_malai"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Malai"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_bulir"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Burkholderia_glumae"/>
+        <rdfs:abstract xml:lang="id">Hawar malai bakteri ditularkan melalui benih. Tidak ada pilihan pengendalian praktis pada tanaman padi yang terinfeksi. Penyebaran penyakit tergantung pada suhu. Hawar malai bakteri cenderung berkembang selama cuaca panas dan kering pada tahap akhir pertumbuhan tanaman. Keberadaannya meningkat ketika suhu siang hari di atas 32 °C dan suhu malam hari sekitar 25 °C atau lebih. Kadar nitrogen yang tinggi juga mendukung perkembangan penyakit ini. Padi yang ditanam lebih awal pada musim semi cenderung memiliki lebih sedikit kerusakan akibat hawar malai bakteri karena suhu yang lebih dingin saat tahap pembentukan malai dan pengisian bulir padi.</rdfs:abstract>
+        <rdfs:label>Hawar Malai Bakteri</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HawarPelepah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HawarPelepah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>Hawar Pelepah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HispaPadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HispaPadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Hispa Padi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Imidakloprid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Imidakloprid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Imidakloprid adalah insektisida yang digunakan untuk mengendalikan hama serangga. Ini bekerja dengan mengganggu sistem saraf serangga, mengakibatkan kehilangan nafsu makan, paralisis, dan akhirnya kematian serangga target. Imidakloprid sering digunakan dalam pertanian, kehutanan, pertamanan, dan pengendalian hama rumah tangga untuk mengatasi serangga seperti kutu daun, kutu putih, rayap, dan serangga lainnya.</rdfs:abstract>
+        <rdfs:label>Imidakloropid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#JelagaPalsu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#JelagaPalsu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>Jelaga Palsu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KaratGarisKuning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KaratGarisKuning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>Karat Garis Kuning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Karbamat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Karbamat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Pestisida karbamat adalah jenis pestisida yang termasuk dalam kelompok senyawa karbamat. Karbamat merupakan senyawa kimia yang digunakan untuk mengendalikan hama, serangga, dan organisme pengganggu lainnya pada tanaman atau di lingkungan. Pestisida karbamat bekerja dengan mengganggu sistem saraf hama atau organisme target, sehingga menyebabkan kematian atau gangguan pada fungsi fisiologis mereka. Beberapa contoh pestisida karbamat yang umum digunakan meliputi karbaril, propoksur, dan metomil. Penting untuk mengikuti petunjuk penggunaan yang benar dan memperhatikan keamanan dalam penggunaan pestisida karbamat, termasuk penggunaan alat pelindung diri yang sesuai dan menghindari paparan berlebihan pada manusia dan hewan.</rdfs:abstract>
+        <rdfs:label>Karbamat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Karbofuran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Karbofuran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Karbofuran adalah sejenis insektisida yang digunakan untuk mengendalikan hama serangga pada berbagai tanaman, termasuk padi. Karbofuran termasuk dalam kelompok insektisida organofosfat dan bekerja dengan mengganggu sistem saraf serangga.</rdfs:abstract>
+        <rdfs:label>Karbofuran</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kasugamisin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kasugamisin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakterisida"/>
+        <rdfs:abstract xml:lang="id">Kasugamisin adalah sejenis bakterisida yang digunakan untuk mengendalikan infeksi bakteri pada tanaman. Bahan aktif kasugamisin adalah kasugamisin hidroklorida, yang berasal dari bakteri Streptomyces kasugaensis. Kasugamisin bekerja dengan menghambat sintesis protein pada bakteri patogen, sehingga menghentikan pertumbuhan dan penyebaran infeksi. Bakterisida ini umumnya digunakan untuk mengendalikan penyakit bakteri pada tanaman padi, tomat, kentang, dan tanaman sayuran lainnya.</rdfs:abstract>
+        <rdfs:label>Kasugamisin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kehilangan_akar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kehilangan_akar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Kehilangan akar pada tanaman padi dapat menyebabkan berbagai gejala yang dapat diamati. Salah satu gejala utama adalah layu pada tanaman. Daun-daun padi yang kehilangan akar mungkin terlihat layu, kering, atau menggulung. Hal ini terjadi karena akar yang sehat penting dalam menyerap air dan nutrisi yang diperlukan oleh tanaman. Tanaman yang kehilangan akar juga cenderung mengalami pertumbuhan terhambat. Ukuran tanaman mungkin lebih kecil dari yang seharusnya, dengan batang dan daun yang lebih pendek. Kekurangan akar menghambat kemampuan tanaman untuk mendapatkan sumber daya yang diperlukan, seperti air dan nutrisi, yang berkontribusi pada pertumbuhan yang sehat. Selain itu, tanaman padi yang kehilangan akar juga dapat menjadi lebih rentan terhadap gangguan lingkungan dan serangan patogen lainnya. Ketidakstabilan tanaman akibat kehilangan akar dapat membuatnya lebih rentan terhadap stres abiotik seperti kekeringan atau kelebihan air. Kehilangan akar pada padi juga dapat berdampak pada produktivitas tanaman. Jumlah malai yang dihasilkan mungkin berkurang, dan bobot gabah dapat menurun.</rdfs:abstract>
+        <rdfs:label>Akar menghilang</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kematian_bibit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kematian_bibit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala kematian bibit padi dapat terlihat dalam beberapa tanda yang jelas. Bibit padi yang mengalami kematian akan tampak sangat lemah dan layu. Daun-daun pada bibit padi akan kehilangan kecerahan dan kekakuan, menunjukkan adanya penurunan turgor sel yang disebabkan oleh kekurangan air dan nutrisi. Selain itu, akar pada bibit padi yang mati akan mengalami pembusukan atau pembusukan. Akar yang busuk akan berubah menjadi gelap, berlendir, dan berbau tidak sedap. Kondisi ini menghambat penyerapan air dan nutrisi oleh akar, sehingga menyebabkan bibit padi menjadi lemah dan tidak mampu tumbuh dengan baik. Selain itu, pertumbuhan bibit padi juga akan terhambat secara signifikan atau bahkan berhenti sama sekali. Ukuran tanaman tidak akan berubah atau bahkan mengecil, menunjukkan bahwa bibit padi tidak mampu mengembangkan dirinya dengan baik. Akhirnya, bibit padi yang mengalami kematian akan layu sepenuhnya dan tidak dapat pulih. Tanaman tidak lagi memiliki kehidupan dan tidak ada tanda-tanda perkembangan baru.</rdfs:abstract>
+        <rdfs:label>Bibit mati</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KepikLudah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KepikLudah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Kepik Ludah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kerapuhan_pelepah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kerapuhan_pelepah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Kerapuhan pelepah padi merupakan suatu kondisi di mana pelepah daun pada tanaman padi menjadi rapuh dan mudah patah. Gejala ini dapat terlihat dalam bentuk kelemahan struktural pada pelepah, yang membuatnya rentan terhadap kerusakan mekanis. Salah satu gejala yang dapat diamati adalah pelepah padi yang mudah patah atau terputus dengan mudah, bahkan dengan sentuhan yang ringan. Pelepah yang rapuh tidak mampu menopang beban daun dan malai padi dengan baik, sehingga menyebabkan kemungkinan kerusakan yang lebih besar pada tanaman.</rdfs:abstract>
+        <rdfs:label>Pelepah rapuh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KumbangTangkaiPadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KumbangTangkaiPadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Kumbang Tangkai Padi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KutuDaun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KutuDaun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Kutu Daun</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KutuPutih -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KutuPutih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Kutu Putih</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#LalatTunas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#LalatTunas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Lalat Tunas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Layu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Layu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala layu pada tanaman padi adalah tanda yang jelas bahwa tanaman mengalami kondisi yang tidak sehat dan mempengaruhi kemampuannya untuk tumbuh dan berkembang dengan baik. Gejala layu pada padi umumnya terlihat pada daun dan bagian atas tanaman, dan dapat dijelaskan dalam sebuah paragraf sebagai berikut: Salah satu gejala utama layu pada padi adalah penampilan daun yang layu atau mengering. Daun-daun tanaman padi yang terkena layu dapat menjadi lemas, menggulung, atau mengering secara bertahap. Ini disebabkan oleh ketidakmampuan tanaman untuk mendapatkan pasokan air yang cukup melalui akar dan mengalirkannya ke daun.</rdfs:abstract>
+        <rdfs:label>Tanaman layu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#LepuhDaun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#LepuhDaun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>Lepuh Daun</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Daun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Daun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala lesi pada daun akibat infeksi penyakit Blast Padi oleh jamur Pyricularia oryzae ditandai dengan munculnya bercak-bercak lesi pada daun tanaman padi. Lesi ini umumnya memiliki bentuk oval atau lonjong dan dapat terlihat di berbagai bagian daun. Awalnya, lesi dapat memiliki warna hijau atau kekuningan, tetapi seiring dengan perkembangan penyakit, warna lesi berubah menjadi cokelat atau abu-abu. Tepi lesi cenderung tidak teratur dan tidak rata, dengan bentuk yang bercabang atau berlekuk-lekuk. Lesi dapat berkembang dalam ukuran dan menyatu satu sama lain, membentuk lesi yang lebih besar dan lebih meluas di daun. Pengamatan lesi ini penting dalam mengidentifikasi infeksi penyakit Blast pada padi dan dapat menjadi faktor penting dalam diagnosis penyakit serta pengambilan tindakan pengendalian yang tepat. Disarankan untuk berkonsultasi dengan ahli pertanian atau petani lokal untuk mendapatkan bantuan dalam penanganan penyakit ini.</rdfs:abstract>
+        <rdfs:label>Daun mengalami kerusakan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Malai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Malai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala lesi pada malai akibat infeksi penyakit Blast Padi dapat memberikan petunjuk tentang kehadiran penyakit ini pada tanaman padi. Lesi pada malai padi yang terinfeksi dapat muncul sebagai bercak-bercak berwarna cokelat atau abu-abu. Awalnya, lesi mungkin terlihat sebagai bercak kecil yang terlihat tidak normal pada malai. Namun, seiring perkembangan penyakit, lesi ini dapat berkembang menjadi lebih besar dan menyebabkan pengeringan pada malai. Selain itu, lesi pada malai dapat menyebabkan kerontokan butir padi yang belum matang. Hal ini dapat mengurangi hasil panen dan kualitas gabah yang dihasilkan. Pengamatan lesi pada malai sangat penting dalam mengidentifikasi dan mengontrol penyakit Blast pada padi.</rdfs:abstract>
+        <rdfs:label>Malai mengalami kerusakan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Lesi pada batang padi adalah gejala yang dapat terjadi akibat serangan penyakit atau kondisi lingkungan yang merusak jaringan batang. Lesi ini biasanya berupa area yang terinfeksi atau rusak pada batang padi. Lesi pada batang dapat memiliki berbagai bentuk dan ukuran, mulai dari bercak kecil hingga lesi yang lebih luas. Lesi pada batang padi sering kali memiliki warna yang berbeda, seperti coklat, kehitaman, atau bahkan kekuningan. Lesi dapat terlihat dengan jelas pada batang, dan dalam beberapa kasus, tepi lesi dapat terlihat lebih gelap atau kehitaman. Lesi pada batang dapat menyebabkan kerusakan struktural pada tanaman, mengakibatkan kelemahan dan potensi patahnya batang padi.</rdfs:abstract>
+        <rdfs:label>Batang mengalami kerusakan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_bulir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_bulir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Lesi pada bulir padi adalah perubahan atau kerusakan pada permukaan bulir yang dapat terlihat sebagai adanya luka, bercak, atau area yang rusak. Lesi ini bisa memiliki berbagai bentuk dan ukuran tergantung pada penyebabnya. Lesi pada bulir padi umumnya disebabkan oleh infeksi patogen seperti jamur atau bakteri. Infeksi ini dapat terjadi melalui luka pada bulir atau melalui penyebaran spora patogen. Lesi pada bulir biasanya berwarna coklat, hitam, atau keabu-abuan.</rdfs:abstract>
+        <rdfs:label>Bulir mengalami kerusakan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_pelepah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_pelepah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract>Lesi pada pelepah padi merujuk pada adanya kerusakan atau bercak pada permukaan pelepah daun tanaman padi. Lesi ini dapat disebabkan oleh infeksi patogen, kerusakan fisik, atau faktor lingkungan yang tidak kondusif. Gejala dan karakteristik lesi pada pelepah padi dapat bervariasi tergantung pada penyebabnya. Infeksi patogen seperti jamur, bakteri, atau virus adalah penyebab umum dari lesi pada pelepah padi. Lesi akibat infeksi patogen biasanya ditandai dengan bercak berwarna gelap, kecokelatan, atau hitam pada pelepah. Lesi mungkin memiliki tepi yang jelas atau tidak teratur, tergantung pada jenis patogen yang menyebabkannya. Selain itu, lesi dapat memperluas seiring perkembangan infeksi, mengubah bentuk dan ukurannya.</rdfs:abstract>
+        <rdfs:label>Pelepah mengalami kerusakan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Magnaporthe_oryzae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Magnaporthe_oryzae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Magnaporthe oryzae adalah jamur patogen yang menyebabkan penyakit blas padi, yang juga dikenal sebagai blast. Jamur ini dapat menyerang tanaman padi di berbagai tahap pertumbuhannya, mulai dari fase vegetatif hingga fase generatif. Gejala awal penyakit biasanya terlihat dalam bentuk bercak-bercak berwarna putih atau abu-abu pada daun, batang, dan malai padi. Bercak-bercak ini kemudian berkembang menjadi lesi berbentuk lonjong dengan tepi coklat atau merah gelap. Pada tingkat infeksi yang lebih parah, lesi tersebut dapat bergabung membentuk pola besar yang disebut sebagai &quot;blas&quot;. Penyakit blas padi dapat menyebabkan kerusakan serius pada tanaman, mengurangi hasil panen, bahkan menyebabkan kegagalan panen total. Pengendalian penyakit ini melibatkan penggunaan varietas tahan, pengelolaan lingkungan yang baik, dan penggunaan fungisida jika diperlukan.</rdfs:abstract>
+        <rdfs:label>Magnaporthe oryzae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Magnaporthe_salvinii -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Magnaporthe_salvinii">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract>Magnaporthe salvinii adalah sebuah spesies jamur yang diketahui sebagai patogen pada tanaman air, khususnya rumput salvini (Salvinia spp.). Penyakit yang disebabkan oleh Magnaporthe salvinii dapat menginfeksi dan merusak tanaman rumput air dengan gejala seperti lesi, pembusukan, dan kemungkinan kehilangan struktur tumbuhan. Magnaporthe salvinii memiliki siklus hidup yang kompleks dan dapat menyebar melalui spora yang dibawa oleh air atau organisme perantara.</rdfs:abstract>
+        <rdfs:label>Magnaporthe salvinii</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Malai_hilang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Malai_hilang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala malai hilang pada padi dapat mengindikasikan adanya masalah atau gangguan dalam pertumbuhan dan perkembangan tanaman. Tanaman padi yang mengalami gejala malai hilang tidak membentuk malai atau malai yang terbentuk tidak berkembang dengan baik. Beberapa faktor yang dapat menyebabkan gejala ini termasuk defisiensi nutrisi, kekurangan air, serangan hama atau penyakit, dan kondisi lingkungan yang tidak ideal.</rdfs:abstract>
+        <rdfs:label>Malai hilang</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Mancozeb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Mancozeb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Mancozeb adalah sejenis fungisida yang digunakan untuk mengendalikan penyakit pada tanaman, termasuk pada padi. Fungisida ini bekerja dengan cara membentuk lapisan pelindung pada permukaan tanaman, menghambat pertumbuhan dan perkembangan jamur penyebab penyakit. Mancozeb efektif dalam mengendalikan penyakit seperti bercak daun, karat, dan penyakit lainnya pada tanaman padi.</rdfs:abstract>
+        <rdfs:label>Mancozeb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Meloidogyne_spp. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Meloidogyne_spp.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:terkenaPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BottomRot"/>
+        <rdfs:abstract xml:lang="id">Meloidogyne spp., juga dikenal sebagai nematoda parasit akar, adalah kelompok cacing mikroskopis yang menyebabkan penyakit pada tanaman, termasuk tanaman padi. Nematoda ini dapat hidup dan berkembang biak di dalam akar tanaman, mengakibatkan kerusakan pada sistem perakaran dan menghambat pertumbuhan tanaman.</rdfs:abstract>
+        <rdfs:label>Meloidogyne spp.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metalaxyl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metalaxyl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Metalaxyl adalah sejenis fungisida yang digunakan untuk mengendalikan berbagai penyakit jamur pada tanaman, termasuk beberapa penyakit yang dapat menyebabkan busuk pada tanaman padi. Metalaxyl termasuk dalam kelompok fungisida sistemik dan bekerja dengan menghambat pertumbuhan dan perkembangan patogen pada tahap awal infeksi. Fungisida metalaxyl terutama efektif dalam mengendalikan penyakit yang disebabkan oleh jamur Phytophthora, seperti busuk pangkal batang dan busuk akar pangkal pada padi. Fungisida ini bekerja dengan menembus jaringan tanaman dan menyebar melalui sistem peredaran tanaman, memberikan perlindungan yang luas terhadap infeksi jamur.</rdfs:abstract>
+        <rdfs:label>Metalaxyl</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metarhizium_anisopliae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metarhizium_anisopliae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Metarhizium anisopliae adalah sejenis jamur entomopatogen yang digunakan sebagai pestisida biologis untuk mengendalikan hama serangga. Jamur ini dapat menginfeksi dan membunuh berbagai jenis hama serangga, termasuk kutu daun, ngengat, ulat, dan belalang. Metarhizium anisopliae bekerja dengan cara menyerang dan menembus tubuh hama melalui kulit atau selaput luar. Setelah masuk ke dalam tubuh hama, jamur ini akan tumbuh dan menghancurkan jaringan dalam, menghasilkan zat-zat yang mematikan hama tersebut. Penggunaan Metarhizium anisopliae sebagai pestisida memiliki keunggulan dalam hal keamanan bagi manusia dan lingkungan, karena jamur ini bersifat selektif terhadap hama dan tidak merusak organisme yang tidak menjadi target. Selain itu, Metarhizium anisopliae juga dapat berperan dalam pengendalian hama secara berkelanjutan karena kemampuannya untuk berkembang biak dan bertahan dalam populasi hama yang terinfeksi.</rdfs:abstract>
+        <rdfs:label>Metarhizium anisopliae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metil_tiofonat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metil_tiofonat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Metil tiofonat, juga dikenal sebagai methylthiophanate, adalah sejenis fungisida yang digunakan untuk mengendalikan berbagai penyakit yang disebabkan oleh jamur pada tanaman, termasuk pada tanaman padi. Bahan aktif metil tiofonat bekerja dengan cara menghambat pertumbuhan dan replikasi jamur patogen.</rdfs:abstract>
+        <rdfs:label>Metil tiofonat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Neonicotinoid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Neonicotinoid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Pestisida Neonicotinoid adalah kelompok insektisida yang bekerja dengan mengganggu sistem saraf serangga. Mereka digunakan secara luas dalam pertanian untuk mengendalikan hama seperti kutu daun, ulat, dan serangga penggerek. Neonicotinoid memiliki sifat sistemik, artinya mereka dapat diserap oleh tanaman dan menyebar ke seluruh jaringan, termasuk nektar dan serbuk sari, yang dapat berdampak pada serangga penyerbuk seperti lebah. Dampak penggunaan neonicotinoid terhadap serangga penyerbuk telah menimbulkan kekhawatiran dan memicu pembatasan atau larangan penggunaan di beberapa negara. Namun, neonicotinoid tetap menjadi salah satu pilihan pestisida yang umum digunakan dalam praktik pertanian.</rdfs:abstract>
+        <rdfs:label>Neonicotinoid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Oksitetrasiklin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Oksitetrasiklin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakterisida"/>
+        <rdfs:abstract xml:lang="id">Oksitetrasiklin adalah sejenis antibiotik yang termasuk dalam kelompok tetrasiklin. Antibiotik ini digunakan dalam bidang pertanian dan peternakan untuk mengendalikan infeksi bakteri pada hewan ternak, termasuk pada industri perikanan dan peternakan. Oksitetrasiklin bekerja dengan menghambat pertumbuhan dan reproduksi bakteri dengan mengganggu produksi protein yang diperlukan oleh bakteri.</rdfs:abstract>
+        <rdfs:label>Oksitetrasiklin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Organofosfat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Organofosfat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Organofosfat adalah kelompok senyawa insektisida yang sering digunakan dalam pertanian untuk mengendalikan hama serangga. Senyawa ini bekerja dengan menghambat enzim kolinesterase dalam sistem saraf serangga, mengganggu transmisi impuls saraf, dan akhirnya menyebabkan kerusakan saraf dan kematian hama. Organofosfat memiliki kekuatan keracunan yang tinggi terhadap serangga dan dapat memberikan efek cepat dalam pengendalian hama. Namun, penggunaan organofosfat juga memiliki risiko terhadap manusia dan lingkungan karena sifat toksik yang kuat.</rdfs:abstract>
+        <rdfs:label>Organofosfat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembentukan_Sporulasi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembentukan_Sporulasi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:label xml:lang="id">Pembentukan sporulasi pada padi adalah tanda bahwa infeksi jamur sedang aktif dan dapat menyebabkan penyebaran penyakit lebih lanjut. Oleh karena itu, pengamatan sporulasi penting dalam pengendalian penyakit Blast. Jika terlihat adanya pembentukan sporulasi pada tanaman padi, langkah-langkah pengendalian yang tepat harus diambil, seperti penggunaan fungisida atau tindakan budidaya yang disarankan untuk mengendalikan penyebaran jamur dan melindungi tanaman dari kerusakan yang lebih lanjut.</rdfs:label>
+        <rdfs:label>Tanaman terjadi pembentukan sporulasi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_akar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_akar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Pembusukan akar pada padi adalah kondisi yang terjadi ketika akar tanaman mengalami kerusakan dan pembusukan, biasanya disebabkan oleh patogen seperti jamur, bakteri, atau nematoda. Gejala pembusukan akar pada padi dapat bervariasi tergantung pada patogen yang terlibat, tetapi umumnya meliputi penurunan pertumbuhan tanaman, kekuningan atau kerusakan daun, serta penurunan produktivitas tanaman. Salah satu gejala utama pembusukan akar pada padi adalah perubahan warna dan tekstur akar. Akar yang terinfeksi mungkin tampak lembek, berwarna cokelat, hitam, atau keabu-abuan, dan terlihat busuk. Pembusukan akar mengganggu kemampuan akar untuk menyerap air dan nutrisi dengan efisien, sehingga menyebabkan penurunan pertumbuhan tanaman secara keseluruhan.</rdfs:abstract>
+        <rdfs:label>Akar membusuk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_batang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_batang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Pembusukan batang pada padi merupakan gejala serius yang dapat merusak tanaman secara keseluruhan. Ketika batang padi mengalami pembusukan, terjadi kerusakan pada jaringan batang yang menyebabkan penurunan kualitas dan produktivitas tanaman. Gejala pembusukan batang meliputi perubahan warna, kelembekan, dan pembusukan pada jaringan batang. Pada awalnya, batang padi yang terinfeksi mungkin mengalami perubahan warna, menjadi cokelat atau kehitaman. Kemudian, jaringan batang akan menjadi lembek dan melemah. Jika infeksi dan pembusukan berlanjut, batang akan mengalami pembusukan yang ditandai dengan perubahan tekstur menjadi lunak dan basah. Serangan patogen yang parah bahkan dapat menyebabkan kerusakan pada batang padi yang menyebabkan kegagalan struktural dan batang patah.</rdfs:abstract>
+        <rdfs:label>Batang membusuk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_pelepah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pembusukan_pelepah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala pembusukan pelepah padi dapat meliputi perubahan warna, pembusukan jaringan, dan kerapuhan pelepah. Awalnya, pelepah daun yang terinfeksi dapat mengalami perubahan warna menjadi kuning, cokelat, atau kehitaman. Kemudian, jaringan pelepah akan mengalami pembusukan yang ditandai dengan bercak basah, lembab, atau lunak. Infeksi yang parah dapat menyebabkan pelepah menjadi rapuh, mudah patah, bahkan terpisah dari batang tanaman.</rdfs:abstract>
+        <rdfs:label>Pelepah membusuk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pengeluaran_cairan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pengeluaran_cairan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala pengeluaran cairan atau lumpur dari batang padi adalah tanda adanya kondisi yang tidak normal pada tanaman. Ketika terjadi infeksi atau kerusakan pada batang padi, cairan atau lumpur dapat keluar dari area yang terkena. Cairan yang dikeluarkan bisa berwarna gelap, seperti cokelat gelap atau hitam, dan sering kali memiliki bau yang tidak sedap. Pengeluaran cairan atau lumpur ini menunjukkan bahwa jaringan batang telah terinfeksi atau mengalami pembusukan. Hal ini dapat disebabkan oleh serangan patogen seperti jamur atau bakteri, atau kondisi lingkungan yang merusak.</rdfs:abstract>
+        <rdfs:label>Tanaman mengeluarkan cairan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggerekBatangKuning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggerekBatangKuning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Penggerek Batang Kuning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggerekBatangPadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggerekBatangPadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Penggerek Batang Padi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggerekBatangUngu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggerekBatangUngu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Penggerek Batang Ungu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggulungDaunPadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggulungDaunPadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Penggulung Daun Padi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Penurunan_produktivitas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Penurunan_produktivitas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Penurunan produktivitas pada tanaman padi dapat diamati melalui berbagai gejala yang mengindikasikan rendahnya hasil panen yang diharapkan. Salah satu gejala utama penurunan produktivitas pada tanaman padi adalah pengurangan jumlah dan ukuran malai yang dihasilkan. Padi yang mengalami penurunan produktivitas cenderung menghasilkan lebih sedikit malai daripada tanaman yang sehat. Selain itu, malai yang dihasilkan dapat memiliki ukuran yang lebih kecil dan berisi lebih sedikit butir padi.</rdfs:abstract>
+        <rdfs:label>Tanaman menurun produktivitas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_bibit_yang_tidak_normal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_bibit_yang_tidak_normal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Bibit padi yang terinfeksi cenderung tumbuh lebih tinggi dari bibit yang sehat. Pertumbuhan yang tidak normal ini dapat terlihat pada tahap awal pertumbuhan tanaman.</rdfs:abstract>
+        <rdfs:label>Bibit tumbuh tidak normal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_terhambat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_terhambat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala pertumbuhan padi yang terhambat biasanya dapat diamati melalui pertumbuhan lambat dan perkembangan yang tidak optimal. Tanaman padi yang terhambat pertumbuhannya cenderung memiliki tinggi yang lebih pendek dibandingkan dengan tanaman sehat pada usia yang sama. Daun-daun padi mungkin juga lebih kecil, dengan warna yang pucat atau kuning. Selain itu, pertumbuhan akar juga dapat terhambat, yang dapat mengakibatkan sistem perakaran yang lemah dan dangkal. Hal ini dapat menyebabkan tanaman menjadi lebih rentan terhadap kekeringan dan kesulitan dalam menyerap nutrisi dan air dari tanah.</rdfs:abstract>
+        <rdfs:label>Tanaman tumbuh terhambat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_batang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_batang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Gejala perubahan warna pada batang padi dapat menjadi indikator adanya infeksi atau kerusakan pada tanaman. Beberapa gejala perubahan warna yang dapat terjadi meliputi batang berubah menjadi cokelat, kehitaman, keabu-abuan, atau bahkan mungkin keunguan. Perubahan warna ini biasanya terjadi di area yang terinfeksi atau terdampak oleh patogen atau kondisi lingkungan yang merusak.</rdfs:abstract>
+        <rdfs:label>Batang berubah warna</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_bulir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_bulir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Perubahan warna bulir pada padi adalah gejala yang menarik perhatian karena dapat mengindikasikan berbagai masalah atau kondisi. Bulir padi yang normal memiliki warna putih, kuning, atau kecoklatan tergantung pada tingkat kematangan. Namun, perubahan warna bulir dapat terjadi akibat berbagai faktor. Salah satu perubahan warna bulir yang sering terjadi adalah perubahan menjadi kecoklatan atau hitam. Hal ini dapat disebabkan oleh infeksi penyakit seperti gosong bulir atau penyakit busuk batang. Infeksi jamur atau bakteri dapat merusak jaringan bulir dan mengubah warnanya menjadi kecoklatan atau hitam.</rdfs:abstract>
+        <rdfs:label>Bulir berubah warna</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_pelepah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Perubahan_warna_pelepah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Perubahan warna pada pelepah padi dapat menjadi indikator penting tentang kesehatan dan kondisi tanaman. Salah satu perubahan warna yang sering terjadi adalah perubahan menjadi kuning. Kuning pada pelepah padi sering kali mengindikasikan adanya masalah atau stres pada tanaman. Salah satu penyebab umum perubahan warna menjadi kuning adalah kekurangan nutrisi, terutama kekurangan nitrogen. Kekurangan nitrogen dapat menghambat pertumbuhan tanaman dan menyebabkan daun dan pelepah padi menguning secara keseluruhan atau hanya pada bagian tertentu.</rdfs:abstract>
+        <rdfs:label>Pelepah berubah warna</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PhomaSorghina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PhomaSorghina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>Phoma Sorghina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Piretroid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Piretroid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Piretroid adalah kelompok insektisida yang berasal dari senyawa kimia sintetis yang meniru efek insektisida alami dari bunga Chrysanthemum. Piretroid bekerja dengan mengganggu sistem saraf serangga, menyebabkan kegagalan saraf dan paralisis, yang pada akhirnya menyebabkan kematian hama. Namun, penggunaan piretroid juga harus dilakukan dengan hati-hati, karena mereka dapat berdampak negatif pada hewan non-target seperti lebah dan ikan. Oleh karena itu, penggunaan piretroid harus mengikuti panduan penggunaan yang tepat dan perhatian harus diberikan terhadap paparan yang berlebihan pada manusia dan lingkungan.</rdfs:abstract>
+        <rdfs:label>Piretroid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Produksi_suara_berbunyi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Produksi_suara_berbunyi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Salah satu gejala yang unik dari penyakit bakanae adalah bibit padi yang terinfeksi dapat mengeluarkan suara berbunyi ketika air mengalir melalui tanaman yang terinfeksi. Fenomena ini disebabkan oleh akumulasi gas dalam jaringan tanaman yang terinfeksi.</rdfs:abstract>
+        <rdfs:label>Tanaman menghasilkan suara berbunyi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Propiconazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Propiconazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Propiconazole adalah sejenis fungisida yang sering digunakan untuk mengendalikan penyakit pada tanaman, termasuk pada padi. Fungisida ini bekerja dengan cara menghambat sintesis ergosterol, yang merupakan komponen penting dalam membran sel jamur penyebab penyakit. Propiconazole efektif dalam mengendalikan penyakit seperti bercak daun, bercak coklat, dan penyakit lainnya pada tanaman padi.</rdfs:abstract>
+        <rdfs:label>Propiconazole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Prothioconazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Prothioconazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Prothioconazole adalah fungisida yang digunakan untuk mengendalikan berbagai penyakit jamur pada tanaman pertanian, termasuk pada padi. Senyawa ini bekerja dengan menghambat pertumbuhan dan perkembangan jamur penyebab penyakit, sehingga mencegah penyebaran infeksi. Prothioconazole efektif melawan penyakit seperti blas daun, bercak daun, dan karat pada padi. Fungisida ini dapat digunakan baik sebagai perlindungan preventif maupun pengendalian pasca-infeksi. Penggunaan prothioconazole harus sesuai dengan dosis dan jadwal aplikasi yang direkomendasikan, serta mengikuti petunjuk penggunaan dan keamanan yang tertera pada label produk. Sebelum menggunakan prothioconazole atau pestisida lainnya, disarankan untuk berkonsultasi dengan petani atau ahli pertanian terkait untuk memastikan penggunaan yang tepat dan aman.</rdfs:abstract>
+        <rdfs:label>Prothioconazole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pyraclostrobin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pyraclostrobin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Pyraclostrobin adalah sejenis fungisida yang digunakan untuk mengendalikan penyakit pada tanaman, termasuk pada padi. Fungisida ini bekerja dengan cara menghambat pernapasan mitokondria jamur penyebab penyakit. Pyraclostrobin efektif dalam mengendalikan penyakit seperti bercak daun, bercak coklat, dan penyakit lainnya pada tanaman padi.</rdfs:abstract>
+        <rdfs:label>Pyraclostrobin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pythium_spp. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pythium_spp.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Pythium spp. adalah genus jamur patogen yang dapat menyebabkan penyakit pada tanaman. Mereka termasuk dalam kelompok oomycetes atau jamur air, dan sering terkait dengan penyakit akar busuk pada tanaman. Pythium spp. dapat menginfeksi akar, batang, dan bagian bawah tanaman, menyebabkan pembusukan, layu, dan kematian tanaman jika tidak dikendalikan dengan baik.</rdfs:abstract>
+        <rdfs:label>Pythium spp.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rayap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rayap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Rayap</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rebahnya_tanaman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rebahnya_tanaman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Batang tanaman padi yang terinfeksi oleh Gibberella fujikuroi menjadi lemah dan mudah patah. Hal ini menyebabkan tanaman menjadi rebah atau roboh.</rdfs:abstract>
+        <rdfs:label>Tanaman rebah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rhizoctonia_solani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rhizoctonia_solani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Rhizoctonia solani adalah jamur patogen tanah yang menyebabkan penyakit akar putih pada tanaman. Jamur ini dapat menginfeksi berbagai tanaman, termasuk padi, jagung, gandum, dan sayuran. Infeksi Rhizoctonia solani menyebabkan pembusukan akar, pembentukan lesi pada batang, dan penurunan pertumbuhan tanaman jika tidak ditangani dengan tepat.</rdfs:abstract>
+        <rdfs:label>Rhizoctonia solani</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Sarocladium_oryzae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Sarocladium_oryzae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Sarocladium oryzae adalah patogen yang menyebabkan penyakit yang dikenal sebagai penyakit &quot;sheath rot&quot; pada tanaman padi. Sarocladium oryzae merupakan jamur yang umumnya menyerang pelepah daun, ruas batang, dan malai padi.</rdfs:abstract>
+        <rdfs:label>Sarocladium oryzae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Steinernema_feltiae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Steinernema_feltiae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis"/>
+        <rdfs:abstract xml:lang="id">Steinernema feltiae adalah jenis nematoda entomopatogen yang digunakan sebagai agen biokontrol untuk mengendalikan hama serangga dalam pertanian. Nematoda ini biasanya digunakan untuk mengendalikan hama tanah seperti kutu daun, thrips, dan larva kumbang. Steinernema feltiae memiliki siklus hidup yang melibatkan fase parasitik di dalam tubuh hama, di mana nematoda menginfeksi dan membunuh hama inangnya. Nematoda ini kemudian berkembang biak dalam tubuh hama dan melepaskan generasi baru untuk mencari inang baru. Steinernema feltiae sering digunakan sebagai alternatif yang ramah lingkungan dalam pengendalian hama, karena tidak berbahaya bagi manusia, hewan, dan lingkungan. Penggunaan Steinernema feltiae dalam program pengendalian hama sering melibatkan aplikasi langsung pada tanah atau dalam bentuk formulasi yang sesuai dengan petunjuk penggunaan yang tepat.</rdfs:abstract>
+        <rdfs:label>Steinernema feltiae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Streptomisin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Streptomisin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakterisida"/>
+        <rdfs:abstract xml:lang="id">Streptomisin adalah antibiotik yang digunakan untuk mengendalikan infeksi bakteri pada tanaman, termasuk pada padi. Senyawa ini berasal dari kelompok aminoglikosida dan memiliki aktivitas melawan berbagai jenis bakteri patogen. Streptomisin bekerja dengan menghambat sintesis protein bakteri, sehingga menghentikan pertumbuhan dan reproduksi bakteri penyebab penyakit. Fungisida ini sering digunakan dalam pengendalian penyakit bakteri seperti layu bakteri dan bercak bakteri pada tanaman padi. Penggunaan streptomisin harus sesuai dengan petunjuk penggunaan yang tepat, termasuk dosis yang direkomendasikan dan waktu aplikasi yang sesuai. Selain itu, penting untuk memperhatikan waktu jeda yang diperlukan antara aplikasi streptomisin dan panen, untuk memastikan keamanan dan kepatuhan terhadap regulasi penggunaan pestisida.</rdfs:abstract>
+        <rdfs:label>Streptomisin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tanaman_terdapat_pupa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tanaman_terdapat_pupa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Pupa adalah tahap perkembangan hama kupu-kupu padi yang terjadi setelah tahap larva. Pada tahap pupa, hama kupu-kupu padi berubah menjadi bentuk diam yang tidak aktif dan mengalami transformasi menuju dewasa. Selama tahap ini, tidak ada gejala yang secara langsung terlihat pada pupa karena mereka tersembunyi di dalam tempat persembunyian seperti dalam tanah atau serasah tanaman.</rdfs:abstract>
+        <rdfs:label>Tanaman terdapat pupa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Tebuconazole adalah sejenis fungisida yang digunakan untuk mengendalikan penyakit pada tanaman, termasuk pada padi. Fungisida ini bekerja dengan cara menghambat enzim yang terlibat dalam sintesis ergosterol, yang merupakan komponen penting dalam membran sel jamur penyebab penyakit. Tebuconazole efektif dalam mengendalikan penyakit seperti bercak daun, bercak coklat, dan penyakit lainnya pada tanaman padi.</rdfs:abstract>
+        <rdfs:label>Tebuconazole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Telenomus_spp. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Telenomus_spp.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis"/>
+        <rdfs:abstract xml:lang="id">Telenomus spp. adalah kelompok parasitoid telur yang termasuk dalam famili Platygastridae. Parasitoid ini adalah agen pengendali hayati yang efektif dalam mengendalikan serangga hama, termasuk ganjur padi Asia (Cnaphalocrocis medinalis).</rdfs:abstract>
+        <rdfs:label>Telenomus spp.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tembaga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tembaga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bakterisida"/>
+        <rdfs:abstract xml:lang="id">Bakterisida tembaga adalah jenis pestisida yang mengandung senyawa tembaga sebagai bahan aktif utama. Senyawa tembaga memiliki sifat antimikroba dan efektif dalam mengendalikan infeksi bakteri pada tanaman. Bakterisida tembaga biasanya digunakan untuk mengendalikan penyakit bakteri seperti bercak bakteri dan layu bakteri pada tanaman padi. Senyawa tembaga bekerja dengan mengganggu perkembangan dan fungsi sel bakteri, sehingga menghambat pertumbuhan dan penyebaran infeksi. Penggunaan bakterisida tembaga harus sesuai dengan dosis yang direkomendasikan dan petunjuk penggunaan yang tepat, serta memperhatikan waktu aplikasi yang disarankan. Namun, penggunaan tembaga dalam jangka panjang perlu diperhatikan karena dapat menyebabkan akumulasi tembaga di tanah yang berlebihan dan berpotensi merusak kualitas tanah serta organisme non-target.</rdfs:abstract>
+        <rdfs:label>Kuprum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Thrips -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Thrips">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Thrips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tilletia_barclayana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tilletia_barclayana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Tilletia barclayana adalah spesies jamur yang menyebabkan penyakit busuk biji padi. Jamur ini termasuk dalam kelompok jamur penyebab penyakit karat atau buntut padi. Penyakit yang disebabkan oleh Tilletia barclayana dikenal dengan sebutan penyakit busuk biji gandum. Gejala utama dari infeksi Tilletia barclayana adalah adanya busuk pada biji padi. Ketika biji padi terinfeksi jamur ini, akan terbentuk massa jamur yang berwarna kecoklatan atau kehitaman di dalam biji. Massa jamur ini kemudian berkembang biak dan menghasilkan spora yang akan menyebar ke biji-biji padi yang sehat.</rdfs:abstract>
+        <rdfs:label>Tilletia barclayana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Triadimefon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Triadimefon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Triadimefon adalah fungisida yang digunakan untuk mengendalikan penyakit jamur pada tanaman, termasuk pada padi. Senyawa ini termasuk dalam kelompok triazol dan bekerja dengan menghambat sintesis ergosterol, komponen penting dalam membran sel jamur. Triadimefon efektif melawan penyakit seperti blas daun, bercak daun, dan karat pada padi. Fungisida ini biasanya diterapkan melalui penyemprotan pada daun dan bagian tanaman yang terinfeksi. Penggunaan triadimefon harus mengikuti dosis yang direkomendasikan dan petunjuk penggunaan yang tertera pada label produk. Penting untuk mengikuti prinsip pengendalian penyakit terpadu dengan menggunakan fungisida secara bijaksana dan menggabungkannya dengan praktik budidaya yang baik untuk meminimalkan risiko resistensi dan efek negatif pada lingkungan.</rdfs:abstract>
+        <rdfs:label>Triadimefon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Trichogrammatidae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Trichogrammatidae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis"/>
+        <rdfs:abstract xml:lang="id">Trichogrammatidae adalah famili serangga parasitoid kecil yang termasuk dalam ordo Hymenoptera. Serangga-serangga ini merupakan agen pengendali hayati yang efektif dalam mengendalikan berbagai hama pertanian, termasuk ganjur padi Asia (Cnaphalocrocis medinalis).</rdfs:abstract>
+        <rdfs:label>Trichogrammatidae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tricyclazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tricyclazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Tricyclazole adalah fungisida yang digunakan untuk mengendalikan penyakit jamur pada tanaman, termasuk pada padi. Senyawa ini efektif dalam mengendalikan penyakit blast pada padi, yang disebabkan oleh jamur Pyricularia oryzae. Tricyclazole bekerja dengan menghambat sintesis melanin dalam sel jamur, sehingga menghentikan pertumbuhan dan penyebaran infeksi. Fungisida ini biasanya diterapkan melalui penyemprotan pada daun dan malai padi yang terinfeksi. Penggunaan tricyclazole harus mengikuti dosis yang direkomendasikan dan petunjuk penggunaan yang tertera pada label produk. Penting untuk menggunakan fungisida ini secara bijaksana dan mengikuti prinsip pengendalian penyakit terpadu untuk meminimalkan risiko resistensi dan menjaga keberlanjutan lingkungan.</rdfs:abstract>
+        <rdfs:label>Tricyclazole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Trifloxystrobin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Trifloxystrobin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Trifloxystrobin adalah salah satu jenis fungisida yang digunakan dalam pengendalian penyakit tanaman, termasuk penyakit Blast Padi yang disebabkan oleh jamur Pyricularia oryzae. Fungisida ini termasuk dalam kelas strobilurin dan memiliki efek proteksi serta kuratif terhadap infeksi jamur. Trifloxystrobin bekerja dengan menghambat respirasi mitokondria jamur, sehingga mengganggu produksi energi yang diperlukan untuk pertumbuhan dan perkembangan jamur. Dengan cara ini, fungisida ini mampu menghentikan penyebaran infeksi dan membantu melindungi tanaman padi dari kerusakan lebih lanjut akibat penyakit Blast.</rdfs:abstract>
+        <rdfs:label>Trifloxystrobin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#TungauDaunPadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#TungauDaunPadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Tungau Daun Padi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#TungauMalaiPadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#TungauMalaiPadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Tungau Malai Padi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tungro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tungro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>Tungro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatGrayak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatGrayak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Ulat Grayak</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatKantungPadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatKantungPadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Ulat Kantung Padi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatTandukHijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatTandukHijau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Ulat Tanduk Hijau</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatTandukTembakau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatTandukTembakau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Ulat Tanduk Tembakau</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#VirusBelangKuning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#VirusBelangKuning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>Virus Belang Kuning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#VirusKerdilRumput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#VirusKerdilRumput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <rdfs:label>Virus Kerdil Rumput</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WalangSangit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WalangSangit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Walang Sangit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengBatangCoklat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengBatangCoklat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Wereng Batang Coklat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengHijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengHijau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Wereng Hijau</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengPunggungPutih -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengPunggungPutih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Wereng Punggung Putih</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Xanthomonas_oryzae_pv._oryzicola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Xanthomonas_oryzae_pv._oryzicola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
+        <rdfs:abstract xml:lang="id">Xanthomonas oryzae pv. oryzae adalah bakteri patogen yang menyebabkan penyakit bercak bakteri pada tanaman padi. Bakteri ini menyerang jaringan tanaman padi dan menginfeksi daun, batang, dan malai padi. Xanthomonas oryzae pv. oryzae menyebabkan pembentukan bercak berwarna coklat pada tanaman padi, yang dapat menyebabkan kerusakan pada daun, batang, dan malai, serta mengurangi hasil panen padi jika tidak dikendalikan dengan baik. Pengendalian penyakit ini melibatkan penerapan praktik budidaya yang baik, penggunaan varietas tahan penyakit, dan penggunaan fungisida atau bakterisida yang sesuai.</rdfs:abstract>
+        <rdfs:label>Xanthomonas oryzae pv. oryzicola</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
