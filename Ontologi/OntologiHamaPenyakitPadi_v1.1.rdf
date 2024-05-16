@@ -1689,6 +1689,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tungro">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BercakCoklat"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:terserangHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengHijau"/>
+        <rdfs:abstract xml:lang="id">Tungro merupakan penyakit yang disebabkan oleh infeksi ganda dari 2 jenis virus yang berlainan. Kedua virus yang dimaksud adalah Rice Tungro Spherical Virus (RTSV) dan Rice Tungro Bacilliform Virus (RTBV). Sebenarnya, penyakit ini bisa ditularkan oleh beberapa jenis hewan serangga, tetapi yang paling cepat menularkan dan menyebarkannya adalah spesies wereng hijau. Gejalla yang ditandai pada daun menguning dan terdapat becak coklat.</rdfs:abstract>
         <rdfs:label>Tungro</rdfs:label>
     </owl:NamedIndividual>
     
