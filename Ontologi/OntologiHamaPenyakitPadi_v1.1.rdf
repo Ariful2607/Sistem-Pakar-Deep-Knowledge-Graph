@@ -375,6 +375,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_pumilus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_pumilus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Bacillus pumilus merupakan bakteri selulolitik yang dimanfaatkan untuk pengembangan pupuk hayati. Bakteri selulolitik merupakan salah satu mikro- organisme yang mampu memproduksi selulase dan menghidrolisis selulosa menjadi produk lebih sederhana, yaitu glukosa</rdfs:abstract>
+        <rdfs:label>Bacillus pumilus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_thuringiensis_var._israelensis -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_thuringiensis_var._israelensis">
@@ -694,6 +704,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_melepuh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_melepuh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">pada kasus daun melepuh tidak terdapat pola zonasi khusus yang terjadi pada daun. Hanya gelaja melepuh saja yang terlihat, lalu akan berlanjut pada daun menjadi layu</rdfs:abstract>
+        <rdfs:label>Daun melepuh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering">
@@ -738,7 +758,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Epicoccum_sorghi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
-        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Epicoccum_sorghi"/>
         <rdfs:abstract>Epicoccum sorghi merupakan jamur yang merupakan patogen tanaman terhadap padi dan tebu, menyebabkan penyakit bercak daun dan bercak cincin. Jamur ini terutama dikenal karena produksi asam tenuazonicnya, yang menyebabkan komplikasi pertumbuhan dan menyebabkan gejala penyakit bercak daun. Asam tenuazonic tidak hanya mempengaruhi pertumbuhan tanaman, namun belakangan ini terbukti berdampak pada kesehatan manusia karena prevalensinya pada makanan dan minuman</rdfs:abstract>
         <rdfs:label>Epicoccum sorghi</rdfs:label>
     </owl:NamedIndividual>
@@ -941,6 +960,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Iprodione -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Iprodione">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Iprodione adalah fungisida kontak dikarboximide dengan tindakan protektif dan kuratif yang digunakan untuk mengendalikan berbagai macam penyakit tanaman. untuk mengendalikan hama jamur, dan juga dapat digunakan sebagai fungisida pasca panen dan sebagai perlakuan benih. Iprodione menghambat perkecambahan spora dan pertumbuhan tikar jamur (miselium).</rdfs:abstract>
+        <rdfs:label>Iprodione</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#JelagaPalsu -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#JelagaPalsu">
@@ -950,14 +979,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kaptan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kaptan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Kaptan merupakan salah satu bahan aktif fungisida yang biasa digunakan petani untuk mengendalikan penyakit yang disebabkan oleh jamur, yang bekerja secara non sistemik dan berfungsi sebagai protektan tanaman dari patogen. Penggunaan fungisida kaptan secara terus menerus dapat meninggalkan residu di lingkungan terutama di tanah. Salah satu teknik untuk mengurangi residu fungisida kaptan yaitu bioremediasi. Bioremediasi merupakan suatu cara untuk menghilangkan residu fungisida dengan memanfaatkan mikroorganisme.</rdfs:abstract>
+        <rdfs:label>Kaptan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KaratGarisKuning -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KaratGarisKuning">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_pumilus"/>
         <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Strobilurin"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_berkarat"/>
         <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Puccinia_striiformis"/>
-        <rdfs:abstract xml:lang="id">Karat Garis Kuning disebabkan oleh jamur Puccinia Striiformis, parasit obligat yang membutuhkan bahan tanaman hidup untuk bertahan hidup. Gejalanya pada varietas yang rentan, jamur menghasilkan pastula kecil berwarna kuning hingga oranye (&quot;berkarat&quot;) yang tersusun dalam barisan membentuk garis garis sempit sejajar dengan urat daun. Akibat pada tumbuhan yang terinfeksi berat ialah pertumbuhan tanaman sangat terganggu dan jaringan rusak. Secara keseluruhan, penyakit ini dapat menyebabkan kerugian panen yang parah. Pengendalian hayati yang dapat dilakukan penggunaan fungisida hayati, produk berbasis bacillus pumilus. Pengendalian kimiawi menggunakan semprotan daun fungisida (kelas strobilurin) yang dilakukan secara preventif.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Karat Garis Kuning disebabkan oleh jamur Puccinia Striiformis, parasit obligat yang membutuhkan bahan tanaman hidup untuk bertahan hidup. Gejalanya pada varietas yang rentan, jamur menghasilkan pastula kecil berwarna kuning hingga oranye (&quot;berkarat&quot;) yang tersusun dalam barisan membentuk garis garis sempit sejajar dengan urat daun. Akibat pada tumbuhan yang terinfeksi berat ialah pertumbuhan tanaman sangat terganggu dan jaringan rusak. Secara keseluruhan, penyakit ini dapat menyebabkan kerugian panen yang parah. Pengendalian hayati yang dapat dilakukan penggunaan fungisida hayati, produk berbasis bacillus pumilus. Pengendalian kimiawi menggunakan semprotan daun fungisida (kelas strobilurin) yang dilakukan secara preventif. Pada lahan yang sudah terinfeksi dapat diberikan produk Triazol</rdfs:abstract>
         <rdfs:label>Karat Garis Kuning</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1085,10 +1126,21 @@
         <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Mancozeb"/>
         <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metil_tiofonat"/>
         <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tembaga_oksiklorida"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_melepuh"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Luka_abu_abu_hijau"/>
         <rdfs:abstract xml:lang="id">Lepuh daun memiliki gejala luka abu abu hijau yang berair dari ujung atau tepian daun. Jika luka telah menyebar dan menghasilkan pola zonasi yang bergantian antara coklat muda dan coklat tua di mulai dari ujung atau tepian daun. Pencegahan yang dapat dilakukan menggunakan metil tiofanat dengan perendaman benih. Di lahan, semprotan daun dengan fungisida yang mengandung mankozeb, metil tiofanat @1,0 g/l atau tembaga oksiklorida</rdfs:abstract>
         <rdfs:label>Lepuh Daun</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_basah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_basah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Lesi basah merupakan gejala awal dari penyakit Phoma Sorghina. Dimana muncul lesi yang basah pada spikelet atau kumpulan bunga padi yang sedang berkembang.</rdfs:abstract>
+        <rdfs:label>Malai basah</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1143,11 +1195,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_terdapat_bercak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_terdapat_bercak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Lesi yang awalnya timbul dan basah akan membesar dan membentuk bercak bercak lonjong atau tidak beraturan, ditandai dengan tepian coklat gelap yang mengelilingi pusat yang berwarna putih.</rdfs:abstract>
+        <rdfs:label>Lesi terdapat bercak</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Luka_abu_abu_hijau -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Luka_abu_abu_hijau">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
-        <rdfs:abstract>Luka abu abu hijau berair yang mulai berkembang pada ujung daun atau tepi daun. gejala lebih lanjutnya luka menyebar dan menghasilkan pola zonasi yang bergantian antar coklat muda dan coklat tua mulai dari ujung atau tepian daun.</rdfs:abstract>
+        <rdfs:abstract>Luka abu abu hijau berair yang mulai berkembang pada ujung daun atau tepi daun. Yang dipengaruhi oleh tahapan pertumbuhan, varietas, dan kerapatan tanaman.  gejala lebih lanjutnya luka menyebar dan menghasilkan pola zonasi yang bergantian antar coklat muda dan coklat tua mulai dari ujung atau tepian daun.</rdfs:abstract>
         <rdfs:label>Luka abu abu hijau</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1414,6 +1476,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PhomaSorghina">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Iprodione"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kaptan"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_malai"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_basah"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Malai"/>
+        <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Epicoccum_sorghi"/>
         <rdfs:abstract xml:lang="id">penyebabnya jamur Epicoccum Sorghi. Jamur ini ditularkan oleh benih dan tanah yang dapat menyerang tanaman yang lemah. Gejalanya terdapat bercak bercak gelap lonjong dan tidak beraturan dengan tepian coklat tua, menyebkan lesi merah atau basah pada kumpulan bunga padi (spikelet) yang sedang berkembang. Pencegahannya dapat menggunakan Iprodione dan Kaptan akan tetapi tidak 100% efisien</rdfs:abstract>
         <rdfs:label>Phoma Sorghina</rdfs:label>
     </owl:NamedIndividual>
@@ -1617,6 +1685,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tikus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tikus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:label>Tikus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tilletia_barclayana -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tilletia_barclayana">
@@ -1738,6 +1815,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#VirusBelangKuning">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
+        <OntologiHamaPenyakitPadi:terserangHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BelalangSawah"/>
+        <OntologiHamaPenyakitPadi:terserangHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KumbangTangkaiPadi"/>
+        <OntologiHamaPenyakitPadi:terserangHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tikus"/>
         <rdfs:abstract xml:lang="id">Gejalanya terdapat garis garis dan bercak bercak kuning pada daun baru. Bercak kuning sampai oranye pada daun yang lebih tua. Bercak gelap di tengah garis.</rdfs:abstract>
         <rdfs:label>Virus Belang Kuning</rdfs:label>
     </owl:NamedIndividual>
