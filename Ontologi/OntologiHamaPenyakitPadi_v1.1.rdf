@@ -1831,6 +1831,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#VirusKerdilRumput">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_berkarat"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <rdfs:abstract xml:lang="id">Serangan hama wereng coklat diikuti oleh serangan virus tanaman padi yang ditularkannya, sehingga kerusakan yang ditimbulkan menjadi berlipat-lipat. Diantara virus pada padi, virus kerdil hampa Rice Ragged Stunt Virus (RRSV) dan virus kerdil rumput Rice Grassy Stunt Virus (RGSV) merupakan virus penting yang menyebabkan penyakit padi. virus kerdil rumput menunjukkan gejala penghambatan pertumbuhan, anakannya banyak, daunnya menjadi pendek dan sempit, dan tumbuhnya tegak serta berwarna hijau pucat atau kuning pucat. Seringkali pada daunnya terdapat bintik-bintik atau bercak coklat tua. Daunnya kadang-kadang tetap hijau jika diberi pupuk nitrogen yang cukup.</rdfs:abstract>
         <rdfs:label>Virus Kerdil Rumput</rdfs:label>
     </owl:NamedIndividual>
     
