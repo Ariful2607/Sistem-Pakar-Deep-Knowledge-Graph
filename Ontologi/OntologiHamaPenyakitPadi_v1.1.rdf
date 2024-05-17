@@ -1210,7 +1210,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Luka_abu_abu_hijau">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
         <rdfs:abstract>Luka abu abu hijau berair yang mulai berkembang pada ujung daun atau tepi daun. Yang dipengaruhi oleh tahapan pertumbuhan, varietas, dan kerapatan tanaman.  gejala lebih lanjutnya luka menyebar dan menghasilkan pola zonasi yang bergantian antar coklat muda dan coklat tua mulai dari ujung atau tepian daun.</rdfs:abstract>
-        <rdfs:label>Luka abu abu hijau</rdfs:label>
+        <rdfs:label>Daun terdapat luka</rdfs:label>
     </owl:NamedIndividual>
     
 
