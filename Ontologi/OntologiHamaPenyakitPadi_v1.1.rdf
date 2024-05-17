@@ -1195,16 +1195,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_terdapat_bercak -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_terdapat_bercak">
-        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
-        <rdfs:abstract xml:lang="id">Lesi yang awalnya timbul dan basah akan membesar dan membentuk bercak bercak lonjong atau tidak beraturan, ditandai dengan tepian coklat gelap yang mengelilingi pusat yang berwarna putih.</rdfs:abstract>
-        <rdfs:label>Lesi terdapat bercak</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Luka_abu_abu_hijau -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Luka_abu_abu_hijau">
