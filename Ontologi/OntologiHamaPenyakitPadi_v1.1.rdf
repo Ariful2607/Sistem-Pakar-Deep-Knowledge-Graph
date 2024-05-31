@@ -678,7 +678,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_berkarat">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
-        <rdfs:abstract xml:lang="id">Daun berkarat (pastula) berwarna kuning hingga oranye, tersusun dalam barisan membentuk garis garis sempit sejajar dengan urat daun. Pada tanaman muda mereka kan tergabung dan memenuhi seluruh daun. Pastula uni berdiamete 0,5 hingga 1 mm, dapat ditemukan juga pada batang dan kepala. Apabila garis garis atau bercak coklat muda panjang dan nekrotik terlihat pada daun, sering kasi ditutupi dengan pastula berkarat, maka telah memasuki tahap akhir penyakit.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Daun berkarat (pastula) berwarna kuning hingga oranye, tersusun dalam barisan membentuk garis garis sempit sejajar dengan urat daun. Pada tanaman muda mereka kan tergabung dan memenuhi seluruh daun. Pastula ini berdiameter 0,5 hingga 1 mm, terkadang gejala ini juga dapat ditemukan juga pada batang dan kepala. Apabila garis garis atau bercak coklat muda panjang dan nekrotik terlihat pada daun, sering kali ditutupi dengan pastula berkarat, maka telah memasuki tahap akhir penyakit.</rdfs:abstract>
         <rdfs:label>Daun berkarat</rdfs:label>
     </owl:NamedIndividual>
     
@@ -995,10 +995,11 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
         <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_pumilus"/>
         <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Strobilurin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_berkarat"/>
         <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Puccinia_striiformis"/>
-        <rdfs:abstract xml:lang="id">Karat Garis Kuning disebabkan oleh jamur Puccinia Striiformis, parasit obligat yang membutuhkan bahan tanaman hidup untuk bertahan hidup. Gejalanya pada varietas yang rentan, jamur menghasilkan pastula kecil berwarna kuning hingga oranye (&quot;berkarat&quot;) yang tersusun dalam barisan membentuk garis garis sempit sejajar dengan urat daun. Akibat pada tumbuhan yang terinfeksi berat ialah pertumbuhan tanaman sangat terganggu dan jaringan rusak. Secara keseluruhan, penyakit ini dapat menyebabkan kerugian panen yang parah. Pengendalian hayati yang dapat dilakukan penggunaan fungisida hayati, produk berbasis bacillus pumilus. Pengendalian kimiawi menggunakan semprotan daun fungisida (kelas strobilurin) yang dilakukan secara preventif. Pada lahan yang sudah terinfeksi dapat diberikan produk Triazol</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Karat Garis Kuning disebabkan oleh jamur Puccinia Striiformis, parasit obligat yang membutuhkan bahan tanaman hidup untuk bertahan hidup. Gejalanya pada varietas yang rentan, jamur menghasilkan pastula kecil berwarna kuning hingga oranye (&quot;berkarat&quot;) yang tersusun dalam barisan membentuk garis garis sempit sejajar dengan urat daun. Akibat pada tumbuhan yang terinfeksi berat ialah pertumbuhan tanaman sangat terganggu dan jaringan rusak. Secara keseluruhan, penyakit ini dapat menyebabkan kerugian panen yang parah. Pengendalian hayati yang dapat dilakukan penggunaan fungisida hayati, produk berbasis bacillus pumilus. Pengendalian kimiawi menggunakan semprotan daun fungisida (kelas strobilurin) yang dilakukan secara preventif. Pada lahan yang sudah terinfeksi dapat diberikan produk Triazol.</rdfs:abstract>
         <rdfs:label>Karat Garis Kuning</rdfs:label>
     </owl:NamedIndividual>
     
