@@ -1668,6 +1668,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid">
+        <rdfs:abstract>richogramma atau parasitoid terkait hadir adalah telur inang yang biasanya berwarna pucat menjadi gelap karena parasitisasi inang mengubah pigmentasi cangkang telurnya.Ketika Trichogramma dewasa muncul dari telur yang diparasit, ia meninggalkan lubang bundar di kulit telur yang tetap gelap karena parasitisme. Pelet kecil dan gelap dari kotoran parasitoid (mekonium) dapat terlihat di dalam cangkang telur. Ketika ulat inangnya menetas dari telurnya, lubang kemunculan umumnya compang-camping, cangkang telur kosong (tidak mengandung mekonium), dan cangkang biasanya berwarna pucat.</rdfs:abstract>
+        <rdfs:label>Tawon Chalcid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tebuconazole">
@@ -1832,6 +1841,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatTandukHijau">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPengendalianHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid"/>
         <rdfs:abstract xml:lang="id">Melanitis leda ismene Cramer Ngengat tidak tertarik pada cahaya. Ngengat berupa kupu-kupu yang berukuran besar yang sangat mudah dikenali karena pada sayapnya terdapat bercak berbentuk seperti mata. Larva memiliki 2 pasang tanduk, satu pasang di bagian ujung kepala dan satu pasang lainnya ada di bagian ujung abdomen. Larva penyebab kerusakan pada tanaman, makan daun mulai dari pinggiran dan ujung daun. Fase pertumbuhan tanaman yang diserang adalah dari fase anakan sampai pembentukan malai.</rdfs:abstract>
         <rdfs:label>Ulat Tanduk Hijau</rdfs:label>
     </owl:NamedIndividual>
