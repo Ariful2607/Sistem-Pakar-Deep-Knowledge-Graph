@@ -1842,6 +1842,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatTandukTembakau">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract xml:lang="id">Ulat tanduk tembakau kadang-kadang disimpan sebagai hewan peliharaan oleh anak-anak di berbagai wilayah. Larva spesies tersebut dapat dibedakan dengan tanda-tanda, misalnya ulat tanduk tomat memiliki delapan tanda putih berbentuk V tanpa batas; sementara ulat tanduk tembakau memiliki tujuh garis putih diagonal dengan batas berwarna hitam</rdfs:abstract>
         <rdfs:label>Ulat Tanduk Tembakau</rdfs:label>
     </owl:NamedIndividual>
     
