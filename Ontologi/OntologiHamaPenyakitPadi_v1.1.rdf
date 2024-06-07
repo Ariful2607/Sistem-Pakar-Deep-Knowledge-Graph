@@ -945,6 +945,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HispaPadi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Sipermetrin"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
+        <rdfs:abstract>Kumbang dewasa atau hispa padi (Dicladispa amigera) memakan bagian luar epidermis atas, menyebabkan pola pola garis paralel atau bercak bercak putih di sepanjang sumbu utama daun. Bercak putih ini tidak teratur. Kumbang dewasa juga menyebabkan layu pada daun. Daun yang terserang menegring dan menghadirkan tampilan putih di lahan. Kumbang yang menyerang biasanya berwarna biru tua atau kehitaman, agak berbentuk persegi, serta berduri.</rdfs:abstract>
         <rdfs:label>Hispa Padi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1059,6 +1065,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KepikLudah">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_rontok"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Daun"/>
+        <rdfs:abstract>Kepik ludah atau Deois flavopicta merupakan serangga yang menyebabkan kerusakan pada beberapa tanaman seperti padi dan jagung. Dengan cara berterlur di dekat tanaman inang, sehingga telur menetas dan limfa mulai berkembang biak pada akat dan batang yang dekat dengan permukaan tanah. Kepik ludah dapat merusak dan melemahkan tanaman dengan menghisapnya dan menyuntikan racun yang dapat menghalangi pertumbuhan, daun layu, hingga kematian tanaman</rdfs:abstract>
         <rdfs:label>Kepik Ludah</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1070,6 +1079,15 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
         <rdfs:abstract xml:lang="id">Kerapuhan pelepah padi merupakan suatu kondisi di mana pelepah daun pada tanaman padi menjadi rapuh dan mudah patah. Gejala ini dapat terlihat dalam bentuk kelemahan struktural pada pelepah, yang membuatnya rentan terhadap kerusakan mekanis. Salah satu gejala yang dapat diamati adalah pelepah padi yang mudah patah atau terputus dengan mudah, bahkan dengan sentuhan yang ringan. Pelepah yang rapuh tidak mampu menopang beban daun dan malai padi dengan baik, sehingga menyebabkan kemungkinan kerusakan yang lebih besar pada tanaman.</rdfs:abstract>
         <rdfs:label>Pelepah rapuh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:label xml:lang="id">Klorpirifos adalah insektisida organofosfat. Klorpirifos murni terdiri dari kristal putih atau tidak berwarna. Memiliki bau seperti telur busuk atau bawang putih. Klorpirifos dapat digunakan untuk mengendalikan hama, kumbang, rayap, nyamuk, dan cacing gelang.</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1584,6 +1602,16 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
         <rdfs:abstract xml:lang="id">Sarocladium oryzae adalah patogen yang menyebabkan penyakit yang dikenal sebagai penyakit &quot;sheath rot&quot; pada tanaman padi. Sarocladium oryzae merupakan jamur yang umumnya menyerang pelepah daun, ruas batang, dan malai padi.</rdfs:abstract>
         <rdfs:label>Sarocladium oryzae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Sipermetrin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Sipermetrin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract>Sipermetrin merupakan salah satu bahan aktif dari keluarga piretroid sintetik . Bahan ini dapat digunakan untuk pengendalian hama dilahan pertanian.</rdfs:abstract>
+        <rdfs:label xml:lang="id">Sipermertrin</rdfs:label>
     </owl:NamedIndividual>
     
 
