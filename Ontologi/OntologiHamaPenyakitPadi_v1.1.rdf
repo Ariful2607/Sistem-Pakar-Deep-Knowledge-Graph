@@ -754,6 +754,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Dimehipo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Dimehipo">
+        <rdfs:abstract xml:lang="id">Bahan aktif dimehipo merupakan insektisida dengan golongan Neristoksin yang bekerja secara sistemik racun kontak, dan lambung yang dapat diserap dan diangkut ke seluruh bagian tanaman. sehingga serangga hama yang memakan setiap bagian tanaman (yang telah di semprot) akan mati.</rdfs:abstract>
+        <rdfs:label>Dimehipo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Epicoccum_sorghi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Epicoccum_sorghi">
@@ -1065,8 +1074,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KepikLudah">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Dimehipo"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fipronil"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_rontok"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Daun"/>
+        <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BusukBatang"/>
         <rdfs:abstract>Kepik ludah atau Deois flavopicta merupakan serangga yang menyebabkan kerusakan pada beberapa tanaman seperti padi dan jagung. Dengan cara berterlur di dekat tanaman inang, sehingga telur menetas dan limfa mulai berkembang biak pada akat dan batang yang dekat dengan permukaan tanah. Kepik ludah dapat merusak dan melemahkan tanaman dengan menghisapnya dan menyuntikan racun yang dapat menghalangi pertumbuhan, daun layu, hingga kematian tanaman</rdfs:abstract>
         <rdfs:label>Kepik Ludah</rdfs:label>
     </owl:NamedIndividual>
