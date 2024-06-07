@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnosa Tanaman</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      /* background-color: #f4f4f4; */
+      background-color: #E2F5D5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header h2 {
+      margin: 0;
+    }
+
+    .header .back-button {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .header .back-button i {
+      margin-right: 5px;
+      font-size: 1.2em;
+    }
+    .btn-diagnosa {
+      background-color: #437223;
+      color: #ffffff;
+    }
+    .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .nav-item i, .nav-item svg {
+            font-size: 20px;
+            color: #437223;
+        }
+        .nav-item span {
+            font-size: 12px;
+        }
+  </style>
+</head>
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand"  href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+          </svg>
+          <span>care</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                      <i class="fas fa-home">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                          </svg>
+                      </i>
+                      <!-- <span>Home</span> -->
+                  </a>
+              </li>
+              <!-- try dropdown -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-info-circle">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                              <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                              <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                          </svg>
+                      </i>
+                      <!-- <span>Information</span> -->
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="DetailInformation.html">Hama</a></li>
+                      <li><a class="dropdown-item" href="DetailInformation.html">Penyakit</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Tips Perawatan</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Diagnosa.html">
+                      <i class="fas fa-search">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg>
+                      </i>
+                      <!-- <span>Diagnose</span> -->
+                  </a>
+              </li>
+          </ul>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="header">
+        <div class="back-button">
+          <i class="fas fa-arrow-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>
+          </i>
+          <span></span>
+          <h2>Diagnosa Gejala Tanaman</h2>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Daun</th>
+              <th scope="col">Batang</th>
+              <th scope="col">Akar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Daun Coklat?</td>
+              <td>Batang berlubang?</td>
+              <td>Akar pendek?</td>
+            </tr>
+            <tr>
+              <td>
+                <select class="form-control">
+                  <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                  <option value="Ya" class="option-ya">Ya</option>
+                </select>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                  <option value="Ya" class="option-ya">Ya</option>
+                </select>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                  <option value="Ya" class="option-ya">Ya</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Daun Berlubang?</td>
+              <td>Batang Kerdil?</td>
+              <td>Akar tidak tumbuh?</td>
+            </tr>
+            <tr>
+              <td>
+                <select class="form-control">
+                  <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                  <option value="Ya" class="option-ya">Ya</option>
+                </select>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                  <option value="Ya" class="option-ya">Ya</option>
+                </select>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                  <option value="Ya" class="option-ya">Ya</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Daun tidak tumbuh?</td>
+              <td>Batang Kopong?</td>
+              <td>Akar Rusak?</td>
+            </tr>
+            <tr>
+              <td>
+                <select class="form-control">
+                  <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                  <option value="Ya" class="option-ya">Ya</option>
+                </select>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                  <option value="Ya" class="option-ya">Ya</option>
+                </select>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                  <option value="Ya" class="option-ya">Ya</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center py-3">
+        <button class="btn btn-diagnosa" onclick="window.location.href='HasilDiagnosa.html'">Diagnosa</button>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
