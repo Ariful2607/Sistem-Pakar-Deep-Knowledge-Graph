@@ -757,6 +757,7 @@
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Dimehipo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Dimehipo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
         <rdfs:abstract xml:lang="id">Bahan aktif dimehipo merupakan insektisida dengan golongan Neristoksin yang bekerja secara sistemik racun kontak, dan lambung yang dapat diserap dan diangkut ke seluruh bagian tanaman. sehingga serangga hama yang memakan setiap bagian tanaman (yang telah di semprot) akan mati.</rdfs:abstract>
         <rdfs:label>Dimehipo</rdfs:label>
     </owl:NamedIndividual>
@@ -1099,7 +1100,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
-        <rdfs:label xml:lang="id">Klorpirifos adalah insektisida organofosfat. Klorpirifos murni terdiri dari kristal putih atau tidak berwarna. Memiliki bau seperti telur busuk atau bawang putih. Klorpirifos dapat digunakan untuk mengendalikan hama, kumbang, rayap, nyamuk, dan cacing gelang.</rdfs:label>
+        <rdfs:abstract xml:lang="id">Klorpirifos adalah insektisida organofosfat. Klorpirifos murni terdiri dari kristal putih atau tidak berwarna. Memiliki bau seperti telur busuk atau bawang putih. Klorpirifos dapat digunakan untuk mengendalikan hama, kumbang, rayap, nyamuk, dan cacing gelang.</rdfs:abstract>
+        <rdfs:label>Klorpiris</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1671,8 +1673,10 @@
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid">
-        <rdfs:abstract>richogramma atau parasitoid terkait hadir adalah telur inang yang biasanya berwarna pucat menjadi gelap karena parasitisasi inang mengubah pigmentasi cangkang telurnya.Ketika Trichogramma dewasa muncul dari telur yang diparasit, ia meninggalkan lubang bundar di kulit telur yang tetap gelap karena parasitisme. Pelet kecil dan gelap dari kotoran parasitoid (mekonium) dapat terlihat di dalam cangkang telur. Ketika ulat inangnya menetas dari telurnya, lubang kemunculan umumnya compang-camping, cangkang telur kosong (tidak mengandung mekonium), dan cangkang biasanya berwarna pucat.</rdfs:abstract>
-        <rdfs:label>Tawon Chalcid</rdfs:label>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid"/>
+        <rdfs:abstract xml:lang="id">Trichogramma atau parasitoid terkait hadir adalah telur inang yang biasanya berwarna pucat menjadi gelap karena parasitisasi inang mengubah pigmentasi cangkang telurnya.Ketika Trichogramma dewasa muncul dari telur yang diparasit, ia meninggalkan lubang bundar di kulit telur yang tetap gelap karena parasitisme. Pelet kecil dan gelap dari kotoran parasitoid (mekonium) dapat terlihat di dalam cangkang telur. Ketika ulat inangnya menetas dari telurnya, lubang kemunculan umumnya compang-camping, cangkang telur kosong (tidak mengandung mekonium), dan cangkang biasanya berwarna pucat.</rdfs:abstract>
+        <rdfs:label>Trichogramm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1841,7 +1845,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatTandukHijau">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
-        <OntologiHamaPenyakitPadi:diberikanPengendalianHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid"/>
         <rdfs:abstract xml:lang="id">Melanitis leda ismene Cramer Ngengat tidak tertarik pada cahaya. Ngengat berupa kupu-kupu yang berukuran besar yang sangat mudah dikenali karena pada sayapnya terdapat bercak berbentuk seperti mata. Larva memiliki 2 pasang tanduk, satu pasang di bagian ujung kepala dan satu pasang lainnya ada di bagian ujung abdomen. Larva penyebab kerusakan pada tanaman, makan daun mulai dari pinggiran dan ujung daun. Fase pertumbuhan tanaman yang diserang adalah dari fase anakan sampai pembentukan malai.</rdfs:abstract>
         <rdfs:label>Ulat Tanduk Hijau</rdfs:label>
     </owl:NamedIndividual>
