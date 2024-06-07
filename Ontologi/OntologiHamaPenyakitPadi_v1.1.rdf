@@ -1798,6 +1798,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatGrayak">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract xml:lang="id">Ulat Grayak menyebabkan kerusakan tanaman dengan cara memakan seluruh bagian tanaman, larva muda pada awalnya memakan jaringan daun dari satu sisi, membiarkan lapisan kulit di sisi yang berlawanan tetap uduh (window feeding).bibi dapat dimakan hingga tuna dan titik tumbuh rusak.</rdfs:abstract>
         <rdfs:label>Ulat Grayak</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1807,6 +1808,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatKantungPadi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract>Ulat kantung padi juga bisa disebut Larva P. stagnalis muda berakibat pada daun menjadi goresan lurus. ulat ini merusak daun dengan cara memotong ujung daun padi di sudut kanan utuk membuat kantung daun. penyebab dari adanya ulat kantung padi muncul dikarenakan penanaman bibit yang masih muda dapat mendukung perkembangan serangga.</rdfs:abstract>
         <rdfs:label>Ulat Kantung Padi</rdfs:label>
     </owl:NamedIndividual>
     
