@@ -1110,6 +1110,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KumbangTangkaiPadi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Karbamat"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Metarhizium_anisopliae"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Piretroid"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_bulir"/>
+        <rdfs:abstract xml:lang="id">Kumbang Tangkai Padi yang memiliki nama latin Tibraca limbativentris yang berasal dari Amerika Tengah dan Selatan. Kumbang ini selain menyerang padi juga menyerang kedelai, tomat, dan gandum. Baik kumbang dewasa maupun nimfa memakan tanaman, menyebabkan kerusakan bulir atau kondisi yang dikenal sebagai beluk dan sundep (merujuk pada kerusakan batang). Cedera lebih parah terjadi pada padi yang ditanam di bawah kondisi kering atau kelembaban rendah. Kekurangan air memungkinkan serangga tetap berada di pangkal tanaman. Saat tanaman matang, pengerasan (lignifikasi) batang menghambat aktivitas makan serangga, dan populasinya secara bertahap berkurang.</rdfs:abstract>
         <rdfs:label>Kumbang Tangkai Padi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1119,6 +1125,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KutuDaun">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fipronil"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Layu"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_terhambat"/>
+        <rdfs:abstract xml:lang="id">Kutu daun yang memiliki nama latin Aphis merupakan sejenis serangga yang apabila dalam jumlah sedikit atau sedang umumnya tidak berbahaya bagi tanaman. Kerumunan kutu dalam jumlah banyak dapat menyebabkan daun dan pucuk mengerut, layu atau kuning dan pertumbuhan tanaman terhambat. Madu yang dihasilkan kutu daun saat mereka memakan jaringan tanaman menyebabkan infeksi tambahan dengan jamur oportunistik di beberapa kasus. Madu memikat semut-semut. Bahkan kutu daun dalam jumlah kecil dapat menularkan virus dari satu tanaman ke tanaman lain secara terus-menerus. Kondisi optimal bagi pertumbuhannya adalah pada iklim yang kering dan hangat.</rdfs:abstract>
         <rdfs:label>Kutu Daun</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1128,6 +1139,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KutuPutih">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_terhambat"/>
+        <rdfs:abstract xml:lang="id">Kutu putih yang memiliki nama latin Pseudococcidae adalah serangga yang berbentuk oval, tanpa sayap yang dapat ditemukan pada daerah beriklim hangat atau sedang. Tubuh mereka seperti dilindungi dengan lapisaj  lilin tepung tipis yang membuat mereka terlihat seperti kapas. Mereka hidup dibawah bagian daun, batang, batang, atau buah.</rdfs:abstract>
         <rdfs:label>Kutu Putih</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1137,6 +1151,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#LalatTunas">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Piretroid"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_melengkung"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Layu"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_terhambat"/>
+        <rdfs:abstract xml:lang="id">Lalat tunas yang memiliki nama latin Atherigona sp. merupakan lalat kecil berwarna abu abu. Lalat ini pemakan segala dan menyerang tanaman.  Lalat betina bertelur tunggal, atau berpasangan, di batang atau di tanah dekat pangkal bibit (tahap 3-4 daun lebih disukai). Penerapan pupuk kandang pada tanah tampaknya menarik lebih banyak lalat betina dan meningkatkan oviposisi. Larva yang baru muncul berbentuk silinder dan berwarna putih. Mereka naik ke atas tanaman dan menggunakan kait mulut mereka untuk mengunyah bagian lembut dari tunas baru, biasanya tepat di atas selubung daun pertama. Pupasi biasanya terjadi di pangkal batang. Lalat ini dapat menjadi hama yang sangat merusak di bidang pertanian di Asia Tengah dan Tenggara.</rdfs:abstract>
         <rdfs:label>Lalat Tunas</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1792,6 +1812,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#TungauDaunPadi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
+        <rdfs:abstract xml:lang="id">Tungau daun padi yang memiliki nama latin Oligonychus spp. gejala yang timbul akibat aktivitas makan dari tungau daun padi. Kerusakan yang serius biasanya terjadi ketika suhu oanas sekitar 25 derajat celcius atau lebih dan juga pada kelembapan relatif yang tinggi. Siklus hidup tungau memakan waktu 8 - 18 hari, tergantung pada kondisi lingkungan. Tungau daun padi berukuran kecil namun mengkoloni permukaan sisi bawah daun dalam jumlah besar. Dengan mengisap getah daun, tungau ini menyebabkan bintik-bintik putih di sisi atas daun yang akhirnya menjadi kuning atau cokelat dan mengering. Karakteristik ini disebut pelintingan daun. Dalam kondisi yang parah, seluruh daun berubah menjadi putih keabu-abuan dan mengering.</rdfs:abstract>
         <rdfs:label>Tungau Daun Padi</rdfs:label>
     </owl:NamedIndividual>
     
