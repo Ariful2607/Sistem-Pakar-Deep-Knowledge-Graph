@@ -1919,6 +1919,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WalangSangit">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract>Walang sangit (Leptcorisa oratorius) merupakan serangga pengganggu atau hama yang sering merusak tanaman padi. Hama ini memiliki bau yang khas dan sangat menyengat, karena baunya ini maka disebut walang sangit. Hama walang sangit akan mengeluarkan aroma khasnya jika ia dalam bahaya, aroma menyengat tersebut merupakan bentuk pertahanan diri dari ancaman predator. Walang sangit menyerang tanaman padi dengan cara menghisap cairan tangkai bunga serta bulir padi pada fase pengisian bulir dan pemasakan bulir sehingga pengisian bulir padi tidak sempurna, bahkan seringkali menyebabkan bulir padi hampa. Hama walang sangit dianggap hama penting yang berbahaya karena dapat mengakibatkan menurunnya produksi padi sekaligus menurunkan kualitas gabah.</rdfs:abstract>
         <rdfs:label>Walang Sangit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1928,6 +1929,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengBatangCoklat">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract>Wereng Batang Cokelat (Nilaparvata lugens) atau disebut juga Wereng Cokelat merupakan salah satu hama tanaman padi yang paling berbahaya dan sulit dibasmi. Bersama beberapa jenis wereng lainnya seperti wereng hijau (Nephotettix spp.) dan wereng punggung putih (Sogatella furcifera),Wereng batang cokelat, sebagaimana jenis wereng lainnya, menjadi parasit dengan menghisap cairan tumbuhan sehingga mengakibatkan perkembangan tumbuhan menjadi terganggu bahkan mati. Selain itu, wereng batang cokelat  (Nilaparvata lugens) juga menjadi vektor (organisme penyebar penyakit) bagi penularan sejumlah penyakit tumbuhan yang diakibatkan virus serta menyebabkan tungro.</rdfs:abstract>
         <rdfs:label>Wereng Batang Coklat</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1937,6 +1939,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengHijau">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract xml:lang="id">Hama ini menghisap cairan dari dalam daun bagian pinggir sehingga menyebabkan daun-daun padi berwarna kuning sampi kuning oranye, penurunan jumlah anakan, dan pertumbuhan tanaman yang terhambat (memendek).</rdfs:abstract>
         <rdfs:label>Wereng Hijau</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1946,6 +1949,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengPunggungPutih">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract xml:lang="id">Wereng punggung putih, Metcalfa pruinosa (Say), ditemukan pada jeruk, namun dapat ditemukan pada berbagai macam tanaman berkayu. Wereng ini jarang menyebabkan kerusakan ekonomi pada sebagian besar tanaman kecuali tanaman yang dilemahkan oleh beberapa faktor lain seperti kerusakan akibat pembekuan. Bahan berwarna putih, flokulan, dan lilin yang dihasilkan oleh nimfa mengganggu kualitas penjualan tanaman yang terkena dampak, sebagian karena pembeli terkadang salah mengira endapan ini sebagai endapan kutu putih</rdfs:abstract>
         <rdfs:label>Wereng Punggung Putih</rdfs:label>
     </owl:NamedIndividual>
     
