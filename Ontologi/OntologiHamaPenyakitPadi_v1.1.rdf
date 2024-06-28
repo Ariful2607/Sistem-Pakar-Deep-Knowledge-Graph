@@ -1744,6 +1744,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Thrips">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract xml:lang="id">Larva dan serangga dewasa memakan jaringan tanaman dan menghasilkan bercak-bercak perak kecil di sisi atas daun, efek yang dikenal sebagai silvering&apos;. Bercak yang sama dapat muncul pada kelopak di mana pigmen telah hilang. Di bagian bawah daun, thrips dan larvanya tinggal bersama dalam kelompok di samping bintik-bintik hitam kotoran mereka. Daun tanaman yang terinfeksi berwarna kuning, layu, cacat atau mengerut. Makan selama perkembangan tunas atau bunga dapat kemudian menghasilkan bunga atau buah yang rusak, terhambat atau cacat, dan kehilangan hasil panen.</rdfs:abstract>
         <rdfs:label>Thrips</rdfs:label>
     </owl:NamedIndividual>
     
