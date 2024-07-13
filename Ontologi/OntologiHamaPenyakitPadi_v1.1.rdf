@@ -1605,6 +1605,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rayap">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract xml:lang="id">Rayap dapat menyerang tanaman di semua tahap pertumbuhan, mulai dari bibit hingga tanaman dewasa. Mereka merusak akar, yang akibatnya pertama kali terlihat dengan layunya bagian atas tanaman. Untuk mengkonfirmasi keberadaan rayap, tanaman yang terserang harus dicabut dan akar serta batang bagian bawahnya harus diperiksa untuk mencari keberadaan serangga hidup atau terowongan. Akar dan batang tanaman dapat berlubang seluruhnya dan berisi tanah.</rdfs:abstract>
         <rdfs:label>Rayap</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1754,6 +1755,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tikus">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract xml:lang="id">Tikus sawah (Ratus argentiventer) termasuk hama yang relatif sulit dikendalikan. Perkembangbiakan dan mobilitas tikus yang cepat serta daya rusak pada tanaman padi yang cukup tinggi menyebabkan hama tikus selalu menjadi ancaman pada pertanaman padi.  dalam bahasa latin dikenal dengan nama Rattus Domesticus. Serangan tikus biasanya sporadis, efek serangannya bisa mengakibatkan hilangnya hasil sampai 70%.</rdfs:abstract>
         <rdfs:label>Tikus</rdfs:label>
     </owl:NamedIndividual>
     
