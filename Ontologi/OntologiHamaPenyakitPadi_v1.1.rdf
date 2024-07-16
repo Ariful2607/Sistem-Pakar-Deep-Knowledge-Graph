@@ -469,6 +469,7 @@
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HawarDaunBakteri"/>
         <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tungro"/>
+        <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#VirusBelangKuning"/>
         <rdfs:abstract xml:lang="id">Belalang sawah, atau Nilaparvata lugens, adalah serangga hama yang menyerang tanaman padi. Serangga ini dapat menyebabkan kerusakan pada tanaman padi dengan menghisap cairan dari batang dan daun. Serangan yang parah dapat mengurangi hasil panen dan mengganggu pertumbuhan tanaman. Pengendalian belalang sawah melibatkan penggunaan insektisida, penggunaan varietas padi tahan, pemantauan populasi secara teratur, dan praktik pengelolaan lingkungan seperti pemotongan gulma dan rotasi tanaman.</rdfs:abstract>
         <rdfs:label>Belalang Sawah</rdfs:label>
     </owl:NamedIndividual>
@@ -1115,6 +1116,7 @@
         <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Piretroid"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_bulir"/>
+        <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#VirusBelangKuning"/>
         <rdfs:abstract xml:lang="id">Kumbang Tangkai Padi yang memiliki nama latin Tibraca limbativentris yang berasal dari Amerika Tengah dan Selatan. Kumbang ini selain menyerang padi juga menyerang kedelai, tomat, dan gandum. Baik kumbang dewasa maupun nimfa memakan tanaman, menyebabkan kerusakan bulir atau kondisi yang dikenal sebagai beluk dan sundep (merujuk pada kerusakan batang). Cedera lebih parah terjadi pada padi yang ditanam di bawah kondisi kering atau kelembaban rendah. Kekurangan air memungkinkan serangga tetap berada di pangkal tanaman. Saat tanaman matang, pengerasan (lignifikasi) batang menghambat aktivitas makan serangga, dan populasinya secara bertahap berkurang.</rdfs:abstract>
         <rdfs:label>Kumbang Tangkai Padi</rdfs:label>
     </owl:NamedIndividual>
@@ -1423,6 +1425,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggerekBatangKuning">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Trichogrammatidae"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fipronil"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Batang_berlubang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_malai"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang"/>
+        <rdfs:abstract xml:lang="id">Penggerek batang kuning merupakan jenis serangga dengan nama latin Scirpophaga incertulas. Yang merupakan hama padi rawa atau padi air (deep water rice). Larva ini seringkali ditemukan pada tanaman yanada di lingkungan berair atau tergenang terus menerus. Larva muda membungkus tubuh mereka ke sekitar bagian daun dan melepaskan diri dari tanaman, jatuh ke permukaan air. Mereka kemudian menempelkan diri ke pangkal tanaman baru dan menggerek batang. Lahan dengan nitrogen tinggi sangat mendukung perkembangan serangan ini. Lahan yang ditanam terlambat pada musim tanam juga mendukung serangga, yang populasinya telah tumbuh di lahan yang telah ditanami sebelumnya. Sebagai perbandingan, hama ini dapat menyebabkan sekitar 20% kerugian hasil pada padi yang ditanam awal, dan 80% pada padi yang ditanam terlambat.</rdfs:abstract>
         <rdfs:label>Penggerek Batang Kuning</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1432,6 +1442,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggerekBatangPadi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_berlubang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Kematian_bibit"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Layu"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_batang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Malai_hilang"/>
+        <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#VirusKerdilRumput"/>
+        <rdfs:abstract xml:lang="id">Penggerek batang padi merupakan jenis serangga dengan nama latin Chilo suppressalis. Hama ini banyak ditemukan di Asia Selatan dan umumnya memiliki dua generasi pada setiap tahun. Ulat memakan sebagian besar jaringan internal, sedangkan ngengat dewasa adalah pemakan getah eksternal. Larva bertahan pada musim dingin di dalam tunggul dan jerami dan mampu bertahan hidup dari embun beku ringan. Betinanya meletakkan hingga 300 telur dalam beberapa kelompok di bagian bawah daun, biasanya di sepanjang vena utama, menutupi daun-daun dengan sekresi coklat. Ketika mencapai batang, mereka melubangi, satu ruas pada satu waktu, menembus melalui buku-buku secara berturut-turut.</rdfs:abstract>
         <rdfs:label>Penggerek Batang Padi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1441,6 +1458,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggerekBatangUngu">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Telenomus_spp."/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Trichogrammatidae"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bacillus_thuringiensis_var._israelensis"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Batang_berlubang"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Layu"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tanaman_terdapat_pupa"/>
+        <rdfs:abstract xml:lang="id">Penggerek batang ungu merupakan jenis serangga dengan nama latin Sesamia inferens. Larva yang melewati musim dingin sebagai kepompong di dalam batang atau pada sisa-sisa tanaman di dalam tanah lalu muncul sebagai ngengat dewasa selama musim semi, ketika kondisi cuaca yang sudah cukup memungkinkan. Betina mengelompokan telur bulat, pucat dan kekuningan di beberapa baris di belakang selubung daun untuk melindungi mereka dari pemangsa. Panjang ulat sekitar 20-25 mm, berwarna merah muda, dengan kepala merah-cokelat dan tanpa garis-garis. Mereka menggali ke dalam batang dan memakan jaringan internal.</rdfs:abstract>
         <rdfs:label>Penggerek Batang Ungu</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1450,6 +1474,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenggulungDaunPadi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Trichogrammatidae"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Sipermetrin"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_melengkung"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tanaman_terdapat_pupa"/>
+        <rdfs:abstract xml:lang="id">Pelipat daun padi merupakan jenis serangga dengan nama latin Cnaphalocrocis medinalis. Serangga jenis ini muncul pada semua lingkungan sawah dan semakin banyak pada musim hujan. Kelembapan yang tinggi, daerah lahan yang teduh, dan keberadaan gulma berumput di sawah dan sekitarnya sangat berpengaruh dalam pengembangan hama. Pada daerah sawah tropis, mereka aktif sepanjang tahun, sedangkan di negara beriklim sedang mereka aktif dari Mei hingga Oktober. Tanaman padi muda dan hijau lebih banyak terserang. Gejala yang ada seperti daun terlipat, karena adanya ulat yang merekatkan daun dengan benang sutra</rdfs:abstract>
         <rdfs:label>Penggulung Daun Padi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1751,15 +1782,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tikus -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tikus">
-        <rdfs:abstract xml:lang="id">Tikus sawah (Ratus argentiventer) termasuk hama yang relatif sulit dikendalikan. Perkembangbiakan dan mobilitas tikus yang cepat serta daya rusak pada tanaman padi yang cukup tinggi menyebabkan hama tikus selalu menjadi ancaman pada pertanaman padi.  dalam bahasa latin dikenal dengan nama Rattus Domesticus. Serangan tikus biasanya sporadis, efek serangannya bisa mengakibatkan hilangnya hasil sampai 70%.</rdfs:abstract>
-        <rdfs:label>Tikus</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tilletia_barclayana -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tilletia_barclayana">
@@ -1895,9 +1917,6 @@
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
-        <OntologiHamaPenyakitPadi:terserangHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BelalangSawah"/>
-        <OntologiHamaPenyakitPadi:terserangHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#KumbangTangkaiPadi"/>
-        <OntologiHamaPenyakitPadi:terserangHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tikus"/>
         <rdfs:abstract xml:lang="id">Gejalanya terdapat garis garis dan bercak bercak kuning pada daun baru. Bercak kuning sampai oranye pada daun yang lebih tua. Bercak gelap di tengah garis.</rdfs:abstract>
         <rdfs:label>Virus Belang Kuning</rdfs:label>
     </owl:NamedIndividual>
