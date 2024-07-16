@@ -956,6 +956,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HawarPelepah">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_pelepah"/>
+        <rdfs:abstract xml:lang="id">Hawar pelepah padi adalah penyakit yang disebabkan oleh jamur Rhizoctonia solani. Penyakit ini ditandai dengan lesi oval berwarna hijau hingga abu-abu pada batang padi, yang kemudian berubah menjadi abu-abu hingga putih dengan tepi cokelat. Lesi tersebut awalnya muncul pada batang di dekat garis air dan bisa menyebabkan kematian daun serta seluruh tanaman jika tidak segera ditangani.</rdfs:abstract>
         <rdfs:label>Hawar Pelepah</rdfs:label>
     </owl:NamedIndividual>
     
