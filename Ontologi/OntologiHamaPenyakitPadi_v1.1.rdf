@@ -603,6 +603,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Buprofezin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Buprofezin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
+        <rdfs:abstract xml:lang="id">Buprofezin adalah jenis pestisida yang tergolong dalam kelompok zat pengatur pertumbuhan serangga (IGR - Insect Growth Regulator). Pestisida ini terutama digunakan untuk mengendalikan serangga hama seperti wereng dan kutu putih pada berbagai tanaman pertanian.</rdfs:abstract>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Burkholderia_glumae -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Burkholderia_glumae">
@@ -1636,6 +1645,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rayap">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#akar_berlubang"/>
         <rdfs:abstract xml:lang="id">Rayap dapat menyerang tanaman di semua tahap pertumbuhan, mulai dari bibit hingga tanaman dewasa. Mereka merusak akar, yang akibatnya pertama kali terlihat dengan layunya bagian atas tanaman. Untuk mengkonfirmasi keberadaan rayap, tanaman yang terserang harus dicabut dan akar serta batang bagian bawahnya harus diperiksa untuk mencari keberadaan serangga hidup atau terowongan. Akar dan batang tanaman dapat berlubang seluruhnya dan berisi tanah.</rdfs:abstract>
         <rdfs:label>Rayap</rdfs:label>
     </owl:NamedIndividual>
@@ -1776,6 +1786,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Thrips">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <rdfs:abstract xml:lang="id">Larva dan serangga dewasa memakan jaringan tanaman dan menghasilkan bercak-bercak perak kecil di sisi atas daun, efek yang dikenal sebagai silvering&apos;. Bercak yang sama dapat muncul pada kelopak di mana pigmen telah hilang. Di bagian bawah daun, thrips dan larvanya tinggal bersama dalam kelompok di samping bintik-bintik hitam kotoran mereka. Daun tanaman yang terinfeksi berwarna kuning, layu, cacat atau mengerut. Makan selama perkembangan tunas atau bunga dapat kemudian menghasilkan bunga atau buah yang rusak, terhambat atau cacat, dan kehilangan hasil panen.</rdfs:abstract>
         <rdfs:label>Thrips</rdfs:label>
     </owl:NamedIndividual>
@@ -1849,6 +1861,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#TungauMalaiPadi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <rdfs:abstract>Tungau malai padi, juga dikenal sebagai tungau oribatid atau tungau padi, adalah salah satu hama penting pada tanaman padi. Tungau ini dapat menyebabkan kerusakan signifikan pada tanaman padi, terutama pada fase reproduksi tanaman.</rdfs:abstract>
         <rdfs:label>Tungau Malai Padi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1960,6 +1973,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengHijau">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Buprofezin"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <rdfs:abstract xml:lang="id">Hama ini menghisap cairan dari dalam daun bagian pinggir sehingga menyebabkan daun-daun padi berwarna kuning sampi kuning oranye, penurunan jumlah anakan, dan pertumbuhan tanaman yang terhambat (memendek).</rdfs:abstract>
         <rdfs:label>Wereng Hijau</rdfs:label>
     </owl:NamedIndividual>
@@ -1970,6 +1985,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengPunggungPutih">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPengendalianHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#LalatTunas"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <rdfs:abstract xml:lang="id">Wereng punggung putih, Metcalfa pruinosa (Say), ditemukan pada jeruk, namun dapat ditemukan pada berbagai macam tanaman berkayu. Wereng ini jarang menyebabkan kerusakan ekonomi pada sebagian besar tanaman kecuali tanaman yang dilemahkan oleh beberapa faktor lain seperti kerusakan akibat pembekuan. Bahan berwarna putih, flokulan, dan lilin yang dihasilkan oleh nimfa mengganggu kualitas penjualan tanaman yang terkena dampak, sebagian karena pembeli terkadang salah mengira endapan ini sebagai endapan kutu putih</rdfs:abstract>
         <rdfs:label>Wereng Punggung Putih</rdfs:label>
     </owl:NamedIndividual>
@@ -1982,6 +2000,16 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
         <rdfs:abstract xml:lang="id">Xanthomonas oryzae pv. oryzae adalah bakteri patogen yang menyebabkan penyakit bercak bakteri pada tanaman padi. Bakteri ini menyerang jaringan tanaman padi dan menginfeksi daun, batang, dan malai padi. Xanthomonas oryzae pv. oryzae menyebabkan pembentukan bercak berwarna coklat pada tanaman padi, yang dapat menyebabkan kerusakan pada daun, batang, dan malai, serta mengurangi hasil panen padi jika tidak dikendalikan dengan baik. Pengendalian penyakit ini melibatkan penerapan praktik budidaya yang baik, penggunaan varietas tahan penyakit, dan penggunaan fungisida atau bakterisida yang sesuai.</rdfs:abstract>
         <rdfs:label>Xanthomonas oryzae pv. oryzicola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#akar_berlubang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#akar_berlubang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <rdfs:abstract xml:lang="id">Akar berlubang akibat rayap merujuk pada kondisi di mana rayap memakan bagian dalam kayu yang menjadi akar tanaman, menyebabkan lubang-lubang atau terowongan di dalam struktur akar tersebut. Rayap adalah serangga penghancur kayu yang dapat merusak bahan organik yang mengandung selulosa, termasuk kayu dan akar tanaman.</rdfs:abstract>
+        <rdfs:label>Akar berlubang</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
