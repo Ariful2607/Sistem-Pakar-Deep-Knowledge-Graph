@@ -1877,6 +1877,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
         <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Laba_laba"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <rdfs:abstract>Tungau malai padi, juga dikenal sebagai tungau oribatid atau tungau padi, adalah salah satu hama penting pada tanaman padi. Tungau ini dapat menyebabkan kerusakan signifikan pada tanaman padi, terutama pada fase reproduksi tanaman.</rdfs:abstract>
         <rdfs:label>Tungau Malai Padi</rdfs:label>
     </owl:NamedIndividual>
@@ -1900,6 +1901,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatGrayak">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Laba_laba"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Karbamat"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_berlubang"/>
         <rdfs:abstract xml:lang="id">Ulat Grayak menyebabkan kerusakan tanaman dengan cara memakan seluruh bagian tanaman, larva muda pada awalnya memakan jaringan daun dari satu sisi, membiarkan lapisan kulit di sisi yang berlawanan tetap uduh (window feeding).bibi dapat dimakan hingga tuna dan titik tumbuh rusak.</rdfs:abstract>
         <rdfs:label>Ulat Grayak</rdfs:label>
     </owl:NamedIndividual>
@@ -1933,6 +1938,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#UlatTandukTembakau">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Daun"/>
         <rdfs:abstract xml:lang="id">Ulat tanduk tembakau kadang-kadang disimpan sebagai hewan peliharaan oleh anak-anak di berbagai wilayah. Larva spesies tersebut dapat dibedakan dengan tanda-tanda, misalnya ulat tanduk tomat memiliki delapan tanda putih berbentuk V tanpa batas; sementara ulat tanduk tembakau memiliki tujuh garis putih diagonal dengan batas berwarna hitam</rdfs:abstract>
         <rdfs:label>Ulat Tanduk Tembakau</rdfs:label>
     </owl:NamedIndividual>
