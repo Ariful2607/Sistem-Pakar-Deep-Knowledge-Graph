@@ -1754,7 +1754,6 @@
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tikus -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tikus">
-        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
         <rdfs:abstract xml:lang="id">Tikus sawah (Ratus argentiventer) termasuk hama yang relatif sulit dikendalikan. Perkembangbiakan dan mobilitas tikus yang cepat serta daya rusak pada tanaman padi yang cukup tinggi menyebabkan hama tikus selalu menjadi ancaman pada pertanaman padi.  dalam bahasa latin dikenal dengan nama Rattus Domesticus. Serangan tikus biasanya sporadis, efek serangannya bisa mengakibatkan hilangnya hasil sampai 70%.</rdfs:abstract>
         <rdfs:label>Tikus</rdfs:label>
     </owl:NamedIndividual>
