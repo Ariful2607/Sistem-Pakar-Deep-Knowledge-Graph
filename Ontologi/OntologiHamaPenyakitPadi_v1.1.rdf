@@ -1002,6 +1002,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#JelagaPalsu">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PenyakitPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Azoxystrobin"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Mancozeb"/>
+        <OntologiHamaPenyakitPadi:diberikanFungisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Propiconazole"/>
+        <rdfs:abstract xml:lang="id">Jelaga palsu, yang disebabkan oleh jamur Villosiclava virens, merupakan penyakit yang umum terjadi pada tanaman padi. Gejala utama penyakit ini adalah munculnya &quot;bola&quot; oranye halus berdiameter sekitar 1 cm pada bulir padi. Bola ini terdiri dari campuran jaringan jamur dan bagian bunga yang tertutup membran keputihan. Saat musim tanam berakhir, bola ini mengering dan berubah menjadi hitam kehijauan. Penyakit ini tidak sistemik, hanya mempengaruhi beberapa bulir dan menyebabkan penurunan berat serta tingkat perkecambahan bulir​.</rdfs:abstract>
         <rdfs:label>Jelaga Palsu</rdfs:label>
     </owl:NamedIndividual>
     
