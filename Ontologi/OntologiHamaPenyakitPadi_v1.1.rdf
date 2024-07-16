@@ -1158,6 +1158,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Laba_laba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Laba_laba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis"/>
+        <rdfs:abstract xml:lang="id">Laba-laba adalah predator umum yang dapat memangsa berbagai jenis serangga dan tungau.</rdfs:abstract>
+        <rdfs:label>Laba laba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#LalatTunas -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#LalatTunas">
@@ -1861,6 +1871,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#TungauMalaiPadi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Laba_laba"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
         <rdfs:abstract>Tungau malai padi, juga dikenal sebagai tungau oribatid atau tungau padi, adalah salah satu hama penting pada tanaman padi. Tungau ini dapat menyebabkan kerusakan signifikan pada tanaman padi, terutama pada fase reproduksi tanaman.</rdfs:abstract>
         <rdfs:label>Tungau Malai Padi</rdfs:label>
     </owl:NamedIndividual>
