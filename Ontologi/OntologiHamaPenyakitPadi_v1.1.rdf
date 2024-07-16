@@ -1655,6 +1655,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Rayap">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Batang_rapuh"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#akar_berlubang"/>
         <rdfs:abstract xml:lang="id">Rayap dapat menyerang tanaman di semua tahap pertumbuhan, mulai dari bibit hingga tanaman dewasa. Mereka merusak akar, yang akibatnya pertama kali terlihat dengan layunya bagian atas tanaman. Untuk mengkonfirmasi keberadaan rayap, tanaman yang terserang harus dicabut dan akar serta batang bagian bawahnya harus diperiksa untuk mencari keberadaan serangga hidup atau terowongan. Akar dan batang tanaman dapat berlubang seluruhnya dan berisi tanah.</rdfs:abstract>
         <rdfs:label>Rayap</rdfs:label>
@@ -1975,6 +1976,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WerengBatangCoklat">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Buprofezin"/>
+        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Laba_laba"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Layu"/>
         <rdfs:abstract>Wereng Batang Cokelat (Nilaparvata lugens) atau disebut juga Wereng Cokelat merupakan salah satu hama tanaman padi yang paling berbahaya dan sulit dibasmi. Bersama beberapa jenis wereng lainnya seperti wereng hijau (Nephotettix spp.) dan wereng punggung putih (Sogatella furcifera),Wereng batang cokelat, sebagaimana jenis wereng lainnya, menjadi parasit dengan menghisap cairan tumbuhan sehingga mengakibatkan perkembangan tumbuhan menjadi terganggu bahkan mati. Selain itu, wereng batang cokelat  (Nilaparvata lugens) juga menjadi vektor (organisme penyebar penyakit) bagi penularan sejumlah penyakit tumbuhan yang diakibatkan virus serta menyebabkan tungro.</rdfs:abstract>
         <rdfs:label>Wereng Batang Coklat</rdfs:label>
     </owl:NamedIndividual>
