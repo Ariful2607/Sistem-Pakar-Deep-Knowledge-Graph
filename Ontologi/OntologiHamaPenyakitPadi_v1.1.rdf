@@ -1253,6 +1253,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_bulir">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
+        <OntologiHamaPenyakitPadi:diberikanPengendalianHama rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Laba_laba"/>
+        <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos"/>
+        <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_bulir"/>
         <rdfs:abstract xml:lang="id">Lesi pada bulir padi adalah perubahan atau kerusakan pada permukaan bulir yang dapat terlihat sebagai adanya luka, bercak, atau area yang rusak. Lesi ini bisa memiliki berbagai bentuk dan ukuran tergantung pada penyebabnya. Lesi pada bulir padi umumnya disebabkan oleh infeksi patogen seperti jamur atau bakteri. Infeksi ini dapat terjadi melalui luka pada bulir atau melalui penyebaran spora patogen. Lesi pada bulir biasanya berwarna coklat, hitam, atau keabu-abuan.</rdfs:abstract>
         <rdfs:label>Bulir mengalami kerusakan</rdfs:label>
     </owl:NamedIndividual>
