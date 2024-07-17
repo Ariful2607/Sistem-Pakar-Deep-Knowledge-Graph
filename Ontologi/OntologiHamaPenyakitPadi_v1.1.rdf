@@ -608,6 +608,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Buprofezin">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
         <rdfs:abstract xml:lang="id">Buprofezin adalah jenis pestisida yang tergolong dalam kelompok zat pengatur pertumbuhan serangga (IGR - Insect Growth Regulator). Pestisida ini terutama digunakan untuk mengendalikan serangga hama seperti wereng dan kutu putih pada berbagai tanaman pertanian.</rdfs:abstract>
+        <rdfs:label>Buprofezin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1584,7 +1585,7 @@
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_basah"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Malai"/>
         <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Epicoccum_sorghi"/>
-        <rdfs:abstract xml:lang="id">penyebabnya jamur Epicoccum Sorghi. Jamur ini ditularkan oleh benih dan tanah yang dapat menyerang tanaman yang lemah. Gejalanya terdapat bercak bercak gelap lonjong dan tidak beraturan dengan tepian coklat tua, menyebkan lesi merah atau basah pada kumpulan bunga padi (spikelet) yang sedang berkembang. Pencegahannya dapat menggunakan Iprodione dan Kaptan akan tetapi tidak 100% efisien</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Phoma Sorghina penyebabnya jamur Epicoccum Sorghi. Jamur ini ditularkan oleh benih dan tanah yang dapat menyerang tanaman yang lemah. Gejalanya terdapat bercak bercak gelap lonjong dan tidak beraturan dengan tepian coklat tua, menyebkan lesi merah atau basah pada kumpulan bunga padi (spikelet) yang sedang berkembang. Pencegahannya dapat menggunakan Iprodione dan Kaptan akan tetapi tidak 100% efisien</rdfs:abstract>
         <rdfs:label>Phoma Sorghina</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1706,8 +1707,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Sipermetrin">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
-        <rdfs:abstract>Sipermetrin merupakan salah satu bahan aktif dari keluarga piretroid sintetik . Bahan ini dapat digunakan untuk pengendalian hama dilahan pertanian.</rdfs:abstract>
-        <rdfs:label xml:lang="id">Sipermertrin</rdfs:label>
+        <rdfs:abstract xml:lang="id">Sipermetrin merupakan salah satu bahan aktif dari keluarga piretroid sintetik . Bahan ini dapat digunakan untuk pengendalian hama di lahan pertanian.</rdfs:abstract>
+        <rdfs:label>Sipermertrin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1797,6 +1798,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tembaga_oksiklorida">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Tembaga oksiklorida yang sering digunakan sebagai fungisida untuk tanaman padi adalah copper oxychloride. Ini adalah senyawa tembaga dengan rumus kimia Cu₂(OH)₃Cl, dan digunakan secara luas untuk melindungi tanaman dari berbagai penyakit jamur.Copper oxychloride bekerja dengan cara menghambat perkembangan spora jamur, mencegah infeksi baru, dan mengurangi kerusakan tanaman akibat penyakit. Ini umumnya diterapkan dalam bentuk yang dapat diencerkan ke dalam larutan dan disemprotkan pada tanaman padi.Penggunaan dan dosis yang tepat biasanya tergantung pada jenis penyakit jamur yang ada di wilayah pertanian, kondisi cuaca, dan fase pertumbuhan tanaman padi.</rdfs:abstract>
         <rdfs:label>Tembaga oksiklorida</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1959,7 +1961,7 @@
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
-        <rdfs:abstract xml:lang="id">Gejalanya terdapat garis garis dan bercak bercak kuning pada daun baru. Bercak kuning sampai oranye pada daun yang lebih tua. Bercak gelap di tengah garis.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Virus Belang Kuning memiliki gejala terdapat garis garis dan bercak bercak kuning pada daun baru. Bercak kuning sampai oranye pada daun yang lebih tua. Bercak gelap di tengah garis. Virus ini terdiri dari dua virus yang berbeda, yaitu Rice tungro bacilliform virus (RTBV) dan Rice tungro spherical virus (RTSV). Virus tungro ditularkan melalui vektor, yaitu serangga wereng padi (Nilaparvata lugens) dan wereng Cikadutung (Nephotettix spp.), yang menyerang tanaman padi.</rdfs:abstract>
         <rdfs:label>Virus Belang Kuning</rdfs:label>
     </owl:NamedIndividual>
     
