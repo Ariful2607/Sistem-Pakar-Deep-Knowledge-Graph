@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasil Diagnosa</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/HasilDiagnosa.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+        </svg>
+        <span>care</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">
+                    <span>Beranda</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/perpustakaan">
+                    <span>Perpustakaan</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/diagnosa">
+                    <span>Diagnosa</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/tipsperawatan">
+                    <span>Tips Perawatan</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Bootstrap and Font Awesome JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <section class="HasilDiagnosa">
+        <div class="Main main-position">
+          <div class="Main main-style">
+            <div class="CreatPost">
+              <div class="StatusPertanyaan">
+                <div class="NamePertanyaan">
+                  <div class="HasilDiagnosis">Hasil Diagnosis</div>
+                </div>
+              </div>
+              <div class="Frame937">
+                <div class="Frame930">
+                  <img class="WhatsappImage20220205At11118" src="{{ url_for('static', filename='images/hama_wereng.jpg') }}" />
+                </div>
+                <div class="DetailCar">
+                  <div class="CarName">
+                    <div class="NamaPenyakit">Wereng <br/>(Nilaparvata lugens)</div>
+                    <div class="Reviews">
+                      <div class="SerangBagian">Hama - Menyerang Batang</div>
+                    </div>
+                  </div>
+                  <div class="PenjelasanSingkat">
+                    Baik nimfa maupun dewasa berlindung di pangkal tanaman dan menghisap getah dari batang dan daun. Tanaman layu dan mulai menguning. Kepadatan populasi yang menyebabkan daun menjadi kuning jingga, kemudian menjadi coklat dan kering, dan akhirnya tanaman mengering dan mati. <br/><br/>
+                    Gejala pertama kali terlihat pada petak-petak kecil namun gejala tersebut dapat berkembang cepat seiring dengan penyebaran wereng. Betina bertelur di batang dan tengah daun, menyebabkan kerusakan tambahan. Tanaman mempunyai malai yang lebih kecil, bulir masak lebih sedikit, dan bobot bulir lebih rendah.  
+                  </div>
+                  <div class="Frame941">
+                    <div class="Price"></div>
+                    <div class="Button">
+                      <div class="Detail" onclick="redirectToPage('DetailInformation.html')">Detail</div>
+                    </div>
+                  </div>
+                  <div class="Spesification1">
+                    <div class="Typr">
+                      <div class="KategoriPatogen">Kategori Patogen</div>
+                      <div class="Virus">Virus</div>
+                    </div>
+                    <div class="Typr">
+                      <div class="Peluang">Peluang</div>
+                      <div class="Presentase">80%</div>
+                    </div>
+                    <div class="Steering">
+                      <div class="Menyerang">Menyerang</div>
+                      <div class="Daun">Daun</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Frame952">
+                <div class="StatusPertanyaan">
+                  <div class="NamePertanyaan">
+                    <div class="Keterangan">Keterangan</div>
+                  </div>
+                </div>
+                <div class="Name">
+                  <div class="SaranPenanganan">Saran Penanganan</div>
+                  <div class="InputData">
+                    <div class="FringillaDisAuctorMaecenasInTegerConsecteturGravidaSemIntegerUtRisusAeneanEu">
+                        Gunakan varietas tahan yang direkomendasikan secara lokal, jika tersedia.
+                    </div>
+                  </div>
+                  <div class="InputData">
+                    <div class="AfringillaDisAuctorMaecenasInTegerConsecteturGravidaSemIntegerUtRisusAeneanEu">
+                        Tanamlah ladang di area yang sama pada periode yang sama untuk menghindari wabah.
+                    </div>
+                  </div>
+                  <div class="InputData">
+                    <div class="LoremIpsumDolorSitAmetConsecTeTurEgestasLigulaLuctusAmetOdioSaGittisPharetraSagittis">
+                        Singkirkan gulma dari ladang dan sekitarnya secara teratur.
+                    </div>
+                  </div>
+                </div>
+                <div class="Frame955">
+                  <div class="Name">
+                    <div class="KemungkinanPenyakitLain">Kemungkinan penyakit lain</div>
+                    <div class="InputData">
+                      <div class="HamaWereng50">Hama Wereng (50%)</div>
+                    </div>
+                  </div>
+                  <div class="Name">
+                    <div class="InputData">
+                      <div class="RiceGrassyStuntVirusRgsv60">Rice Grassy Stunt Virus (RGSV) (60%)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Frame956">
+                <div class="Button">
+                  <div class="Content">
+                    <div class="Label" onclick="redirectToPage('Diagnosa.html')">Diagnosis Ulang</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="redirect.js"></script>      
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pcare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="content">
+                <div class="background"></div>
+                <li><a href="/test-connection">Test Connection</a></li>
+                <div class="text-container">
+                    <div class="heading">
+                        <span class="text-dark">Bersama </span>
+                        <span class="text-green">eXperTani</span>
+                        <span class="text-dark"><br />langkah tepat <br />untuk </span>
+                        <span class="text-green">PANEN MELIMPAH</span>
+                    </div>
+                    <div class="description">
+                        eXperTani merupakan media yang membantu mendiagnosis dan mengobati masalah pada tanaman padi, meningkatkan produktivitas serta menyediakan tips dan trik mengenai tanaman padi. Bersama eXperTani tingkatkan produktivitas padimu.
+                    </div>
+                    <div class="description"> eXperTani dapat mendeteksi:</div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">{{ jumlah_penyakit_padi }}</div>
+                            <div class="stat-bar"></div>
+                            <div class="stat-label">Penyakit Tanaman Padi</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">{{ jumlah_patogen_padi }}</div>
+                            <div class="stat-bar"></div>
+                            <div class="stat-label">Patogen Tanaman Padi</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">{{ jumlah_hama_padi }}</div>
+                            <div class="stat-bar"></div>
+                            <div class="stat-label">Hama Tanaman Padi</div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <div class="button" onclick="redirectToPage('/diagnosa')">Diagnosis Penyakit</div>
+                    </div>
+                </div>
+            </div>
+            <img class="image1" src="{{ url_for('static', filename='images/gambar1.png') }}" alt="Placeholder Image 1">
+            <div class="overlay"></div>
+            <div class="cards">
+                {% for node in nodes_list %}
+                <div class="card" onclick="redirectToDetails('{{ node.label }}')">
+                    <img class="card-image" src="{{ url_for('static', filename='images/card hama 1.png') }}" alt="Card Image 1">
+                    <div class="card-text"><strong>{{ node.label }}</strong><br/>{{ node.abstract }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectToDetails(label) {
+            window.location.href = `/details?label=${encodeURIComponent(label)}`;
+        }
+    </script>
+    <script src="{{ url_for('static', filename='js/redirect.js') }}"></script>
+</body>
+</html>

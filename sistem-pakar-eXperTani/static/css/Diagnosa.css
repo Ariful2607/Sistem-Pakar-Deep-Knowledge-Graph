@@ -1,0 +1,224 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .header h2 {
+    margin: 0;
+  }
+
+  .header .back-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .header .back-button i {
+    margin-right: 5px;
+    font-size: 1.2em;
+  }
+
+  .image-container {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .information {
+    padding: 20px;
+  }
+
+  .information h3 {
+    margin-top: 0;
+  }
+
+  .information .description {
+    margin-top: 10px;
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .category {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #CFDCC7;
+    /* color: #fff; */
+  }
+
+  .more-information {
+    padding: 20px;
+  }
+
+  .more-information h4 {
+    margin-top: 0;
+  }
+
+  .more-information .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+
+  .more-information .question .icon {
+    font-size: 1.2em;
+    transition: transform 0.2s ease;
+  }
+
+  .more-information .question .icon:hover {
+    transform: rotate(90deg);
+  }
+
+  .more-information .answer {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .more-information .btn-link {
+    color: #437223;
+  }
+
+      .navbar {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-item span {
+        font-size: 14px;
+    }
+
+ .btn-diagnosa {
+    background-color: #4CAF50; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animasi transisi */
+  }
+
+  .btn-diagnosa:hover {
+    background-color: #45a049; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+  }
+
+
+  /* .hover-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.hover-message {
+    display: none;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+} */
+
+.card-header h5 {
+  display: flex;
+  align-items: center;
+}
+
+.hover-info {
+  margin-left: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 14px;
+  position: relative;
+}
+
+.hover-message {
+  display: none;
+  margin-right: 10px; /* Adjust as needed */
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  position: absolute;
+  top: -10px; /* Adjust as needed */
+  left: 30px; /* Adjust to ensure it appears on the left of the icon */
+  white-space: nowrap;
+}
+
+.hover-info:hover .hover-message {
+  display: block;
+}
+
+

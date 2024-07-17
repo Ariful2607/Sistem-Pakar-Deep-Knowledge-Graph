@@ -1,0 +1,142 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.header .back-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header .back-button i {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.image-container {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.information {
+  padding: 20px;
+}
+
+.information h3 {
+  margin-top: 0;
+}
+
+.information .description {
+  margin-top: 10px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.category {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #CFDCC7;
+  /* color: #fff; */
+}
+
+.more-information {
+  padding: 20px;
+}
+
+.more-information h4 {
+  margin-top: 0;
+}
+
+.more-information .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.more-information .question .icon {
+  font-size: 1.2em;
+  transition: transform 0.2s ease;
+}
+
+.more-information .question .icon:hover {
+  transform: rotate(90deg);
+}
+
+.more-information .answer {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.more-information .btn-link {
+  color: #437223;
+}
+.navbar {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-item i, .nav-item svg {
+        font-size: 20px;
+        color: #437223;
+    }
+    .nav-item span {
+        font-size: 12px;
+    }
+
+    /* table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }

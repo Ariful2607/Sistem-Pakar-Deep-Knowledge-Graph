@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnosa</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Diagnosa.css') }}">
+</head>
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+          </svg>
+          <span>care</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="/">
+                      <span>Beranda</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/perpustakaan">
+                      <span>Perpustakaan</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/diagnosa">
+                      <span>Diagnosa</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/tipsperawatan">
+                      <span>Tips Perawatan</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  <!-- Bootstrap and Font Awesome JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="back-button">
+        <i class="fas fa-arrow-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+        </i>
+        <span></span>
+        <h2>Diagnosa</h2>
+      </div>
+
+      <div class="more-information">
+        <h4>Pilih Gejala Tanaman Anda</h4>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Gejala pada Daun
+                </button>
+                <div class="hover-info">
+                  <i class="info-icon">i</i>
+                  <div class="hover-message">Daun padi biasanya berbentuk panjang dan lebar dengan ujung yang runcing</div>
+              </div>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Gejala</th>
+                      <th scope="col">Pilih</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>Daun Berkarat?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Daun Berlubang?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Daun Melengkung?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Daun Melepuh?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Daun Mengering?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Daun Menguning?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Daun Rontok?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Daun Mengalami Kerusakan?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Daun Terdapat Bercak?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Daun Terdapat Garis?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Daun Terdapat Luka?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                        </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Gejala pada Batang
+                </button>
+                <div class="hover-info">
+                  <i class="info-icon">i</i>
+                  <div class="hover-message">Informasi tentang item ini</div>
+              </div>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Gejala</th>
+                      <th scope="col">Pilih</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Batang Berubah Warna?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Batang Berlubang?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Batang Membusuk?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Batang Mengalami Kerusakan?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Batang Rapuh?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Gejala pada Akar
+                </button>
+                <div class="hover-info">
+                  <i class="info-icon">i</i>
+                  <div class="hover-message">Informasi tentang item ini</div>
+              </div>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Gejala</th>
+                      <th scope="col">Pilih</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Akar Busuk?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Akar Menghilang?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Gejala pada Bibit
+                </button>
+                <div class="hover-info">
+                  <i class="info-icon">i</i>
+                  <div class="hover-message">Informasi tentang item ini</div>
+              </div>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Gejala</th>
+                      <th scope="col">Pilih</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Bibit Mati</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Bibit Tumbuh Tidak Normal?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Gejala pada Bulir
+                </button>
+                <div class="hover-info">
+                  <i class="info-icon">i</i>
+                  <div class="hover-message">Informasi tentang item ini</div>
+              </div>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Gejala</th>
+                      <th scope="col">Pilih</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Bulir Berubah Warna?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Bulir Mengalami Kerusakan?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Bulir Pecah?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Bulir Terdapat Bercak?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Gejala pada Malai
+                </button>
+                <div class="hover-info">
+                  <i class="info-icon">i</i>
+                  <div class="hover-message">Informasi tentang item ini</div>
+              </div>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+              <div class="card-body">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Gejala</th>
+                      <th scope="col">Pilih</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Malai Basah?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Malai Hilang?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Bulir Mengalami Kerusakan?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Bulir Terdapat Bercak?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingSeven">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Gejala pada Pelepah
+                </button>
+                <div class="hover-info">
+                  <i class="info-icon">i</i>
+                  <div class="hover-message">Informasi tentang item ini</div>
+              </div>
+              </h5>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+              <div class="card-body">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Gejala</th>
+                      <th scope="col">Pilih</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Pelepah Berubah Warna?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Pelepah Mengalami Kerusakan?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Pelepah Rapuh?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingEight">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  Gejala pada Tanaman
+                </button>
+                <div class="hover-info">
+                  <i class="info-icon">i</i>
+                  <div class="hover-message">Informasi tentang item ini</div>
+              </div>
+              </h5>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+              <div class="card-body">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Gejala</th>
+                      <th scope="col">Pilih</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tanaman Layu?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Tanaman Mengeluarkan Cairan?</td>
+                      <td>
+                        <select class="form-control">
+                          <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                          <option value="Ya" class="option-ya">Ya</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Tanaman Menghasilkan Suara Berbunyi?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Tanaman Menurun Produktivitas?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Tanaman Rebah?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Tanaman Terdapat Pupa?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>Tanaman Terjadi Pembentukan Sporulasi?</td>
+                        <td>
+                          <select class="form-control">
+                            <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                            <option value="Ya" class="option-ya">Ya</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Tanaman Tumbuh Terhambať?</td>
+                          <td>
+                            <select class="form-control">
+                              <option value="Tidak" class="option-tidak" selected>Tidak</option>
+                              <option value="Ya" class="option-ya">Ya</option>
+                            </select>
+                          </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="text-center py-3">
+        <button class="btn btn-diagnosa" onclick="redirectToPage('/hasildiagnosa')">Diagnosa</button>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+  </section>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/redirect.js') }}"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

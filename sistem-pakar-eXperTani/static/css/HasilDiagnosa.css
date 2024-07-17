@@ -1,0 +1,449 @@
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.nav-item span {
+  font-size: 14px;
+}
+  
+  .HasilDiagnosa {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+  
+  .main-style {
+    width: 858px;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    display: flex;
+  }
+  
+  .CreatPost {
+    width: 858px;
+    height: 100%;
+    padding: 20px 32px;
+    background: #fbfbfd;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: flex;
+  }
+  
+  .StatusPertanyaan {
+    width: 125px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    display: inline-flex;
+  }
+  
+  .NamePertanyaan {
+    flex: 1 1 0;
+    height: 33.45px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: inline-flex;
+  }
+  
+  .HasilDiagnosis {
+    width: 424px;
+    color: black;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  
+  .Frame937 {
+    width: 745px;
+    height: 552px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    display: inline-flex;
+  }
+  
+  .Frame930 {
+    height: 502px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25.20px;
+    display: inline-flex;
+  }
+  
+  .WhatsappImage20220205At11118 {
+    width: 365px;
+    height: 528px;
+  }
+  
+  .DetailCar {
+    width: 352px;
+    height: 528px;
+    position: relative;
+    border-radius: 7.20px;
+    overflow: hidden;
+  }
+  
+  .CarName {
+    height: 80px;
+    left: 17px;
+    top: 20.55px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+    display: inline-flex;
+  }
+  
+  .NamaPenyakit {
+    align-self: stretch;
+    color: black;
+    font-size: 20px;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+  
+  .Reviews {
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5.76px;
+    display: inline-flex;
+  }
+  
+  .SerangBagian {
+    width: 263px;
+    color: #c5d0e6;
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    word-wrap: break-word;
+  }
+  
+  .PenjelasanSingkat {
+    width: 319.68px;
+    left: 17.28px;
+    top: 120.55px;
+    position: absolute;
+    color: black;
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .Frame941 {
+    width: 320px;
+    left: 17px;
+    top: 443.55px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 36px;
+    display: inline-flex;
+  }
+  
+  .Price {
+    flex: 1 1 0;
+  }
+  
+  .Button {
+    padding: 12px 16px;
+    background: #437223;
+    border-radius: 6px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+  }
+  
+  .Detail {
+    color: white;
+    font-size: 14px;
+    font-family: Rubik;
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+  
+  .Spesification1 {
+    height: 83px;
+    left: 15px;
+    top: 325.55px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+  }
+  
+  .Typr {
+    width: 322px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 11.52px;
+    display: inline-flex;
+  }
+  
+  .KategoriPatogen {
+    color: #437223;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+  }
+  
+  .Virus {
+    flex: 1 1 0;
+    text-align: right;
+    color: black;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+  }
+  
+  .Peluang {
+    color: #437223;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+  }
+
+  .Presentase {
+    flex: 1 1 0;
+    text-align: right;
+    color: black;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+  }
+  
+  .Steering {
+    width: 322px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 11.52px;
+    display: inline-flex;
+  }
+  
+  .Menyerang {
+    color: #437223;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+  }
+  
+  .Daun {
+    flex: 1 1 0;
+    text-align: right;
+    color: black;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+  }
+  
+  .Frame958 {
+    width: 858px;
+    left: 327px;
+    top: 764px;
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+  }
+  
+  .Frame952 {
+    height: 386.45px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: flex;
+  }
+  
+  .Keterangan {
+    color: black;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  
+  .Name {
+    height: 219px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+  }
+  
+  .SaranPenanganan {
+    color: black;
+    font-size: 16px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  
+  .InputData {
+    align-self: stretch;
+    height: 49px;
+    padding: 12px;
+    background: #e2f5d5;
+    border-radius: 6px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+  }
+  
+  .FringillaDisAuctorMaecenasInTegerConsecteturGravidaSemIntegerUtRisusAeneanEu {
+    width: 675px;
+    color: #858ead;
+    font-size: 14px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+  }
+  
+  .AfringillaDisAuctorMaecenasInTegerConsecteturGravidaSemIntegerUtRisusAeneanEu {
+    width: 675px;
+    color: #858ead;
+    font-size: 14px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+  }
+  
+  .LoremIpsumDolorSitAmetConsecTeTurEgestasLigulaLuctusAmetOdioSaGittisPharetraSagittis {
+    width: 675px;
+    color: #858ead;
+    font-size: 14px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+  }
+  
+  .Frame955 {
+    width: 721px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 24px;
+    display: inline-flex;
+  }
+  
+  .KemungkinanPenyakitLain {
+    color: black;
+    font-size: 16px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  
+  .HamaWereng50 {
+    color: black;
+    font-size: 14px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+  }
+  
+  .RiceGrassyStuntVirusRgsv60 {
+    color: black;
+    font-size: 14px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+  }
+  
+  .Frame956 {
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+  }
+  
+  .Frame956 .Button {
+    height: 40px;
+    padding-left: 96px;
+    padding-right: 96px;
+    background: #437223;
+    border-radius: 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+  }
+  
+  .Content {
+    height: 40px;
+    padding: 11px 0;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+  }
+  
+  .Label {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  

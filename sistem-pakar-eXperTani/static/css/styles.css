@@ -1,0 +1,197 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    height: 3229px;
+    padding-bottom: 2205px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+
+.section {
+    max-width: 100%;
+    height: 1024px;
+    position: relative;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.content {
+    width: 822px;
+    height: 773px;
+    position: relative;
+}
+
+.background {
+    width: 753px;
+    height: 773px;
+    position: absolute;
+    background: #F2F2F2;
+}
+
+.text-container {
+    position: absolute;
+    left: 64px;
+    top: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.heading {
+    width: 676px;
+    font-size: 53px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 0.53px;
+}
+
+.text-dark {
+    color: #333333;
+}
+
+.text-green {
+    color: #437223;
+}
+
+.description {
+    width: 651px;
+    color: #333333;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.stats {
+    height: 118px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.stat-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.stat-number {
+    color: #333333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.stat-bar {
+    width: 46px;
+    height: 3px;
+    background: #333333;
+}
+
+.stat-label {
+    width: 107px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.button-container {
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: #437223;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.button {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.image1 {
+    width: 65%;
+    height: 65%;
+    position: absolute;
+    top: 50px; /* Posisi vertikal */
+    left: 470px; /* Posisi horizontal */
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 670px; /* Posisi vertikal */
+    left: 1040px; /* Posisi horizontal */
+    width: 300px;
+    height: 83px;
+    opacity: 0.60;
+    background: #B5C7A9;
+    border-radius: 50%; /* Mengatur border-radius untuk membuat bentuk elips */
+    opacity: 0.60;
+    background: #B5C7A9;
+    z-index: 0;
+}
+
+.cards {
+    padding-top: 25px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.card {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px #333333 solid;
+    backdrop-filter: blur(32px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%);
+    border-radius: 9999px;
+    border: 1px solid;
+}
+
+.card-text {
+    padding-left: 10px;
+    width: 257px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
