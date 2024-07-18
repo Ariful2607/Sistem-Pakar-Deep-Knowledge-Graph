@@ -608,6 +608,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Buprofezin">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
         <rdfs:abstract xml:lang="id">Buprofezin adalah jenis pestisida yang tergolong dalam kelompok zat pengatur pertumbuhan serangga (IGR - Insect Growth Regulator). Pestisida ini terutama digunakan untuk mengendalikan serangga hama seperti wereng dan kutu putih pada berbagai tanaman pertanian.</rdfs:abstract>
+        <rdfs:label>Buprofezin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -914,7 +915,7 @@
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Malai_hilang"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tanaman_terdapat_pupa"/>
-        <rdfs:abstract>Hama kupu-kupu padi  ditemukan di semua lingkungan sawah tetapi lebih berlimpah di sawah tadah hujan. Mereka berwarna cokelat muda dengan tanda oranye dan memiliki pola bercak putih khas pada sayapnya. Serangga dewasa aktif di siang hari dan mereka memiliki gerakan terbang yang tidak menentu ketika mereka melompat dari satu tanaman ke tanaman lain. Betina bertelur putih atau kuning pucat, berbentuk bulat. Larva aktif di malam hari. Larva berwarna hijau dengan garis vertikal kemerahan di setiap sisi lateral kepala, berukuran sekitar 50 mm. Kepompong berwarna cokelat muda atau hijau muda, dan ujungnya runcing. Perkembangan mereka didukung oleh kejadian cuaca ekstrem seperti kekeringan, hujan lebat atau banjir. Penyalahgunaan pestisida membunuh serangga yang bermanfaat dan mungkin juga menjadi penyebab kemunculan mereka.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Hama kupu-kupu padi  ditemukan di semua lingkungan sawah tetapi lebih berlimpah di sawah tadah hujan. Mereka berwarna cokelat muda dengan tanda oranye dan memiliki pola bercak putih khas pada sayapnya. Serangga dewasa aktif di siang hari dan mereka memiliki gerakan terbang yang tidak menentu ketika mereka melompat dari satu tanaman ke tanaman lain. Betina bertelur putih atau kuning pucat, berbentuk bulat. Larva aktif di malam hari. Larva berwarna hijau dengan garis vertikal kemerahan di setiap sisi lateral kepala, berukuran sekitar 50 mm. Kepompong berwarna cokelat muda atau hijau muda, dan ujungnya runcing. Perkembangan mereka didukung oleh kejadian cuaca ekstrem seperti kekeringan, hujan lebat atau banjir. Penyalahgunaan pestisida membunuh serangga yang bermanfaat dan mungkin juga menjadi penyebab kemunculan mereka.</rdfs:abstract>
         <rdfs:label>Hama Kupu-kupu Padi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -972,7 +973,7 @@
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_mengering"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
-        <rdfs:abstract>Kumbang dewasa atau hispa padi (Dicladispa amigera) memakan bagian luar epidermis atas, menyebabkan pola pola garis paralel atau bercak bercak putih di sepanjang sumbu utama daun. Bercak putih ini tidak teratur. Kumbang dewasa juga menyebabkan layu pada daun. Daun yang terserang menegring dan menghadirkan tampilan putih di lahan. Kumbang yang menyerang biasanya berwarna biru tua atau kehitaman, agak berbentuk persegi, serta berduri.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Kumbang dewasa atau hispa padi (Dicladispa amigera) memakan bagian luar epidermis atas, menyebabkan pola pola garis paralel atau bercak bercak putih di sepanjang sumbu utama daun. Bercak putih ini tidak teratur. Kumbang dewasa juga menyebabkan layu pada daun. Daun yang terserang menegring dan menghadirkan tampilan putih di lahan. Kumbang yang menyerang biasanya berwarna biru tua atau kehitaman, agak berbentuk persegi, serta berduri.</rdfs:abstract>
         <rdfs:label>Hispa Padi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1158,7 +1159,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pertumbuhan_terhambat"/>
-        <rdfs:abstract xml:lang="id">Kutu putih yang memiliki nama latin Pseudococcidae adalah serangga yang berbentuk oval, tanpa sayap yang dapat ditemukan pada daerah beriklim hangat atau sedang. Tubuh mereka seperti dilindungi dengan lapisaj  lilin tepung tipis yang membuat mereka terlihat seperti kapas. Mereka hidup dibawah bagian daun, batang, batang, atau buah.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Kutu putih yang memiliki nama latin Pseudococcidae adalah serangga yang berbentuk oval, tanpa sayap yang dapat ditemukan pada daerah beriklim hangat atau sedang. Tubuh mereka seperti dilindungi dengan lapisan  lilin tepung tipis yang membuat mereka terlihat seperti kapas. Mereka hidup dibawah bagian daun, batang, batang, atau buah, sangat aktif dan meskipun jumlahnya rendah memiliki dampak yang sangat kecil, infestasi dapat menyebabkan daun muda menguning dan mengeriting, pertumbuhan tanaman terhambat. Lebih kecil kemungkinan daun yang lebih tua menjadi cacat atau terdistorsi. Serangga mengeluarkan madu pada saat mengisap getah dan hal ini membuat jaringan lengket dan rentan dijajah oleh bakteri dan jamur.Mereka memasukkan bagian mulut penindik dan pengisap panjang (stylet) mereka ke dalam jaringan tanaman dan menyedot getahnya. Gejala-gejalanya adalah reaksi terhadap zat-zat beracun yang mereka suntikkan ke dalam tanaman ketika makan. Kutu putih juga bertelur di tanah. Setelah menetas, nimfa dan serangga dewasa dapat merayap ke tanaman tetangga. Kutu ini juga dapat tersebar pada jarak yang lebih atau kurang lebih jauh oleh angin, semut, binatang, burung atau hanya selama kegiatan kerja ladang seperti pemangkasan atau panen.</rdfs:abstract>
         <rdfs:label>Kutu Putih</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1584,7 +1585,7 @@
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_basah"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Malai"/>
         <OntologiHamaPenyakitPadi:terkenaPatogen rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Epicoccum_sorghi"/>
-        <rdfs:abstract xml:lang="id">penyebabnya jamur Epicoccum Sorghi. Jamur ini ditularkan oleh benih dan tanah yang dapat menyerang tanaman yang lemah. Gejalanya terdapat bercak bercak gelap lonjong dan tidak beraturan dengan tepian coklat tua, menyebkan lesi merah atau basah pada kumpulan bunga padi (spikelet) yang sedang berkembang. Pencegahannya dapat menggunakan Iprodione dan Kaptan akan tetapi tidak 100% efisien</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Phoma Sorghina penyebabnya jamur Epicoccum Sorghi. Jamur ini ditularkan oleh benih dan tanah yang dapat menyerang tanaman yang lemah. Gejalanya terdapat bercak bercak gelap lonjong dan tidak beraturan dengan tepian coklat tua, menyebkan lesi merah atau basah pada kumpulan bunga padi (spikelet) yang sedang berkembang. Pencegahannya dapat menggunakan Iprodione dan Kaptan akan tetapi tidak 100% efisien</rdfs:abstract>
         <rdfs:label>Phoma Sorghina</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1706,8 +1707,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Sipermetrin">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Pestisida"/>
-        <rdfs:abstract>Sipermetrin merupakan salah satu bahan aktif dari keluarga piretroid sintetik . Bahan ini dapat digunakan untuk pengendalian hama dilahan pertanian.</rdfs:abstract>
-        <rdfs:label xml:lang="id">Sipermertrin</rdfs:label>
+        <rdfs:abstract xml:lang="id">Sipermetrin merupakan salah satu bahan aktif dari keluarga piretroid sintetik . Bahan ini dapat digunakan untuk pengendalian hama di lahan pertanian.</rdfs:abstract>
+        <rdfs:label>Sipermertrin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1756,7 +1757,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis"/>
-        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid"/>
         <rdfs:abstract xml:lang="id">Trichogramma atau parasitoid terkait hadir adalah telur inang yang biasanya berwarna pucat menjadi gelap karena parasitisasi inang mengubah pigmentasi cangkang telurnya.Ketika Trichogramma dewasa muncul dari telur yang diparasit, ia meninggalkan lubang bundar di kulit telur yang tetap gelap karena parasitisme. Pelet kecil dan gelap dari kotoran parasitoid (mekonium) dapat terlihat di dalam cangkang telur. Ketika ulat inangnya menetas dari telurnya, lubang kemunculan umumnya compang-camping, cangkang telur kosong (tidak mengandung mekonium), dan cangkang biasanya berwarna pucat.</rdfs:abstract>
         <rdfs:label>Trichogramm</rdfs:label>
     </owl:NamedIndividual>
@@ -1797,6 +1797,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tembaga_oksiklorida">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Fungisida"/>
+        <rdfs:abstract xml:lang="id">Tembaga oksiklorida yang sering digunakan sebagai fungisida untuk tanaman padi adalah copper oxychloride. Ini adalah senyawa tembaga dengan rumus kimia Cu₂(OH)₃Cl, dan digunakan secara luas untuk melindungi tanaman dari berbagai penyakit jamur.Copper oxychloride bekerja dengan cara menghambat perkembangan spora jamur, mencegah infeksi baru, dan mengurangi kerusakan tanaman akibat penyakit. Ini umumnya diterapkan dalam bentuk yang dapat diencerkan ke dalam larutan dan disemprotkan pada tanaman padi.Penggunaan dan dosis yang tepat biasanya tergantung pada jenis penyakit jamur yang ada di wilayah pertanian, kondisi cuaca, dan fase pertumbuhan tanaman padi.</rdfs:abstract>
         <rdfs:label>Tembaga oksiklorida</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1923,7 +1924,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
         <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Karbamat"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
-        <rdfs:abstract>Ulat kantung padi juga bisa disebut Larva P. stagnalis muda berakibat pada daun menjadi goresan lurus. ulat ini merusak daun dengan cara memotong ujung daun padi di sudut kanan utuk membuat kantung daun. penyebab dari adanya ulat kantung padi muncul dikarenakan penanaman bibit yang masih muda dapat mendukung perkembangan serangga.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Ulat kantung padi juga bisa disebut Larva P. stagnalis muda berakibat pada daun menjadi goresan lurus. ulat ini merusak daun dengan cara memotong ujung daun padi di sudut kanan utuk membuat kantung daun. penyebab dari adanya ulat kantung padi muncul dikarenakan penanaman bibit yang masih muda dapat mendukung perkembangan serangga.</rdfs:abstract>
         <rdfs:label>Ulat Kantung Padi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1959,7 +1960,7 @@
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Garis_pada_daun"/>
-        <rdfs:abstract xml:lang="id">Gejalanya terdapat garis garis dan bercak bercak kuning pada daun baru. Bercak kuning sampai oranye pada daun yang lebih tua. Bercak gelap di tengah garis.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Virus Belang Kuning memiliki gejala terdapat garis garis dan bercak bercak kuning pada daun baru. Bercak kuning sampai oranye pada daun yang lebih tua. Bercak gelap di tengah garis. Virus ini terdiri dari dua virus yang berbeda, yaitu Rice tungro bacilliform virus (RTBV) dan Rice tungro spherical virus (RTSV). Virus tungro ditularkan melalui vektor, yaitu serangga wereng padi (Nilaparvata lugens) dan wereng Cikadutung (Nephotettix spp.), yang menyerang tanaman padi.</rdfs:abstract>
         <rdfs:label>Virus Belang Kuning</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1982,7 +1983,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#WalangSangit">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
-        <rdfs:abstract>Walang sangit (Leptcorisa oratorius) merupakan serangga pengganggu atau hama yang sering merusak tanaman padi. Hama ini memiliki bau yang khas dan sangat menyengat, karena baunya ini maka disebut walang sangit. Hama walang sangit akan mengeluarkan aroma khasnya jika ia dalam bahaya, aroma menyengat tersebut merupakan bentuk pertahanan diri dari ancaman predator. Walang sangit menyerang tanaman padi dengan cara menghisap cairan tangkai bunga serta bulir padi pada fase pengisian bulir dan pemasakan bulir sehingga pengisian bulir padi tidak sempurna, bahkan seringkali menyebabkan bulir padi hampa. Hama walang sangit dianggap hama penting yang berbahaya karena dapat mengakibatkan menurunnya produksi padi sekaligus menurunkan kualitas gabah.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Walang sangit (Leptcorisa oratorius) merupakan serangga pengganggu atau hama yang sering merusak tanaman padi. Hama ini memiliki bau yang khas dan sangat menyengat, karena baunya ini maka disebut walang sangit. Hama walang sangit akan mengeluarkan aroma khasnya jika ia dalam bahaya, aroma menyengat tersebut merupakan bentuk pertahanan diri dari ancaman predator. Walang sangit menyerang tanaman padi dengan cara menghisap cairan tangkai bunga serta bulir padi pada fase pengisian bulir dan pemasakan bulir sehingga pengisian bulir padi tidak sempurna, bahkan seringkali menyebabkan bulir padi hampa. Hama walang sangit dianggap hama penting yang berbahaya karena dapat mengakibatkan menurunnya produksi padi sekaligus menurunkan kualitas gabah.</rdfs:abstract>
         <rdfs:label>Walang Sangit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1997,7 +1998,7 @@
         <OntologiHamaPenyakitPadi:diberikanPestisida rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Klorpirifos"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Layu"/>
-        <rdfs:abstract>Wereng Batang Cokelat (Nilaparvata lugens) atau disebut juga Wereng Cokelat merupakan salah satu hama tanaman padi yang paling berbahaya dan sulit dibasmi. Bersama beberapa jenis wereng lainnya seperti wereng hijau (Nephotettix spp.) dan wereng punggung putih (Sogatella furcifera),Wereng batang cokelat, sebagaimana jenis wereng lainnya, menjadi parasit dengan menghisap cairan tumbuhan sehingga mengakibatkan perkembangan tumbuhan menjadi terganggu bahkan mati. Selain itu, wereng batang cokelat  (Nilaparvata lugens) juga menjadi vektor (organisme penyebar penyakit) bagi penularan sejumlah penyakit tumbuhan yang diakibatkan virus serta menyebabkan tungro.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Wereng Batang Cokelat (Nilaparvata lugens) atau disebut juga Wereng Cokelat merupakan salah satu hama tanaman padi yang paling berbahaya dan sulit dibasmi. Bersama beberapa jenis wereng lainnya seperti wereng hijau (Nephotettix spp.) dan wereng punggung putih (Sogatella furcifera),Wereng batang cokelat, sebagaimana jenis wereng lainnya, menjadi parasit dengan menghisap cairan tumbuhan sehingga mengakibatkan perkembangan tumbuhan menjadi terganggu bahkan mati. Selain itu, wereng batang cokelat  (Nilaparvata lugens) juga menjadi vektor (organisme penyebar penyakit) bagi penularan sejumlah penyakit tumbuhan yang diakibatkan virus serta menyebabkan tungro.</rdfs:abstract>
         <rdfs:label>Wereng Batang Coklat</rdfs:label>
     </owl:NamedIndividual>
     
