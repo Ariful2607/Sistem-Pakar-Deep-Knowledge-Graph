@@ -155,42 +155,126 @@ def details_page():
     try:
         query = """
         MATCH (n {label: $label})
+        WITH n, labels(n) AS allLabels
+        UNWIND allLabels AS label
+        WITH n, CASE 
+            WHEN label = "PenyakitPadi" THEN "Penyakit Padi"
+            WHEN label = "PatogenPadi" THEN "Patogen Padi"
+            WHEN label = "HamaPadi" THEN "Hama Padi"
+            WHEN label = "Biologis" THEN "Agen Biologi"
+            ELSE label
+        END AS modifiedLabel
+        WHERE modifiedLabel IN ["Fungisida", "Gejala", "Penyakit Padi", "Patogen Padi", "Hama Padi", "Agen Biologi", "Bakterisida", "Pestisida"]
+        WITH n, collect(modifiedLabel) AS labelobjects
         OPTIONAL MATCH (n)-[:memilikiGejala]->(gejala)
         OPTIONAL MATCH (n)-[:diberikanFungisida]->(fungisida)
+        OPTIONAL MATCH (n)-[:diberikanBakterisida]->(bakterisida)
+        OPTIONAL MATCH (n)-[:diberikanPestisida]->(pestisida)
+        OPTIONAL MATCH (n)-[:diberikanAgenBiologi]->(agenbiologi)
         OPTIONAL MATCH (n)-[:terkenaPatogen]->(patogenpadi)
         RETURN n,
-               collect(DISTINCT {label: gejala.label, abstract: gejala.abstract}) AS gejalaInfo,
-               collect(DISTINCT {label: fungisida.label, abstract: fungisida.abstract}) AS fungisidaInfo,
-               collect(DISTINCT {label: patogenpadi.label, abstract: patogenpadi.abstract}) AS patogenInfo
+            labelobjects,
+            collect(DISTINCT {label: gejala.label, abstract: gejala.abstract}) AS gejalaInfo,
+            collect(DISTINCT {label: fungisida.label, abstract: fungisida.abstract}) AS fungisidaInfo,
+            collect(DISTINCT {label: bakterisida.label, abstract: bakterisida.abstract}) AS bakterisidaInfo,
+            collect(DISTINCT {label: pestisida.label, abstract: pestisida.abstract}) AS pestisidaInfo,
+            collect(DISTINCT {label: agenbiologi.label, abstract: agenbiologi.abstract}) AS agenbiologiInfo,
+            collect(DISTINCT {label: patogenpadi.label, abstract: patogenpadi.abstract}) AS patogenInfo
         """
         result = run_query(query, {"label": label})
 
         if result:
             node = result[0]['n']
+            labels = result[0]['labelobjects']
             gejala_info = result[0]['gejalaInfo']
             fungisida_info = result[0]['fungisidaInfo']
+            bakterisida_info = result[0]['bakterisidaInfo']
+            pestisida_info = result[0]['pestisidaInfo']
+            agenbiologi_info = result[0]['agenbiologiInfo']
             patogen_info = result[0]['patogenInfo']
 
             logging.debug(f"Node: {node}")
+            logging.debug(f"Label Objects: {labels}")
             logging.debug(f"Gejala Info: {gejala_info}")
             logging.debug(f"Fungisida Info: {fungisida_info}")
+            logging.debug(f"Bakterisida Info: {bakterisida_info}")
+            logging.debug(f"Pestisida Info: {pestisida_info}")
+            logging.debug(f"Agen Biologi Info: {agenbiologi_info}")
             logging.debug(f"Patogen Info: {patogen_info}")
 
             gejala_info_list = [gejala for gejala in gejala_info if gejala.get('label')]
             fungisida_info_list = [fungisida for fungisida in fungisida_info if fungisida.get('label')]
+            bakterisida_info_list = [bakterisida for bakterisida in bakterisida_info if bakterisida.get('label')]
+            pestisida_info_list = [pestisida for pestisida in pestisida_info if pestisida.get('label')]
+            agenbiologi_info_list = [agenbiologi for agenbiologi in agenbiologi_info if agenbiologi.get('label')]
             patogen_info_list = [patogen for patogen in patogen_info if patogen.get('label')]
 
             logging.debug(f"Gejala Info List: {gejala_info_list}")
             logging.debug(f"Fungisida Info List: {fungisida_info_list}")
+            logging.debug(f"Bakterisida Info List: {bakterisida_info_list}")
+            logging.debug(f"Pestisida Info List: {pestisida_info_list}")
+            logging.debug(f"Agen Biologi Info List: {agenbiologi_info_list}")
             logging.debug(f"Patogen Info List: {patogen_info_list}")
 
             return render_template(
                 "DetailInformation.html",
                 label=node.get("label", ""),
+                labels=labels,
                 abstract=node.get("abstract", ""),
                 gejala_info=gejala_info_list,
                 fungisida_info=fungisida_info_list,
+                bakterisida_info=bakterisida_info_list,
+                pestisida_info=pestisida_info_list,
+                agenbiologi_info=agenbiologi_info_list,
                 patogen_info=patogen_info_list
+            )
+        else:
+            logging.warning(f"No results found for label: {label}")
+            return f"No details found for {label}", 404
+
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+        return str(e), 500
+
+@app.route('/details-2')
+def details2_page():
+    label = request.args.get('label', '')
+
+    # Log the received label
+    logging.debug(f"Received label: {label}")
+
+    if not label:
+        return "Label is required", 400
+
+    try:
+        query = """
+        MATCH (n {label: $label})
+        WITH n, labels(n) AS allLabels
+        UNWIND allLabels AS label
+        WITH n, CASE 
+            WHEN label = "PenyakitPadi" THEN "Penyakit Padi"
+            WHEN label = "PatogenPadi" THEN "Patogen Padi"
+            WHEN label = "HamaPadi" THEN "Hama Padi"
+            WHEN label = "Biologis" THEN "Agen Biologi"
+            ELSE label
+        END AS modifiedLabel
+        WHERE modifiedLabel IN ["Fungisida", "Gejala", "Penyakit Padi", "Patogen Padi", "Hama Padi", "Agen Biologi", "Bakterisida", "Pestisida"]
+        RETURN n, modifiedLabel AS labelobject
+        """
+        result = run_query(query, {"label": label})
+
+        if result:
+            node = result[0]['n']
+            labels = result[0]['labelobject']
+
+            logging.debug(f"Node: {node}")
+            logging.debug(f"Label Object: {labels}")
+
+            return render_template(
+                "DetailInformation-2.html",
+                label=node.get("label", ""),
+                abstract=node.get("abstract", ""),
+                labels=labels,
             )
         else:
             logging.warning(f"No results found for label: {label}")

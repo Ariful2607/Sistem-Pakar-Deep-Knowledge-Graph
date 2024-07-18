@@ -28,12 +28,16 @@
         <img src="{{ url_for('static', filename='images/tungro.jpg') }}" alt="Load fail.." style="width: 900px; height: 200px; border-radius: 15px;">
         <div class="information">
           <h3>{{ label }}</h3>
-          <p style="font-style: italic;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi sed eveniet eum rem quia unde.</p>
+          <p style="font-style: italic;">Merupakan sejenis 
+          {% for label in labels %}
+            {{ label }}
+          {% endfor %}
+           pada sebuah tanaman padi.</p>
         </div>
       </div>
       <div class="categories">
         {% for info in gejala_info %}
-        <div class="category" data-label="{{ info.label }}">{{ info.label }}</div>
+        <div class="category" data-label="{{ info.label }}"> {{ info.label }}</div>
         {% endfor %}
         {% for info in fungisida_info %}
         <div class="category" data-label="{{ info.label }}">{{ info.label }}</div>
@@ -120,7 +124,7 @@
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-              <p>Penanganan Dapat diberi fungisida.</p>
+              <p>Penanganan Dapat diberi fungisida, Bakterisida, Pestisida, atau agen Biologi.</p>
               <table>
                 <thead>
                     <tr>
@@ -137,6 +141,57 @@
                     {% endfor %}
                 </tbody>
             </table>
+            <!-- Bakterisida -->
+            <table>
+              <thead>
+                  <tr>
+                      <th>Bakterisida</th>
+                      <th>Keterangan</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  {% for info in bakterisida_info %}
+                  <tr>
+                      <td>{{ info.label }}</td>
+                      <td>{{ info.abstract }}</td>
+                  </tr>
+                  {% endfor %}
+              </tbody>
+          </table>
+          <!-- Pestisida -->
+          <table>
+            <thead>
+                <tr>
+                    <th>Pestisida</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for info in pestisida_info %}
+                <tr>
+                    <td>{{ info.label }}</td>
+                    <td>{{ info.abstract }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+          <!-- Agen Biologi -->
+          <table>
+            <thead>
+                <tr>
+                    <th>Agen Biologi</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for info in agenbiologi_info %}
+                <tr>
+                    <td>{{ info.label }}</td>
+                    <td>{{ info.abstract }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+          </table>
             </div>
           </div>
         </div>
@@ -174,7 +229,7 @@
         category.addEventListener('click', function() {
             const label = category.getAttribute('data-label');
             // alert('Category clicked: ' + label); // Replace this line with the desired action
-            window.location.href = `/details?label=${label}`;
+            window.location.href = `/details-2?label=${label}`;
         });
     });
   </script>
