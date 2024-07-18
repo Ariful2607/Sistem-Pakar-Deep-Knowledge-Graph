@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Information - 2</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/DetailInformation.css') }}">
+  <style>
+
+  </style>
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="header">
+        <div class="back-button">
+          <i class="fas fa-arrow-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>
+          </i>
+          <span></span>
+          <h2>Detil Informasi</h2>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="{{ url_for('static', filename='images/tungro.jpg') }}" alt="Load fail.." style="width: 900px; height: 200px; border-radius: 15px;">
+        <div class="information">
+          <!-- <h3>{{ label }}</h3>
+          <p style="font-style: italic;">Merupakan sejenis {{ labels }} pada sebuah tanaman padi</p> -->
+        </div>
+      </div>
+      <div class="information">
+        <h3>{{ label }}</h3>
+        <p style="font-style: italic;">Merupakan sejenis {{ labels }} pada sebuah tanaman padi.</p>
+        <h4>Keterangan</h4>
+        <p class="gray-text">{{ abstract }}</p>
+        <!-- <h2>Related Symptoms</h2> -->
+      </div>
+
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.querySelector('.back-button').addEventListener('click', function() {
+        history.back();
+    });
+
+    // Add click event listeners to categories
+    document.querySelectorAll('.category').forEach(function(category) {
+        category.addEventListener('click', function() {
+            const label = category.getAttribute('data-label');
+            // alert('Category clicked: ' + label); // Replace this line with the desired action
+            window.location.href = `/details?label=${label}`;
+        });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
