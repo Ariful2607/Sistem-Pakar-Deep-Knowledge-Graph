@@ -1757,7 +1757,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Biologis"/>
-        <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Tawon_Chalchid"/>
         <rdfs:abstract xml:lang="id">Trichogramma atau parasitoid terkait hadir adalah telur inang yang biasanya berwarna pucat menjadi gelap karena parasitisasi inang mengubah pigmentasi cangkang telurnya.Ketika Trichogramma dewasa muncul dari telur yang diparasit, ia meninggalkan lubang bundar di kulit telur yang tetap gelap karena parasitisme. Pelet kecil dan gelap dari kotoran parasitoid (mekonium) dapat terlihat di dalam cangkang telur. Ketika ulat inangnya menetas dari telurnya, lubang kemunculan umumnya compang-camping, cangkang telur kosong (tidak mengandung mekonium), dan cangkang biasanya berwarna pucat.</rdfs:abstract>
         <rdfs:label>Trichogramm</rdfs:label>
     </owl:NamedIndividual>
