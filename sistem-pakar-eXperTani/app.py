@@ -291,4 +291,4 @@ def details2_page():
         return str(e), 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5001,debug=True)
