@@ -539,7 +539,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_malai">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
-        <rdfs:abstract>Bercak pada malai padi adalah gejala yang dapat terjadi akibat berbagai penyakit atau kondisi stres pada tanaman. Gejala ini ditandai dengan adanya bercak-barcak yang terlihat pada malai padi. Bercak-bercak ini dapat memiliki ukuran dan bentuk yang bervariasi, mulai dari kecil hingga besar, dan berbentuk bulat atau tidak teratur. Warna bercak pada malai padi juga dapat berbeda-beda, mulai dari coklat, kehitaman, hingga kekuningan. Bercak-barcak tersebut biasanya menunjukkan adanya kerusakan atau infeksi pada bagian malai. Bercak yang lebih besar atau yang terdapat dalam jumlah banyak dapat mengurangi kualitas dan hasil panen padi.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Bercak pada malai padi adalah gejala yang dapat terjadi akibat berbagai penyakit atau kondisi stres pada tanaman. Gejala ini ditandai dengan adanya bercak-barcak yang terlihat pada malai padi. Bercak-bercak ini dapat memiliki ukuran dan bentuk yang bervariasi, mulai dari kecil hingga besar, dan berbentuk bulat atau tidak teratur. Warna bercak pada malai padi juga dapat berbeda-beda, mulai dari coklat, kehitaman, hingga kekuningan. Bercak-barcak tersebut biasanya menunjukkan adanya kerusakan atau infeksi pada bagian malai. Bercak yang lebih besar atau yang terdapat dalam jumlah banyak dapat mengurangi kualitas dan hasil panen padi.</rdfs:abstract>
         <rdfs:label>Malai terdapat bercak</rdfs:label>
     </owl:NamedIndividual>
     
@@ -779,7 +779,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Epicoccum_sorghi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
-        <rdfs:abstract>Epicoccum sorghi merupakan jamur yang merupakan patogen tanaman terhadap padi dan tebu, menyebabkan penyakit bercak daun dan bercak cincin. Jamur ini terutama dikenal karena produksi asam tenuazonicnya, yang menyebabkan komplikasi pertumbuhan dan menyebabkan gejala penyakit bercak daun. Asam tenuazonic tidak hanya mempengaruhi pertumbuhan tanaman, namun belakangan ini terbukti berdampak pada kesehatan manusia karena prevalensinya pada makanan dan minuman</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Epicoccum sorghi merupakan jamur yang merupakan patogen tanaman terhadap padi dan tebu, menyebabkan penyakit bercak daun dan bercak cincin. Jamur ini terutama dikenal karena produksi asam tenuazonicnya, yang menyebabkan komplikasi pertumbuhan dan menyebabkan gejala penyakit bercak daun. Asam tenuazonic tidak hanya mempengaruhi pertumbuhan tanaman, namun belakangan ini terbukti berdampak pada kesehatan manusia karena prevalensinya pada makanan dan minuman</rdfs:abstract>
         <rdfs:label>Epicoccum sorghi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -872,7 +872,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gibberella_fujikuroi">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
-        <rdfs:abstract>Gibberella fujikuroi adalah spesies jamur dalam genus Gibberella. Jamur ini dikenal karena menyebabkan penyakit pada tanaman, termasuk penyakit bakanae pada padi. Gibberella fujikuroi dapat menyerang tanaman padi pada berbagai tahap pertumbuhannya dan menyebabkan kerugian yang signifikan dalam produksi padi.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Gibberella fujikuroi adalah spesies jamur dalam genus Gibberella. Jamur ini dikenal karena menyebabkan penyakit pada tanaman, termasuk penyakit bakanae pada padi. Gibberella fujikuroi dapat menyerang tanaman padi pada berbagai tahap pertumbuhannya dan menyebabkan kerugian yang signifikan dalam produksi padi.</rdfs:abstract>
         <rdfs:label>Gibberella fujikuroi</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1097,7 +1097,7 @@
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_rontok"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_Daun"/>
         <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BusukBatang"/>
-        <rdfs:abstract>Kepik ludah atau Deois flavopicta merupakan serangga yang menyebabkan kerusakan pada beberapa tanaman seperti padi dan jagung. Dengan cara berterlur di dekat tanaman inang, sehingga telur menetas dan limfa mulai berkembang biak pada akat dan batang yang dekat dengan permukaan tanah. Kepik ludah dapat merusak dan melemahkan tanaman dengan menghisapnya dan menyuntikan racun yang dapat menghalangi pertumbuhan, daun layu, hingga kematian tanaman</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Kepik ludah atau Deois flavopicta merupakan serangga yang menyebabkan kerusakan pada beberapa tanaman seperti padi dan jagung. Dengan cara berterlur di dekat tanaman inang, sehingga telur menetas dan limfa mulai berkembang biak pada akat dan batang yang dekat dengan permukaan tanah. Kepik ludah dapat merusak dan melemahkan tanaman dengan menghisapnya dan menyuntikan racun yang dapat menghalangi pertumbuhan, daun layu, hingga kematian tanaman</rdfs:abstract>
         <rdfs:label>Kepik Ludah</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1273,7 +1273,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Lesi_pada_pelepah">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
-        <rdfs:abstract>Lesi pada pelepah padi merujuk pada adanya kerusakan atau bercak pada permukaan pelepah daun tanaman padi. Lesi ini dapat disebabkan oleh infeksi patogen, kerusakan fisik, atau faktor lingkungan yang tidak kondusif. Gejala dan karakteristik lesi pada pelepah padi dapat bervariasi tergantung pada penyebabnya. Infeksi patogen seperti jamur, bakteri, atau virus adalah penyebab umum dari lesi pada pelepah padi. Lesi akibat infeksi patogen biasanya ditandai dengan bercak berwarna gelap, kecokelatan, atau hitam pada pelepah. Lesi mungkin memiliki tepi yang jelas atau tidak teratur, tergantung pada jenis patogen yang menyebabkannya. Selain itu, lesi dapat memperluas seiring perkembangan infeksi, mengubah bentuk dan ukurannya.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Lesi pada pelepah padi merujuk pada adanya kerusakan atau bercak pada permukaan pelepah daun tanaman padi. Lesi ini dapat disebabkan oleh infeksi patogen, kerusakan fisik, atau faktor lingkungan yang tidak kondusif. Gejala dan karakteristik lesi pada pelepah padi dapat bervariasi tergantung pada penyebabnya. Infeksi patogen seperti jamur, bakteri, atau virus adalah penyebab umum dari lesi pada pelepah padi. Lesi akibat infeksi patogen biasanya ditandai dengan bercak berwarna gelap, kecokelatan, atau hitam pada pelepah. Lesi mungkin memiliki tepi yang jelas atau tidak teratur, tergantung pada jenis patogen yang menyebabkannya. Selain itu, lesi dapat memperluas seiring perkembangan infeksi, mengubah bentuk dan ukurannya.</rdfs:abstract>
         <rdfs:label>Pelepah mengalami kerusakan</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1283,7 +1283,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Luka_abu_abu_hijau">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Gejala"/>
-        <rdfs:abstract>Luka abu abu hijau berair yang mulai berkembang pada ujung daun atau tepi daun. Yang dipengaruhi oleh tahapan pertumbuhan, varietas, dan kerapatan tanaman.  gejala lebih lanjutnya luka menyebar dan menghasilkan pola zonasi yang bergantian antar coklat muda dan coklat tua mulai dari ujung atau tepian daun.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Luka abu abu hijau berair yang mulai berkembang pada ujung daun atau tepi daun. Yang dipengaruhi oleh tahapan pertumbuhan, varietas, dan kerapatan tanaman.  gejala lebih lanjutnya luka menyebar dan menghasilkan pola zonasi yang bergantian antar coklat muda dan coklat tua mulai dari ujung atau tepian daun.</rdfs:abstract>
         <rdfs:label>Daun terdapat luka</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1303,7 +1303,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Magnaporthe_salvinii">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
-        <rdfs:abstract>Magnaporthe salvinii adalah sebuah spesies jamur yang diketahui sebagai patogen pada tanaman air, khususnya rumput salvini (Salvinia spp.). Penyakit yang disebabkan oleh Magnaporthe salvinii dapat menginfeksi dan merusak tanaman rumput air dengan gejala seperti lesi, pembusukan, dan kemungkinan kehilangan struktur tumbuhan. Magnaporthe salvinii memiliki siklus hidup yang kompleks dan dapat menyebar melalui spora yang dibawa oleh air atau organisme perantara.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Magnaporthe salvinii adalah sebuah spesies jamur yang diketahui sebagai patogen pada tanaman air, khususnya rumput salvini (Salvinia spp.). Penyakit yang disebabkan oleh Magnaporthe salvinii dapat menginfeksi dan merusak tanaman rumput air dengan gejala seperti lesi, pembusukan, dan kemungkinan kehilangan struktur tumbuhan. Magnaporthe salvinii memiliki siklus hidup yang kompleks dan dapat menyebar melalui spora yang dibawa oleh air atau organisme perantara.</rdfs:abstract>
         <rdfs:label>Magnaporthe salvinii</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1333,7 +1333,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Meloidogyne_spp.">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#HamaPadi"/>
-        <OntologiHamaPenyakitPadi:terkenaPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BottomRot"/>
+        <OntologiHamaPenyakitPadi:menyebabkanPenyakit rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#BottomRot"/>
         <rdfs:abstract xml:lang="id">Meloidogyne spp., juga dikenal sebagai nematoda parasit akar, adalah kelompok cacing mikroskopis yang menyebabkan penyakit pada tanaman, termasuk tanaman padi. Nematoda ini dapat hidup dan berkembang biak di dalam akar tanaman, mengakibatkan kerusakan pada sistem perakaran dan menghambat pertumbuhan tanaman.</rdfs:abstract>
         <rdfs:label>Meloidogyne spp.</rdfs:label>
     </owl:NamedIndividual>
@@ -1635,7 +1635,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Puccinia_striiformis">
         <rdf:type rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#PatogenPadi"/>
-        <rdfs:abstract>Puccinia striiformis merupakan parasi obligat yang membutuhkan bahan tanaman hidup untuk bertahan hidup. Spora tersebar hingga ratusan kilometer oleh arus angin dan dapat memicu  epidemi penyakit musiman. Jamur memasuki tanaman melalui stomata dan secara bertahap menjajah jarungan daun.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Puccinia striiformis merupakan parasi obligat yang membutuhkan bahan tanaman hidup untuk bertahan hidup. Spora tersebar hingga ratusan kilometer oleh arus angin dan dapat memicu  epidemi penyakit musiman. Jamur memasuki tanaman melalui stomata dan secara bertahap menjajah jarungan daun.</rdfs:abstract>
         <rdfs:label>Puccinia striiformis</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1885,7 +1885,7 @@
         <OntologiHamaPenyakitPadi:diberikanAgenBiologi rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Laba_laba"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Bercak_pada_daun"/>
         <OntologiHamaPenyakitPadi:memilikiGejala rdf:resource="http://www.semanticweb.org/Ariful/ontologies/2023/06/OntologiHamaPenyakitPadi#Daun_menguning"/>
-        <rdfs:abstract>Tungau malai padi, juga dikenal sebagai tungau oribatid atau tungau padi, adalah salah satu hama penting pada tanaman padi. Tungau ini dapat menyebabkan kerusakan signifikan pada tanaman padi, terutama pada fase reproduksi tanaman.</rdfs:abstract>
+        <rdfs:abstract xml:lang="id">Tungau malai padi, juga dikenal sebagai tungau oribatid atau tungau padi, adalah salah satu hama penting pada tanaman padi. Tungau ini dapat menyebabkan kerusakan signifikan pada tanaman padi, terutama pada fase reproduksi tanaman.</rdfs:abstract>
         <rdfs:label>Tungau Malai Padi</rdfs:label>
     </owl:NamedIndividual>
     
