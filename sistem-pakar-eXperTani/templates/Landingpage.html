@@ -5,138 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eXperTani</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="/">
-          <img src="{{ url_for('static', filename='images/EXTN.png') }}" width="90" height="20" alt="Penyiangan">
+          <img src="{{ url_for('static', filename='images/EXTN.png') }}" width="90" height="20" alt="eXperTani">
         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">
-                        <span>Beranda</span>
-                    </a>
+                    <a class="nav-link" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/perpustakaan">
-                        <span>Perpustakaan</span>
-                    </a>
+                    <a class="nav-link" href="/perpustakaan">Perpustakaan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/diagnosa">
-                        <span>Diagnosa</span>
-                    </a>
+                    <a class="nav-link" href="/diagnosa">Diagnosa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/tipsperawatan">
-                        <span>Tips Perawatan</span>
-                    </a>
+                    <a class="nav-link" href="/tipsperawatan">Tips Perawatan</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="section">
-            <div class="content">
-                <div class="background"></div>
-                <div class="text-container">
-                    <div class="heading">
-                        <span class="text-dark">Bersama </span>
-                        <span class="text-green">eXperTanie</span>
-                        <span class="text-dark"><br />langkah tepat <br />untuk </span>
-                        <span class="text-green">PANEN MELIMPAH</span>
-                    </div>
-                    <div class="description">
-                        eXperTani merupakan media yang membantu mendiagnosis dan mengobati masalah pada tanaman padi, meningkatkan produktivitas serta menyediakan tips dan trik mengenai tanaman padi. Bersama eXperTani tingkatkan produktivitas padimu.
-                    </div>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <div class="stat-number">{{ jumlah_penyakit_padi }}</div>
-                            <div class="stat-bar"></div>
-                            <div class="stat-label">Penyakit Tanaman Padi</div>
+    <div class="container-fluid p-0">
+        <section class="hero-section">
+            <div class="row no-gutters">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="hero-content">
+                        <h1 class="mb-4">
+                            <span class="text-dark">Bersama </span>
+                            <span class="text-green">eXperTani</span>
+                            <span class="text-dark"><br>langkah tepat <br>untuk </span>
+                            <span class="text-green">PANEN MELIMPAH</span>
+                        </h1>
+                        <p class="mb-4">eXperTani merupakan media yang membantu mendiagnosis dan mengobati masalah pada tanaman padi, meningkatkan produktivitas serta menyediakan tips dan trik mengenai tanaman padi. Bersama eXperTani tingkatkan produktivitas padimu.</p>
+                        <div class="stats mb-4">
+                            <div class="stat-item">
+                                <div class="stat-number">{{ jumlah_penyakit_padi }}</div>
+                                <div class="stat-bar"></div>
+                                <div class="stat-label">Penyakit Tanaman Padi</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">{{ jumlah_patogen_padi }}</div>
+                                <div class="stat-bar"></div>
+                                <div class="stat-label">Patogen Tanaman Padi</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">{{ jumlah_hama_padi }}</div>
+                                <div class="stat-bar"></div>
+                                <div class="stat-label">Hama Tanaman Padi</div>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">{{ jumlah_patogen_padi }}</div>
-                            <div class="stat-bar"></div>
-                            <div class="stat-label">Patogen Tanaman Padi</div>
+                        <a href="/diagnosa" class="btn btn-primary btn-lg">Diagnosis Penyakit</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="hero-image" src="{{ url_for('static', filename='images/gambar1.png') }}" alt="Hero Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="information-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Informasi Hama & Penyakit Padi:</h2>
+                <div class="row">
+                    {% for node in nodes_list %}
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100" onclick="redirectToDetails('{{ node.label }}')">
+                            <img class="card-img-top" src="{{ url_for('static', filename='images/Penggerek_Batang.jpg') }}" alt="Card Image">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ node.label }}</h5>
+                                <p class="card-text">{{ node.abstract }}</p>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">{{ jumlah_hama_padi }}</div>
-                            <div class="stat-bar"></div>
-                            <div class="stat-label">Hama Tanaman Padi</div>
-                        </div>
                     </div>
-                    <div class="button-container">
-                        <div class="button" onclick="redirectToPage('/diagnosa')">Diagnosis Penyakit</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="mb-4">
+                            <span class="text-dark">Sekilas </span>
+                            <span class="text-green">Tentang eXperTani</span>
+                        </h2>
+                        <p>eXperTani adalah sebuah platform yang menyediakan informasi lengkap mengenai cara pengelolaan tanaman padi, termasuk diagnosis penyakit, penanganan hama, dan pemilihan varietas unggul.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/EXTANI.png') }}" alt="Logo">
                     </div>
                 </div>
             </div>
-            <img class="image1" src="{{ url_for('static', filename='images/gambar1.png') }}" alt="Placeholder Image 1">
-            <div class="overlay"></div>
-            <div class="cards">
-                {% for node in nodes_list %}
-                <div class="card" onclick="redirectToDetails('{{ node.label }}')">
-                    <img class="card-image" src="{{ url_for('static', filename='images/card hama 1.png') }}" alt="Card Image 1">
-                    <div class="card-text"><strong>{{ node.label }}</strong><br/>{{ node.abstract }}</div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-        
-        <!-- Additional Section 1 -->
-        <div class="section1">
-            <div class="content">
-                <div class="text-container">
-                    <div class="heading">
-                        <span class="text-dark">Sekilas </span>
-                        <span class="text-green">Tentang eXperTani</span>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/petani1.png') }}" alt="Logo">
                     </div>
-                    <div class="description">
-                        eXperTani adalah sebuah platform yang menyediakan informasi lengkap mengenai cara pengelolaan tanaman padi, termasuk diagnosis penyakit, penanganan hama, dan pemilihan varietas unggul.
+                    <div class="col-md-6">
+                        <h2 class="mb-4">
+                            <h2 class="text-center mb-5">Fitur Unggulan eXperTani</h2>
+                        </h2>
+                        <p>Dengan fitur-fitur unggulan seperti Diagnosis penyakit, perpustakaan hama dan penyakit, dan tips perawatan, eXperTani membantu petani meningkatkan hasil panen padi mereka secara signifikan.</p>
                     </div>
                 </div>
-                <img class="section-image" src="{{ url_for('static', filename='images/EXTANI.png') }}" alt="Logo">
             </div>
-        </div>
-        
-        <!-- Additional Section 2 -->
-        <div class="section1">
-            <div class="content">
-                <div class="text-container">
-                    <div class="heading">
-                        <span class="text-dark">Fitur Unggulan </span>
-                        <span class="text-green">eXperTani</span>
-                    </div>
-                    <div class="description">
-                        Dengan fitur-fitur unggulan seperti Diagnosis penyakit, perpustakaan hama dan penyakit, dan tips perawatan, eXperTani membantu petani meningkatkan hasil panen padi mereka secara signifikan.
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <span class="text-dark">Testimoni </span>
+                    <span class="text-green">Pengguna</span>
+                </h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"Sejak menggunakan eXperTani, produktivitas tanaman padi saya meningkat pesat. Informasi yang diberikan sangat akurat dan membantu."</p>
+                            <footer class="blockquote-footer">Budi, <cite title="Source Title">Petani Padi</cite></footer>
+                        </blockquote>
                     </div>
                 </div>
-                <img class="section-image" src="{{ url_for('static', filename='images/petani1.png') }}" alt="Logo">
             </div>
-        </div>
-        
-        <!-- Additional Section 3 -->
-        <div class="section1">
-            <div class="content">
-                <div class="text-container">
-                    <div class="heading">
-                        <span class="text-dark">Testimoni </span>
-                        <span class="text-green">Pengguna</span>
-                    </div>
-                    <div class="description">
-                        "Sejak menggunakan eXperTani, produktivitas tanaman padi saya meningkat pesat. Informasi yang diberikan sangat akurat dan membantu." - Budi, Petani Padi.
-                    </div>
-                </div>
-                <img class="section-image" src="{{ url_for('static', filename='images/petani2.png') }}" alt="Logo">
-            </div>
-        </div>
+        </section>
     </div>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 eXperTani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
         function redirectToDetails(label) {
-            window.location.href = `/details?label=${encodeURIComponent(label)}`;
+            window.location.href = `/details-2?label=${encodeURIComponent(label)}`;
         }
     </script>
     <script src="{{ url_for('static', filename='js/redirect.js') }}"></script>

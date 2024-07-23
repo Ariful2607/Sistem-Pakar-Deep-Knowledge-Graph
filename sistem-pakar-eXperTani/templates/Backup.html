@@ -56,7 +56,6 @@
         </div>
       </div>
     </div>
-    <div class="loader" id="loader"></div>
     <div class="disease-list" id="disease-list">
       <!-- Cards will be dynamically inserted here -->
     </div>
@@ -72,30 +71,21 @@
     document.addEventListener("DOMContentLoaded", function() {
       loadInitialData();
 
-      const searchInput = document.getElementById('search-query');
-      let debounceTimer;
+      // Event listener for search input
+      document.getElementById('search-query').addEventListener('input', search);
 
-      searchInput.addEventListener('input', function() {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(search, 300); // Debounce search
-      });
-
+      // Event listeners for checkboxes
       document.getElementById('penyakit').addEventListener('change', search);
       document.getElementById('hama').addEventListener('change', search);
     });
 
     function loadInitialData() {
-      showLoader();
       fetch('/search-results?query=random')
         .then(response => response.json())
         .then(data => {
           displayResults(data.nodes);
-          hideLoader();
         })
-        .catch(error => {
-          console.error('Error fetching initial data:', error);
-          hideLoader();
-        });
+        .catch(error => console.error('Error fetching initial data:', error));
     }
 
     function displayResults(nodes) {
@@ -122,6 +112,7 @@
         diseaseList.insertAdjacentHTML('beforeend', card);
       });
 
+      // Add click event listener to each card
       document.querySelectorAll('.disease-card').forEach(card => {
         card.addEventListener('click', function() {
           const label = this.getAttribute('data-label');
@@ -131,7 +122,6 @@
     }
 
     function search() {
-      showLoader();
       const query = document.getElementById('search-query').value;
       const categories = Array.from(document.querySelectorAll('input[name="category"]:checked'))
                               .map(input => input.value)
@@ -141,20 +131,8 @@
         .then(response => response.json())
         .then(data => {
           displayResults(data.nodes);
-          hideLoader();
         })
-        .catch(error => {
-          console.error('Error fetching search results:', error);
-          hideLoader();
-        });
-    }
-
-    function showLoader() {
-      document.getElementById('loader').style.display = 'block';
-    }
-
-    function hideLoader() {
-      document.getElementById('loader').style.display = 'none';
+        .catch(error => console.error('Error fetching search results:', error));
     }
   </script>
 </body>
