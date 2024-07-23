@@ -7,16 +7,4 @@ application:
 deployment:
   tasks:
     - export DEPLOYPATH=/home/extaniwe/public_html/eXperTani/sistem-pakar-eXperTani
-    - /bin/cp Passengerfile.json $DEPLOYPATH/
-    - /bin/chmod 644 $DEPLOYPATH/Passengerfile.json
-
-# Environment settings
-env:
-  PATH: /opt/rh/rh-ruby27/root/usr/bin:/usr/local/bin:/usr/bin:/bin
-
-# Hook scripts
-hooks:
-  pre_deploy:
-    - /bin/echo "Starting deployment of eXperTani"
-  post_deploy:
-    - /bin/echo "Deployment of eXperTani completed"
+    - /bin/cp -R images $DEPLOYPATH
