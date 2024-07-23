@@ -7,8 +7,13 @@ app = Flask(__name__)
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
 
+# Define connection details for remote Neo4j instance (GCP)
+# uri = "bolt://34.101.192.24:7687"
+# user = "neo4j"
+# password = "unej1234"
+
 # Define connection details for remote Neo4j instance
-uri = "bolt://34.101.192.24:7687"
+uri = "bolt://ricekg.extani.web.id:7687"  # Update with the new domain and correct port
 user = "neo4j"
 password = "unej1234"
 
@@ -69,6 +74,7 @@ def index_page():
 
         return render_template(
             "Landingpage.html",
+            # "Backup.html",
             jumlah_hama_padi=jumlah_hama_padi,
             jumlah_patogen_padi=jumlah_patogen_padi,
             jumlah_penyakit_padi=jumlah_penyakit_padi,

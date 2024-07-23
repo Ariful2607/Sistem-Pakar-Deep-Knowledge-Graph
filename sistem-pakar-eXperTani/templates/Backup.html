@@ -1,139 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Perpustakaan</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/tanaman.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/HasilDiagnosa.css') }}">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eXperTani</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">
-      <img src="{{ url_for('static', filename='images/EXTN.png') }}" width="90" height="20" alt="Penyiangan">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">
-                    <span>Beranda</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/perpustakaan">
-                    <span>Perpustakaan</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/diagnosa">
-                    <span>Diagnosa</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/tipsperawatan">
-                    <span>Tips Perawatan</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-  <div class="container">
-    <div class="filter-section">
-      <div class="filter-by">
-        <h2>Filter by</h2>
-        <div class="filter-item">
-          <input type="checkbox" id="penyakit" name="category" value="penyakit">
-          <label for="penyakit">Penyakit</label>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="/">
+          <img src="{{ url_for('static', filename='images/EXTN.png') }}" width="90" height="20" alt="eXperTani">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/perpustakaan">Perpustakaan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/diagnosa">Diagnosa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tipsperawatan">Tips Perawatan</a>
+                </li>
+            </ul>
         </div>
-        <div class="filter-item">
-          <input type="checkbox" id="hama" name="category" value="hama">
-          <label for="hama">Hama</label>
-        </div>
-      </div>
-      <div class="search-section">
-        <div class="search-bar">
-          <input type="text" id="search-query" placeholder="Tuliskan nama penyakit...">
-        </div>
-      </div>
-    </div>
-    <div class="disease-list" id="disease-list">
-      <!-- Cards will be dynamically inserted here -->
-    </div>
-  </div>
+    </nav>
 
-  <!-- Bootstrap and jQuery JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <!-- Custom JS -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      loadInitialData();
-
-      // Event listener for search input
-      document.getElementById('search-query').addEventListener('input', search);
-
-      // Event listeners for checkboxes
-      document.getElementById('penyakit').addEventListener('change', search);
-      document.getElementById('hama').addEventListener('change', search);
-    });
-
-    function loadInitialData() {
-      fetch('/search-results?query=random')
-        .then(response => response.json())
-        .then(data => {
-          displayResults(data.nodes);
-        })
-        .catch(error => console.error('Error fetching initial data:', error));
-    }
-
-    function displayResults(nodes) {
-      const diseaseList = document.getElementById('disease-list');
-      diseaseList.innerHTML = '';  // Clear existing cards
-      nodes.forEach(node => {
-        const card = `
-          <div class="disease-card" data-label="${node.label}">
-            <img src="{{ url_for('static', filename='images/hama_wereng.jpg') }}" alt="${node.label}">
-            <div class="info">
-              <h2>${node.label}</h2>
-              <p>${node.abstract}</p>
-              <div class="details">
-                <span>Serangga</span>
-                <span>Merusak Batang</span>
-              </div>
-              <div class="details">
-                <span>Patogen</span>
-                <span>Cara Penanganan</span>
-              </div>
+    <div class="container-fluid p-0">
+        <section class="hero-section">
+            <div class="row no-gutters">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="hero-content">
+                        <h1 class="mb-4">
+                            <span class="text-dark">Bersama </span>
+                            <span class="text-green">eXperTanie</span>
+                            <span class="text-dark"><br>langkah tepat <br>untuk </span>
+                            <span class="text-green">PANEN MELIMPAH</span>
+                        </h1>
+                        <p class="mb-4">eXperTani merupakan media yang membantu mendiagnosis dan mengobati masalah pada tanaman padi, meningkatkan produktivitas serta menyediakan tips dan trik mengenai tanaman padi. Bersama eXperTani tingkatkan produktivitas padimu.</p>
+                        <div class="stats mb-4">
+                            <div class="stat-item">
+                                <div class="stat-number">{{ jumlah_penyakit_padi }}</div>
+                                <div class="stat-bar"></div>
+                                <div class="stat-label">Penyakit Tanaman Padi</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">{{ jumlah_patogen_padi }}</div>
+                                <div class="stat-bar"></div>
+                                <div class="stat-label">Patogen Tanaman Padi</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">{{ jumlah_hama_padi }}</div>
+                                <div class="stat-bar"></div>
+                                <div class="stat-label">Hama Tanaman Padi</div>
+                            </div>
+                        </div>
+                        <a href="/diagnosa" class="btn btn-primary btn-lg">Diagnosis Penyakit</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="hero-image" src="{{ url_for('static', filename='images/gambar1.png') }}" alt="Hero Image">
+                </div>
             </div>
-          </div>
-        `;
-        diseaseList.insertAdjacentHTML('beforeend', card);
-      });
+        </section>
 
-      // Add click event listener to each card
-      document.querySelectorAll('.disease-card').forEach(card => {
-        card.addEventListener('click', function() {
-          const label = this.getAttribute('data-label');
-          window.location.href = `/details?label=${label}`;
-        });
-      });
-    }
+        <section class="features-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Fitur Unggulan eXperTani</h2>
+                <div class="row">
+                    {% for node in nodes_list %}
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100" onclick="redirectToDetails('{{ node.label }}')">
+                            <img class="card-img-top" src="{{ url_for('static', filename='images/card hama 1.png') }}" alt="Card Image">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ node.label }}</h5>
+                                <p class="card-text">{{ node.abstract }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
 
-    function search() {
-      const query = document.getElementById('search-query').value;
-      const categories = Array.from(document.querySelectorAll('input[name="category"]:checked'))
-                              .map(input => input.value)
-                              .join('|');
-      const url = `/search-results?query=${query}&category=${categories}`;
-      fetch(url)
-        .then(response => response.json())
-        .then(data => {
-          displayResults(data.nodes);
-        })
-        .catch(error => console.error('Error fetching search results:', error));
-    }
-  </script>
+        <section class="about-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="mb-4">
+                            <span class="text-dark">Sekilas </span>
+                            <span class="text-green">Tentang eXperTani</span>
+                        </h2>
+                        <p>eXperTani adalah sebuah platform yang menyediakan informasi lengkap mengenai cara pengelolaan tanaman padi, termasuk diagnosis penyakit, penanganan hama, dan pemilihan varietas unggul.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/EXTANI.png') }}" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <span class="text-dark">Testimoni </span>
+                    <span class="text-green">Pengguna</span>
+                </h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"Sejak menggunakan eXperTani, produktivitas tanaman padi saya meningkat pesat. Informasi yang diberikan sangat akurat dan membantu."</p>
+                            <footer class="blockquote-footer">Budi, <cite title="Source Title">Petani Padi</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 eXperTani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        function redirectToDetails(label) {
+            window.location.href = `/details-2?label=${encodeURIComponent(label)}`;
+        }
+    </script>
+    <script src="{{ url_for('static', filename='js/redirect.js') }}"></script>
 </body>
 </html>
