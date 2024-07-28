@@ -6,33 +6,29 @@
   <title>Hasil Diagnosa</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/HasilDiagnosa.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="/">
-      <img src="{{ url_for('static', filename='images/EXTN.png') }}" width="90" height="20" alt="Penyiangan">
+      <img src="{{ url_for('static', filename='images/EXTN.png') }}" width="90" height="20" alt="eXperTani">
     </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/">
-                    <span>Beranda</span>
-                </a>
+                <a class="nav-link" href="/">Beranda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/perpustakaan">
-                    <span>Perpustakaan</span>
-                </a>
+                <a class="nav-link" href="/perpustakaan">Perpustakaan</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/diagnosa">
-                    <span>Diagnosa</span>
-                </a>
+                <a class="nav-link" href="/diagnosa">Diagnosa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/tipsperawatan">
-                    <span>Tips Perawatan</span>
-                </a>
+                <a class="nav-link" href="/tipsperawatan">Tips Perawatan</a>
             </li>
         </ul>
     </div>
@@ -64,7 +60,7 @@
                   </div>
                   <div class="PenjelasanSingkat">
                     Baik nimfa maupun dewasa berlindung di pangkal tanaman dan menghisap getah dari batang dan daun. Tanaman layu dan mulai menguning. Kepadatan populasi yang menyebabkan daun menjadi kuning jingga, kemudian menjadi coklat dan kering, dan akhirnya tanaman mengering dan mati. <br/><br/>
-                    Gejala pertama kali terlihat pada petak-petak kecil namun gejala tersebut dapat berkembang cepat seiring dengan penyebaran wereng. Betina bertelur di batang dan tengah daun, menyebabkan kerusakan tambahan. Tanaman mempunyai malai yang lebih kecil, bulir masak lebih sedikit, dan bobot bulir lebih rendah.  
+                    <!-- Gejala pertama kali terlihat pada petak-petak kecil namun gejala tersebut dapat berkembang cepat seiring dengan penyebaran wereng. Betina bertelur di batang dan tengah daun, menyebabkan kerusakan tambahan. Tanaman mempunyai malai yang lebih kecil, bulir masak lebih sedikit, dan bobot bulir lebih rendah.   -->
                   </div>
                   <div class="Frame941">
                     <div class="Price"></div>

@@ -1,27 +1,41 @@
-.navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 56px; /* Adjust for fixed navbar */
+  margin: 0;
+  background-color: #f2f2f2;
 }
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Sama di kedua halaman */
+  padding: 10px 20px; /* Sesuaikan padding jika diperlukan */
+}
+
+.navbar-brand img {
+  height: 30px; /* Ukuran logo disamakan */
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 16px; /* Sesuaikan ukuran font */
+  font-weight: 400; /* Sesuaikan ketebalan font */
+}
+
 .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
 .nav-item span {
   font-size: 14px;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
-}
-
+/* Additional styles from perpustakaan.css */
 .container {
   width: 95%;
   margin: 0 auto;
   padding: 20px;
+  padding-top: 80px; /* Tambahkan padding-top untuk mengimbangi tinggi navbar tetap */
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -95,6 +109,13 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.disease-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .disease-card img {
@@ -102,6 +123,11 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.disease-card:hover img {
+  transform: scale(1.05);
 }
 
 .disease-card .info {
@@ -110,6 +136,11 @@ body {
 
 .disease-card .info h2 {
   margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.disease-card:hover .info h2 {
+  color: #4CAF50;
 }
 
 .disease-card .info p {
@@ -125,42 +156,13 @@ body {
 .disease-card .info .details span {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #eee;
+  background-color: #e0e0e0;
   border-radius: 5px;
-}
-
-.disease-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.disease-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.disease-card img {
-  transition: transform 0.3s ease;
-}
-
-.disease-card:hover img {
-  transform: scale(1.05);
-}
-
-.disease-card .info h2 {
-  transition: color 0.3s ease;
-}
-
-.disease-card:hover .info h2 {
-  color: #4CAF50;
-}
-
-.disease-card .info .details span {
   transition: background-color 0.3s ease;
 }
 
 .disease-card:hover .info .details span {
-  background-color: #e0e0e0;
+  background-color: #e2f5d5;
 }
 
 #search-query {
@@ -196,4 +198,21 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.details span {
+  padding: 4px;
+  background-color: lightgreen; /* Change background color to light green */
+  border-radius: 3px; /* Optional: add some border radius */
+  margin-bottom: 4px; /* Add some space between spans */
+}
+
+footer {
+  background-color: #F2F2F2;
 }

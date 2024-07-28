@@ -1,12 +1,31 @@
-.navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 56px; /* Adjust for fixed navbar */
+  margin: 0;
+  background-color: #f2f2f2;
 }
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Sama di kedua halaman */
+  padding: 10px 20px; /* Sesuaikan padding jika diperlukan */
+}
+
+.navbar-brand img {
+  height: 30px; /* Ukuran logo disamakan */
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 16px; /* Sesuaikan ukuran font */
+  font-weight: 400; /* Sesuaikan ketebalan font */
+}
+
 .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
 .nav-item span {
   font-size: 14px;
 }

@@ -125,29 +125,69 @@ def search_results():
             label_filter = "PenyakitPadi|HamaPadi"
 
         if not query or query.lower() == 'random':
-            search_query = f"MATCH (n) WHERE ANY(label IN labels(n) WHERE label =~ '{label_filter}') RETURN n ORDER BY rand() LIMIT 10"
+            search_query = f"""
+                MATCH (n) 
+                WHERE ANY(label IN labels(n) WHERE label =~ '{label_filter}')
+                OPTIONAL MATCH (n)-[:memilikiGejala]->(gejala)
+                WITH n, labels(n) AS allLabels, collect(DISTINCT gejala.label) AS gejalaInfo
+                UNWIND allLabels AS label
+                WITH n, gejalaInfo, 
+                CASE 
+                    WHEN label = 'PenyakitPadi' THEN 'Penyakit Padi'
+                    WHEN label = 'PatogenPadi' THEN 'Patogen Padi'
+                    WHEN label = 'HamaPadi' THEN 'Hama Padi'
+                    WHEN label = 'Biologis' THEN 'Agen Biologi'
+                    ELSE label 
+                END AS modifiedLabel
+                WHERE modifiedLabel IN ['Fungisida', 'Gejala', 'Penyakit Padi', 'Patogen Padi', 'Hama Padi', 'Agen Biologi', 'Bakterisida', 'Pestisida']
+                WITH n, gejalaInfo, collect(modifiedLabel) AS labelobjects 
+                RETURN n, labelobjects, gejalaInfo
+                ORDER BY rand() 
+                LIMIT 10
+            """
         else:
-            search_query = f"MATCH (n) WHERE toLower(n.label) CONTAINS toLower($query) AND ANY(label IN labels(n) WHERE label =~ '{label_filter}') RETURN n LIMIT 10"
+            search_query = f"""
+                MATCH (n) 
+                WHERE toLower(n.label) CONTAINS toLower($query) 
+                AND ANY(label IN labels(n) WHERE label =~ '{label_filter}')
+                OPTIONAL MATCH (n)-[:memilikiGejala]->(gejala)
+                WITH n, labels(n) AS allLabels, collect(DISTINCT gejala.label) AS gejalaInfo
+                UNWIND allLabels AS label
+                WITH n, gejalaInfo, 
+                CASE 
+                    WHEN label = 'PenyakitPadi' THEN 'Penyakit Padi'
+                    WHEN label = 'PatogenPadi' THEN 'Patogen Padi'
+                    WHEN label = 'HamaPadi' THEN 'Hama Padi'
+                    WHEN label = 'Biologis' THEN 'Agen Biologi'
+                    ELSE label 
+                END AS modifiedLabel
+                WHERE modifiedLabel IN ['Fungisida', 'Gejala', 'Penyakit Padi', 'Patogen Padi', 'Hama Padi', 'Agen Biologi', 'Bakterisida', 'Pestisida']
+                WITH n, gejalaInfo, collect(modifiedLabel) AS labelobjects 
+                RETURN n, labelobjects, gejalaInfo 
+                ORDER BY rand() 
+                LIMIT 10
+            """
 
         nodes = run_query(search_query, {"query": query})
 
         nodes_list = [
             {
-                "abstract": ' '.join(record["n"].get("abstract", "").split()[:5]) + "...",
+                "abstract": ' '.join(record["n"].get("abstract", "").split()[:9]) + "...",
                 "label": record["n"].get("label", ""),
                 "Vector": record["n"].get("Vector", []),
-                "uri": record["n"].get("uri", "")
+                "uri": record["n"].get("uri", ""),
+                "gejalaInfo": record["gejalaInfo"]  # Include gejalaInfo in the response
             }
             for record in nodes
         ]
 
         logging.debug(f"Fetched nodes: {nodes_list}")
-        return jsonify({"nodes": nodes_list})
+        return jsonify({"nodes": nodes_list})  # Return JSON data
 
     except Exception as e:
         logging.error(f"An error occurred: {e}")
         return jsonify({"error": str(e)}), 500
-
+    
 @app.route('/details')
 def details_page():
     label = request.args.get('label', '')
@@ -178,6 +218,7 @@ def details_page():
         OPTIONAL MATCH (n)-[:diberikanPestisida]->(pestisida)
         OPTIONAL MATCH (n)-[:diberikanAgenBiologi]->(agenbiologi)
         OPTIONAL MATCH (n)-[:terkenaPatogen]->(patogenpadi)
+        OPTIONAL MATCH (hamapadi)-[:menyebabkanPenyakit]->(n)
         RETURN n,
             labelobjects,
             collect(DISTINCT {label: gejala.label, abstract: gejala.abstract}) AS gejalaInfo,
@@ -185,7 +226,8 @@ def details_page():
             collect(DISTINCT {label: bakterisida.label, abstract: bakterisida.abstract}) AS bakterisidaInfo,
             collect(DISTINCT {label: pestisida.label, abstract: pestisida.abstract}) AS pestisidaInfo,
             collect(DISTINCT {label: agenbiologi.label, abstract: agenbiologi.abstract}) AS agenbiologiInfo,
-            collect(DISTINCT {label: patogenpadi.label, abstract: patogenpadi.abstract}) AS patogenInfo
+            collect(DISTINCT {label: patogenpadi.label, abstract: patogenpadi.abstract}) AS patogenInfo,
+            collect(DISTINCT {label: hamapadi.label, abstract: hamapadi.abstract}) AS hamaInfo
         """
         result = run_query(query, {"label": label})
 
@@ -198,6 +240,7 @@ def details_page():
             pestisida_info = result[0]['pestisidaInfo']
             agenbiologi_info = result[0]['agenbiologiInfo']
             patogen_info = result[0]['patogenInfo']
+            hama_info = result[0]['hamaInfo']
 
             logging.debug(f"Node: {node}")
             logging.debug(f"Label Objects: {labels}")
@@ -207,6 +250,7 @@ def details_page():
             logging.debug(f"Pestisida Info: {pestisida_info}")
             logging.debug(f"Agen Biologi Info: {agenbiologi_info}")
             logging.debug(f"Patogen Info: {patogen_info}")
+            logging.debug(f"Hama Info: {hama_info}")
 
             gejala_info_list = [gejala for gejala in gejala_info if gejala.get('label')]
             fungisida_info_list = [fungisida for fungisida in fungisida_info if fungisida.get('label')]
@@ -214,6 +258,7 @@ def details_page():
             pestisida_info_list = [pestisida for pestisida in pestisida_info if pestisida.get('label')]
             agenbiologi_info_list = [agenbiologi for agenbiologi in agenbiologi_info if agenbiologi.get('label')]
             patogen_info_list = [patogen for patogen in patogen_info if patogen.get('label')]
+            hama_info_list = [hama for hama in hama_info if hama.get('label')]
 
             logging.debug(f"Gejala Info List: {gejala_info_list}")
             logging.debug(f"Fungisida Info List: {fungisida_info_list}")
@@ -221,9 +266,11 @@ def details_page():
             logging.debug(f"Pestisida Info List: {pestisida_info_list}")
             logging.debug(f"Agen Biologi Info List: {agenbiologi_info_list}")
             logging.debug(f"Patogen Info List: {patogen_info_list}")
+            logging.debug(f"Hama Info List: {hama_info_list}")
 
             return render_template(
                 "DetailInformation.html",
+                # "Backup.html",
                 label=node.get("label", ""),
                 labels=labels,
                 abstract=node.get("abstract", ""),
@@ -232,7 +279,8 @@ def details_page():
                 bakterisida_info=bakterisida_info_list,
                 pestisida_info=pestisida_info_list,
                 agenbiologi_info=agenbiologi_info_list,
-                patogen_info=patogen_info_list
+                patogen_info=patogen_info_list,
+                hama_info=hama_info_list
             )
         else:
             logging.warning(f"No results found for label: {label}")

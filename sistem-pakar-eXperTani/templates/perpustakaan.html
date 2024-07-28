@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Perpustakaan</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/tanaman.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/HasilDiagnosa.css') }}">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tanaman.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">
-      <img src="{{ url_for('static', filename='images/EXTN.png') }}" width="90" height="20" alt="Penyiangan">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">
-                    <span>Beranda</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/perpustakaan">
-                    <span>Perpustakaan</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/diagnosa">
-                    <span>Diagnosa</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/tipsperawatan">
-                    <span>Tips Perawatan</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="/">
+    <img src="{{ url_for('static', filename='images/EXTN.png') }}" width="90" height="20" alt="eXperTani">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="/">Beranda</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/perpustakaan">Perpustakaan</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/diagnosa">Diagnosa</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/tipsperawatan">Tips Perawatan</a>
+          </li>
+      </ul>
+  </div>
 </nav>
 
   <div class="container">
@@ -58,7 +56,7 @@
     </div>
     <div class="loader" id="loader"></div>
     <div class="disease-list" id="disease-list">
-      <!-- Cards will be dynamically inserted here -->
+      <!-- Cards will be populated here by JavaScript -->
     </div>
   </div>
 
@@ -101,25 +99,26 @@
     function displayResults(nodes) {
       const diseaseList = document.getElementById('disease-list');
       diseaseList.innerHTML = '';  // Clear existing cards
+
       nodes.forEach(node => {
+        // Limit gejalaInfo to a maximum of 1 items
+        const limitedGejala = node.gejalaInfo.slice(0, 1);
+        // Create spans for each gejala
+        const gejalaSpans = limitedGejala.map(gejala => `<span>Gejala: ${gejala}...</span>`).join(' ');
+
         const card = `
           <div class="disease-card" data-label="${node.label}">
-            <img src="{{ url_for('static', filename='images/hama_wereng.jpg') }}" alt="${node.label}">
+            <img src="{{ url_for('static', filename='images/Walang_Sangit.jpg') }}" alt="${node.label}">
             <div class="info">
               <h2>${node.label}</h2>
               <p>${node.abstract}</p>
               <div class="details">
-                <span>Serangga</span>
-                <span>Merusak Batang</span>
-              </div>
-              <div class="details">
-                <span>Patogen</span>
-                <span>Cara Penanganan</span>
+                ${gejalaSpans}
               </div>
             </div>
           </div>
         `;
-        diseaseList.insertAdjacentHTML('beforeend', card);
+        diseaseList.innerHTML += card;
       });
 
       document.querySelectorAll('.disease-card').forEach(card => {
@@ -130,14 +129,30 @@
       });
     }
 
+    function showLoader() {
+      document.getElementById('loader').style.display = 'block';
+    }
+
+    function hideLoader() {
+      document.getElementById('loader').style.display = 'none';
+    }
+
     function search() {
       showLoader();
       const query = document.getElementById('search-query').value;
-      const categories = Array.from(document.querySelectorAll('input[name="category"]:checked'))
-                              .map(input => input.value)
-                              .join('|');
-      const url = `/search-results?query=${query}&category=${categories}`;
-      fetch(url)
+      const penyakit = document.getElementById('penyakit').checked ? 'penyakit' : '';
+      const hama = document.getElementById('hama').checked ? 'hama' : '';
+
+      let category = '';
+      if (penyakit && hama) {
+        category = '';
+      } else if (penyakit) {
+        category = 'penyakit';
+      } else if (hama) {
+        category = 'hama';
+      }
+
+      fetch(`/search-results?query=${query}&category=${category}`)
         .then(response => response.json())
         .then(data => {
           displayResults(data.nodes);
@@ -147,14 +162,6 @@
           console.error('Error fetching search results:', error);
           hideLoader();
         });
-    }
-
-    function showLoader() {
-      document.getElementById('loader').style.display = 'block';
-    }
-
-    function hideLoader() {
-      document.getElementById('loader').style.display = 'none';
     }
   </script>
 </body>

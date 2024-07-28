@@ -6,9 +6,6 @@
   <title>Detail Information</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/DetailInformation.css') }}">
-  <style>
-
-  </style>
 </head>
 <body>
   <section>
@@ -35,6 +32,7 @@
            pada sebuah tanaman padi.</p>
         </div>
       </div>
+      <p>Berikut merupakan informasi yang relevan terkait kasus {{label}}, Yuk Simak Informasinya!</p>
       <div class="categories">
         {% for info in gejala_info %}
         <div class="category" data-label="{{ info.label }}"> {{ info.label }}</div>
@@ -45,11 +43,10 @@
         {% for info in patogen_info %}
         <div class="category" data-label="{{ info.label }}">{{ info.label }}</div>
         {% endfor %}
-    </div>
+      </div>
       <div class="information">
         <h4>Keterangan</h4>
         <p class="gray-text">{{ abstract }}</p>
-        <!-- <h2>Related Symptoms</h2> -->
       </div>
       <div class="more-information">
         <h4>Yuk cari tahu lebih dalam</h4>
@@ -64,6 +61,7 @@
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
+                {% if gejala_info %}
                 <table>
                     <thead>
                         <tr>
@@ -80,141 +78,193 @@
                         {% endfor %}
                     </tbody>
                 </table>
+                {% else %}
+                <p>Tidak ada informasi gejala tersedia.</p>
+                {% endif %}
               </div>
             </div>
           </div>
           <!-- other accordion items -->
            
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Apa penyebabnya?
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              <table>
-                <thead>
-                    <tr>
-                        <th>Patogen</th>
-                        <th>Keterangan</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for info in patogen_info %}
-                    <tr>
-                        <td>{{ info.label }}</td>
-                        <td>{{ info.abstract }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Apa penyebabnya?
+                </button>
+              </h5>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Bagaimana cara menanganinya?
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              <p>Penanganan Dapat diberi fungisida, Bakterisida, Pestisida, atau agen Biologi.</p>
-              <table>
-                <thead>
-                    <tr>
-                        <th>Fungisida</th>
-                        <th>Keterangan</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for info in fungisida_info %}
-                    <tr>
-                        <td>{{ info.label }}</td>
-                        <td>{{ info.abstract }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-            <!-- Bakterisida -->
-            <table>
-              <thead>
-                  <tr>
-                      <th>Bakterisida</th>
-                      <th>Keterangan</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  {% for info in bakterisida_info %}
-                  <tr>
-                      <td>{{ info.label }}</td>
-                      <td>{{ info.abstract }}</td>
-                  </tr>
-                  {% endfor %}
-              </tbody>
-          </table>
-          <!-- Pestisida -->
-          <table>
-            <thead>
-                <tr>
-                    <th>Pestisida</th>
-                    <th>Keterangan</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for info in pestisida_info %}
-                <tr>
-                    <td>{{ info.label }}</td>
-                    <td>{{ info.abstract }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-          </table>
-          <!-- Agen Biologi -->
-          <table>
-            <thead>
-                <tr>
-                    <th>Agen Biologi</th>
-                    <th>Keterangan</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for info in agenbiologi_info %}
-                <tr>
-                    <td>{{ info.label }}</td>
-                    <td>{{ info.abstract }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-          </table>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingFour">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Apa saja yang dirusak oleh virus ini?
-              </button>
-            </h5>
-          </div>
-          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-            <div class="card-body">
-              {% for info in gejala_info %}
-              <tr>
-                  <td>{{ info.label }},</td>
-              </tr>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Umumnya {{label}} Dapat terjadi karena:</p>
+                {% if patogen_info %}
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Patogen</th>
+                          <th>Keterangan</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      {% for info in patogen_info %}
+                      <tr>
+                          <td>{{ info.label }}</td>
+                          <td>{{ info.abstract }}</td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+                {% else %}
+                <!-- <p>Tidak ada informasi tersedia.</p> -->
+                {% endif %}
 
-      </div>
+                {% if hama_info %}
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Hama</th>
+                          <th>Keterangan</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      {% for info in hama_info %}
+                      <tr>
+                          <td>{{ info.label }}</td>
+                          <td>{{ info.abstract }}</td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+                {% else %}
+                <!-- <p>Tidak ada informasi tersedia.</p> -->
+                {% endif %}
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Bagaimana cara menanganinya?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Berikut penanangan yang dapat dilakukan terhadap kasus {{ label }}:</p>
+                {% if fungisida_info %}
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Fungisida</th>
+                          <th>Keterangan</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      {% for info in fungisida_info %}
+                      <tr>
+                          <td>{{ info.label }}</td>
+                          <td>{{ info.abstract }}</td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+                {% else %}
+                <!-- <p>Tidak ada informasi fungisida tersedia.</p> -->
+                {% endif %}
+                
+                {% if bakterisida_info %}
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Bakterisida</th>
+                          <th>Keterangan</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      {% for info in bakterisida_info %}
+                      <tr>
+                          <td>{{ info.label }}</td>
+                          <td>{{ info.abstract }}</td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+                {% else %}
+                <!-- <p>Tidak ada informasi bakterisida tersedia.</p> -->
+                {% endif %}
+                
+                {% if pestisida_info %}
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Pestisida</th>
+                          <th>Keterangan</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      {% for info in pestisida_info %}
+                      <tr>
+                          <td>{{ info.label }}</td>
+                          <td>{{ info.abstract }}</td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+                {% else %}
+                <!-- <p>Tidak ada informasi pestisida tersedia.</p> -->
+                {% endif %}
+                
+                {% if agenbiologi_info %}
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Agen Biologi</th>
+                          <th>Keterangan</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      {% for info in agenbiologi_info %}
+                      <tr>
+                          <td>{{ info.label }}</td>
+                          <td>{{ info.abstract }}</td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+                {% else %}
+                <!-- <p>Tidak ada informasi agen biologi tersedia.</p> -->
+                {% endif %}
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Apa saja yang dirusak oleh virus ini?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                {% if gejala_info %}
+                <ul>
+                  {% for info in gejala_info %}
+                  <li>{{ info.label }}</li>
+                  {% endfor %}
+                </ul>
+                {% else %}
+                <p>Tidak ada informasi tersedia.</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -234,6 +284,7 @@
     });
   </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
